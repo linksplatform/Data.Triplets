@@ -11,7 +11,7 @@ namespace Platform.Data.Triplets.Sequences
     /// </remarks>
     public class SequenceHelpers
     {
-        public const int MaxSequenceFormatSize = 20;
+        public static readonly int MaxSequenceFormatSize = 20;
 
         //public static void DeleteSequence(Link sequence)
         //{
@@ -48,7 +48,7 @@ namespace Platform.Data.Triplets.Sequences
         {
             if (links.Length == 1)
             {
-                throw new Exception("Подпоследовательности с одним элементом не поддерживаются.");
+                throw new InvalidOperationException("Подпоследовательности с одним элементом не поддерживаются.");
             }
             var leftBound = 0;
             var rightBound = links.Length - 1;

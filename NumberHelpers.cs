@@ -7,8 +7,8 @@ namespace Platform.Data.Triplets
 {
     public static class NumberHelpers
     {
-        public static Link[] NumbersToLinks;
-        public static Dictionary<Link, long> LinksToNumbers;
+        public static Link[] NumbersToLinks { get; private set; }
+        public static Dictionary<Link, long> LinksToNumbers { get; private set; }
 
         static NumberHelpers() => Create();
 

@@ -52,50 +52,50 @@ namespace Platform.Data.Triplets
 
     public class Net
     {
-        public static Link Link;
-        public static Link Thing;
-        public static Link IsA;
-        public static Link IsNotA;
+        public static Link Link { get; private set; }
+        public static Link Thing { get; private set; }
+        public static Link IsA { get; private set; }
+        public static Link IsNotA { get; private set; }
 
-        public static Link Of;
-        public static Link And;
-        public static Link ThatConsistsOf;
-        public static Link Has;
-        public static Link Contains;
-        public static Link ContainedBy;
+        public static Link Of { get; private set; }
+        public static Link And { get; private set; }
+        public static Link ThatConsistsOf { get; private set; }
+        public static Link Has { get; private set; }
+        public static Link Contains { get; private set; }
+        public static Link ContainedBy { get; private set; }
 
-        public static Link One;
-        public static Link Zero;
+        public static Link One { get; private set; }
+        public static Link Zero { get; private set; }
 
-        public static Link Sum;
-        public static Link Character;
-        public static Link String;
-        public static Link Name;
+        public static Link Sum { get; private set; }
+        public static Link Character { get; private set; }
+        public static Link String { get; private set; }
+        public static Link Name { get; private set; }
 
-        public static Link Set;
-        public static Link Group;
+        public static Link Set { get; private set; }
+        public static Link Group { get; private set; }
 
-        public static Link ParsedFrom;
-        public static Link ThatIs;
-        public static Link ThatIsBefore;
-        public static Link ThatIsBetween;
-        public static Link ThatIsAfter;
-        public static Link ThatIsRepresentedBy;
-        public static Link ThatHas;
+        public static Link ParsedFrom { get; private set; }
+        public static Link ThatIs { get; private set; }
+        public static Link ThatIsBefore { get; private set; }
+        public static Link ThatIsBetween { get; private set; }
+        public static Link ThatIsAfter { get; private set; }
+        public static Link ThatIsRepresentedBy { get; private set; }
+        public static Link ThatHas { get; private set; }
 
-        public static Link Text;
-        public static Link Path;
-        public static Link Content;
-        public static Link EmptyContent;
-        public static Link Empty;
-        public static Link Alphabet;
-        public static Link Letter;
-        public static Link Case;
-        public static Link Upper;
-        public static Link UpperCase;
-        public static Link Lower;
-        public static Link LowerCase;
-        public static Link Code;
+        public static Link Text { get; private set; }
+        public static Link Path { get; private set; }
+        public static Link Content { get; private set; }
+        public static Link EmptyContent { get; private set; }
+        public static Link Empty { get; private set; }
+        public static Link Alphabet { get; private set; }
+        public static Link Letter { get; private set; }
+        public static Link Case { get; private set; }
+        public static Link Upper { get; private set; }
+        public static Link UpperCase { get; private set; }
+        public static Link Lower { get; private set; }
+        public static Link LowerCase { get; private set; }
+        public static Link Code { get; private set; }
 
         static Net() => Create();
 
@@ -113,10 +113,12 @@ namespace Platform.Data.Triplets
         {
             #region Core
 
-            if (!Link.TryGetMapped(NetMapping.IsA, out IsA)
-             || !Link.TryGetMapped(NetMapping.IsNotA, out IsNotA)
-             || !Link.TryGetMapped(NetMapping.Link, out Link)
-             || !Link.TryGetMapped(NetMapping.Thing, out Thing))
+            IsA = Link.GetMappedOrDefault(NetMapping.IsA);
+            IsNotA = Link.GetMappedOrDefault(NetMapping.IsNotA);
+            Link = Link.GetMappedOrDefault(NetMapping.Link);
+            Thing = Link.GetMappedOrDefault(NetMapping.Thing);
+
+            if (IsA == null || IsNotA == null || Link == null || Thing == null)
             {
                 // Наивная инициализация (Не является корректным объяснением).
                 IsA = Link.CreateMapped(Link.Itself, Link.Itself, Link.Itself, NetMapping.IsA); // Стоит переделать в "[x] is a member|instance|element of the class [y]"
@@ -124,7 +126,7 @@ namespace Platform.Data.Triplets
                 Link = Link.CreateMapped(Link.Itself, IsA, Link.Itself, NetMapping.Link);
                 Thing = Link.CreateMapped(Link.Itself, IsNotA, Link, NetMapping.Thing);
 
-                Link.Update(ref IsA, IsA, IsA, Link); // Исключение, позволяющие завершить систему
+                IsA = Link.Update(IsA, IsA, Link); // Исключение, позволяющие завершить систему
             }
 
             #endregion
@@ -174,7 +176,7 @@ namespace Platform.Data.Triplets
 
         public static void Recreate()
         {
-            ThreadHelpers.SyncInvokeWithExtendedStack(() => Link.Delete(ref IsA));
+            ThreadHelpers.SyncInvokeWithExtendedStack(() => Link.Delete(IsA));
             CharacterHelpers.Recreate();
             Create();
         }

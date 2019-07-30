@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Platform.Data.Triplets.Sequences
 {
-    internal class CompressionExperiments
+    internal static class CompressionExperiments
     {
         public static void RightJoin(ref Link subject, Link @object)
         {
@@ -382,7 +383,7 @@ namespace Platform.Data.Triplets.Sequences
                         var neighbour = couple.FirstRefererByTarget;
                         if (neighbour.Linker == Net.And && neighbour.Source == first)
                         {
-
+                            throw new NotImplementedException();
                         }
                     }
                 });

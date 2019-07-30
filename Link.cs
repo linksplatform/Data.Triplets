@@ -7,11 +7,11 @@ using LinkIndex = System.UInt64;
 
 namespace Platform.Data.Triplets
 {
-    public struct LinkDefinition
+    public struct LinkDefinition : IEquatable<LinkDefinition>
     {
-        public Link Source;
-        public Link Linker;
-        public Link Target;
+        public readonly Link Source;
+        public readonly Link Linker;
+        public readonly Link Target;
 
         public LinkDefinition(Link source, Link linker, Link target)
         {
@@ -21,6 +21,8 @@ namespace Platform.Data.Triplets
         }
 
         public LinkDefinition(Link link) : this(link.Source, link.Linker, link.Target) { }
+
+        public bool Equals(LinkDefinition other) => Source == other.Source && Linker == other.Linker && Target == other.Target;
     }
 
     public partial struct Link : ILink<Link>, IEquatable<Link>
@@ -141,7 +143,7 @@ namespace Platform.Data.Triplets
 
         public static readonly Link Itself = null;
         public static readonly bool Continue = true;
-        public static readonly bool Stop = false;
+        public static readonly bool Stop;
 
         #endregion
 
@@ -209,7 +211,7 @@ namespace Platform.Data.Triplets
                 {
                     if (OpenLinks(storageFilename) == 0)
                     {
-                        throw new Exception($"Файл ({storageFilename}) хранилища не удалось открыть.");
+                        throw new InvalidOperationException($"Файл ({storageFilename}) хранилища не удалось открыть.");
                     }
                     _memoryManagerIsReady = true;
                 }
@@ -224,14 +226,14 @@ namespace Platform.Data.Triplets
                 {
                     if (CloseLinks() == 0)
                     {
-                        throw new Exception("Файл хранилища не удалось закрыть. Возможно он был уже закрыт, или не открывался вовсе.");
+                        throw new InvalidOperationException("Файл хранилища не удалось закрыть. Возможно он был уже закрыт, или не открывался вовсе.");
                     }
                     _memoryManagerIsReady = false;
                 }
             }
         }
 
-        public static implicit operator LinkIndex? (Link link) => link._link == 0 ? (LinkIndex?)null : link._link;
+        public static implicit operator LinkIndex?(Link link) => link._link == 0 ? (LinkIndex?)null : link._link;
 
         public static implicit operator Link(LinkIndex? link) => new Link(link ?? 0);
 
@@ -265,7 +267,7 @@ namespace Platform.Data.Triplets
 
         private static bool LinkWasDeleted(LinkIndex link) => link != 0 && GetLinkerIndex(link) == 0;
 
-        private bool IsMatchingTo(Link source, Link linker, Link target) 
+        private bool IsMatchingTo(Link source, Link linker, Link target)
             => ((Source == this && source == null) || (Source == source))
             && ((Linker == this && linker == null) || (Linker == linker))
             && ((Target == this && target == null) || (Target == target));
@@ -282,7 +284,7 @@ namespace Platform.Data.Triplets
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             if (LinkWasDeleted(source))
             {
@@ -311,7 +313,7 @@ namespace Platform.Data.Triplets
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             if (index == 0)
             {
@@ -322,13 +324,13 @@ namespace Platform.Data.Triplets
                 Link link = index;
                 if (LinkDoesNotExist(link))
                 {
-                    throw new Exception("Связь с указанным адресом удалена, либо не существовала.");
+                    throw new InvalidOperationException("Связь с указанным адресом удалена, либо не существовала.");
                 }
                 return link;
             }
             catch (Exception ex)
             {
-                throw new Exception("Указатель не является корректным.", ex);
+                throw new InvalidOperationException("Указатель не является корректным.", ex);
             }
         }
 
@@ -338,7 +340,7 @@ namespace Platform.Data.Triplets
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             Link mappedLink = GetMappedLink(mappingIndex);
             if (mappedLink == null)
@@ -347,12 +349,12 @@ namespace Platform.Data.Triplets
                 SetMappedLink(mappingIndex, mappedLink);
                 if (GetMappedLink(mappingIndex) != mappedLink)
                 {
-                    throw new Exception("Установить привязанную связь не удалось.");
+                    throw new InvalidOperationException("Установить привязанную связь не удалось.");
                 }
             }
             else if (!mappedLink.IsMatchingTo(source, linker, target))
             {
-                throw new Exception("Существующая привязанная связь не соответствует указанным Source, Linker и Target.");
+                throw new InvalidOperationException("Существующая привязанная связь не соответствует указанным Source, Linker и Target.");
             }
             _linkToMappingIndex[mappedLink] = mappingIndex;
             return mappedLink;
@@ -385,8 +387,20 @@ namespace Platform.Data.Triplets
         {
             if (!TryGetMapped(mappingIndex, out Link mappedLink))
             {
-                throw new Exception($"Mapped link with index {mappingIndex} is not set.");
+                throw new InvalidOperationException($"Mapped link with index {mappingIndex} is not set.");
             }
+            return mappedLink;
+        }
+
+        public static Link GetMappedOrDefault(object mappingIndex)
+        {
+            TryGetMapped(mappingIndex, out Link mappedLink);
+            return mappedLink;
+        }
+
+        public static Link GetMappedOrDefault(Int mappingIndex)
+        {
+            TryGetMapped(mappingIndex, out Link mappedLink);
             return mappedLink;
         }
 
@@ -396,7 +410,7 @@ namespace Platform.Data.Triplets
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             mappedLink = GetMappedLink(mappingIndex);
             if (mappedLink != null)
@@ -406,11 +420,18 @@ namespace Platform.Data.Triplets
             return mappedLink != null;
         }
 
+        public static Link Update(Link newSource, Link newLinker, Link newTarget)
+        {
+            Link result = null;
+            Update(ref result, newSource, newLinker, newTarget);
+            return result;
+        }
+
         public static void Update(ref Link link, Link newSource, Link newLinker, Link newTarget)
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             if (LinkDoesNotExist(link))
             {
@@ -441,6 +462,8 @@ namespace Platform.Data.Triplets
             UpdatedEvent(previousDefinition, new LinkDefinition(link));
         }
 
+        public static void Delete(Link link) => Delete(ref link);
+
         public static void Delete(ref Link link)
         {
             if (LinkDoesNotExist(link))
@@ -463,9 +486,9 @@ namespace Platform.Data.Triplets
         //public static void Replace(ref Link link, Link replacement)
         //{
         //    if (!MemoryManagerIsReady)
-        //        throw new Exception("Менеджер памяти ещё не готов.");
+        //        throw new InvalidOperationException("Менеджер памяти ещё не готов.");
         //    if (LinkDoesNotExist(link))
-        //        throw new Exception("Если связь не существует, её нельзя заменить.");
+        //        throw new InvalidOperationException("Если связь не существует, её нельзя заменить.");
         //    if (LinkDoesNotExist(replacement))
         //        throw new ArgumentException("Пустая или удалённая связь не может быть замещаемым значением.", "replacement");
         //    link = ReplaceLink(link, replacement);
@@ -475,11 +498,11 @@ namespace Platform.Data.Triplets
         {
             if (!_memoryManagerIsReady)
             {
-                throw new Exception("Менеджер памяти ещё не готов.");
+                throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
             if (LinkDoesNotExist(source) || LinkDoesNotExist(linker) || LinkDoesNotExist(target))
             {
-                throw new Exception("Выполнить поиск связи можно только по существующим связям.");
+                throw new InvalidOperationException("Выполнить поиск связи можно только по существующим связям.");
             }
             return SearchLink(source, linker, target);
         }
@@ -494,7 +517,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersBySourceCount;
             if (referers == 1)
@@ -515,7 +538,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersBySourceCount;
             if (referers == 1)
@@ -532,7 +555,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersByLinkerCount;
             if (referers == 1)
@@ -553,7 +576,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersByLinkerCount;
             if (referers == 1)
@@ -570,7 +593,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersByTargetCount;
             if (referers == 1)
@@ -591,7 +614,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             var referers = ReferersByTargetCount;
             if (referers == 1)
@@ -608,7 +631,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             void wrapper(ulong x) => walker(x);
             WalkThroughAllReferersBySource(this, wrapper);
@@ -620,7 +643,7 @@ namespace Platform.Data.Triplets
         {
             if (LinkDoesNotExist(this))
             {
-                throw new Exception("C несуществующей связью нельзя производитить операции.");
+                throw new InvalidOperationException("C несуществующей связью нельзя производитить операции.");
             }
             long wrapper(ulong x) => walker(x) ? 1 : 0;
             WalkThroughReferersBySource(this, wrapper);

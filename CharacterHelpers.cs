@@ -201,12 +201,12 @@ namespace Platform.Data.Triplets
         private static Link CreateSimpleCharacterLink(char character) => Link.Create(Net.Character, Net.ThatHas, Link.Create(Net.Code, Net.ThatIsRepresentedBy, LinkConverter.FromNumber(character)));
 
         private static bool IsLetterOfLatinAlphabet(char character)
-            => character >= FirstLowerСaseLatinLetter && character <= LastLowerСaseLatinLetter
-            || character >= FirstUpperСaseLatinLetter && character <= LastUpperСaseLatinLetter;
+            => (character >= FirstLowerСaseLatinLetter && character <= LastLowerСaseLatinLetter)
+            || (character >= FirstUpperСaseLatinLetter && character <= LastUpperСaseLatinLetter);
 
         private static bool IsLetterOfCyrillicAlphabet(char character)
-            => character >= FirstLowerCaseCyrillicLetter && character <= LastLowerCaseCyrillicLetter
-            || character >= FirstUpperCaseCyrillicLetter && character <= LastUpperCaseCyrillicLetter
+            => (character >= FirstLowerCaseCyrillicLetter && character <= LastLowerCaseCyrillicLetter)
+            || (character >= FirstUpperCaseCyrillicLetter && character <= LastUpperCaseCyrillicLetter)
             || character == YoLowerCaseCyrillicLetter || character == YoUpperCaseCyrillicLetter;
 
         public static Link FromChar(char character)
