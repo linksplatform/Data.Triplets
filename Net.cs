@@ -126,7 +126,7 @@ namespace Platform.Data.Triplets
                 Link = Link.CreateMapped(Link.Itself, IsA, Link.Itself, NetMapping.Link);
                 Thing = Link.CreateMapped(Link.Itself, IsNotA, Link, NetMapping.Thing);
 
-                IsA = Link.Update(IsA, IsA, Link); // Исключение, позволяющие завершить систему
+                IsA = Link.Update(IsA, IsA, IsA, Link); // Исключение, позволяющие завершить систему
             }
 
             #endregion

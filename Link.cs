@@ -420,11 +420,10 @@ namespace Platform.Data.Triplets
             return mappedLink != null;
         }
 
-        public static Link Update(Link newSource, Link newLinker, Link newTarget)
+        public static Link Update(Link link, Link newSource, Link newLinker, Link newTarget)
         {
-            Link result = null;
-            Update(ref result, newSource, newLinker, newTarget);
-            return result;
+            Update(ref link, newSource, newLinker, newTarget);
+            return link;
         }
 
         public static void Update(ref Link link, Link newSource, Link newLinker, Link newTarget)
