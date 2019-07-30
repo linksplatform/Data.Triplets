@@ -70,7 +70,8 @@ namespace Platform.Data.Triplets
                 {
                     if ((number & key) == key)
                     {
-                        links[i++] = FromPowerOf2(powerOf2);
+                        links[i] = FromPowerOf2(powerOf2);
+                        i++;
                     }
                 }
             }

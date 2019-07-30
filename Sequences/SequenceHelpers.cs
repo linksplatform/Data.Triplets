@@ -9,7 +9,7 @@ namespace Platform.Data.Triplets.Sequences
     /// TODO: Check that CollectMatchingSequences algorithm is working, if not throw it away.
     /// TODO: Think of the abstraction on Sequences that can be equally usefull for triple links, doublet links and so on.
     /// </remarks>
-    public class SequenceHelpers
+    public static class SequenceHelpers
     {
         public static readonly int MaxSequenceFormatSize = 20;
 

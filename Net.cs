@@ -50,7 +50,7 @@ namespace Platform.Data.Triplets
         Code
     }
 
-    public class Net
+    public static class Net
     {
         public static Link Link { get; private set; }
         public static Link Thing { get; private set; }

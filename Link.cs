@@ -301,7 +301,7 @@ namespace Platform.Data.Triplets
             Link link = CreateLink(source, linker, target);
             if (link == null)
             {
-                throw new OutOfMemoryException();
+                throw new InvalidOperationException("Невозможно создать связь.");
             }
             CreatedEvent.Invoke(new LinkDefinition(link));
             return link;
