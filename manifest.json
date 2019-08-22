@@ -1,0 +1,332 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/travis/build/linksplatform/Data.Triplets",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "iULz55aSgBrsRV9lKaVa7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html",
+          "hash": "61hGKq5uZKHWaj+hxqdEZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.CharacterHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.html",
+          "hash": "NwyGW2S3s6WEkEBfHwXWpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.GexfExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.GexfExporter.html",
+          "hash": "59CJIq8X74pMNjGg7Pd9Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Link.CreatedDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Link.CreatedDelegate.html",
+          "hash": "ajlMDeU5+pCsDAQ3XzpvPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Link.DeletedDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Link.DeletedDelegate.html",
+          "hash": "LPToX8myEdBPFPjevpb9ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Link.UpdatedDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Link.UpdatedDelegate.html",
+          "hash": "ipRthYj1SJ/poaTPjRc7/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Link.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Link.html",
+          "hash": "nw1zS9GSbvgi7PguV5iMrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.LinkConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.LinkConverter.html",
+          "hash": "CPrE6UOZfIj6ismUNDw2Nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.LinkDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.LinkDefinition.html",
+          "hash": "L/QV5kn6jTWJ7i+2XvWAqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.LinkExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.LinkExtensions.html",
+          "hash": "sRHE+UMykFJvyEYFHxQ5VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Net.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Net.html",
+          "hash": "RoLg52BNHh5tItwrXvZAKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.NetMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.NetMapping.html",
+          "hash": "eSzNwBu5CgTHUMHnpNtKFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.NumberHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.NumberHelpers.html",
+          "hash": "6FFujSA52R0wrYzK+Nx1jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Sequences.SequenceHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Sequences.SequenceHelpers.html",
+          "hash": "y4jzU2jxV45DrWB4H2Ap/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Sequences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Sequences.html",
+          "hash": "D+lTrBomRm17MhK34FW9/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.LinkTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Tests.LinkTests.html",
+          "hash": "At/CJzgoMIN2iKdJFtIDYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.html",
+          "hash": "hVXZwZCwn7NO5CxlzY0rig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.Tests.html",
+          "hash": "ou4z1wr75EG2YUtok1JM5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Data.Triplets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Data.Triplets.html",
+          "hash": "3HJycDYJL47QYz1jGIHekQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "9GSDfVot75xfkJlTTfCMqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "NjgNr3TYKhuGQtUSbHfzkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 19,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
