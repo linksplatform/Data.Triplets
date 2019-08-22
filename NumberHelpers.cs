@@ -36,7 +36,7 @@ namespace Platform.Data.Triplets
                         if (NumbersToLinks[i] == null)
                         {
                             var numberLink = Link.Create(Net.Sum, Net.Of, previousPowerOf2Link & previousPowerOf2Link);
-                            var num = (long)Math.Pow(2, i);
+                            var num = (long)System.Math.Pow(2, i);
                             NumbersToLinks[i] = numberLink;
                             LinksToNumbers[numberLink] = num;
                             numberLink.SetName(num.ToString(CultureInfo.InvariantCulture));
@@ -45,7 +45,7 @@ namespace Platform.Data.Triplets
                     }
                 }
                 result = Link.Create(Net.Sum, Net.Of, previousPowerOf2Link & previousPowerOf2Link);
-                var number = (long)Math.Pow(2, powerOf2);
+                var number = (long)System.Math.Pow(2, powerOf2);
                 NumbersToLinks[powerOf2] = result;
                 LinksToNumbers[result] = number;
                 result.SetName(number.ToString(CultureInfo.InvariantCulture));
@@ -63,7 +63,7 @@ namespace Platform.Data.Triplets
             {
                 return Net.One;
             }
-            var links = new Link[BitwiseHelpers.CountBits(number)];
+            var links = new Link[Bit.Count(number)];
             if (number >= 0)
             {
                 for (long key = 1, powerOf2 = 0, i = 0; key <= number; key *= 2, powerOf2++)
@@ -113,7 +113,7 @@ namespace Platform.Data.Triplets
             {
                 var previousNumberLink = link.Target.Source;
                 GoDownAndTakeIt(previousNumberLink, out number);
-                var previousNumberIndex = (int)Math.Log(number, 2);
+                var previousNumberIndex = (int)System.Math.Log(number, 2);
                 var newNumberIndex = previousNumberIndex + 1;
                 var newNumberLink = Link.Create(Net.Sum, Net.Of, previousNumberLink & previousNumberLink);
                 number += number;
