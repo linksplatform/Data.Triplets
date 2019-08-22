@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Threading;
 using Int = System.Int64;
 using LinkIndex = System.UInt64;
 
@@ -152,7 +153,7 @@ namespace Platform.Data.Triplets
         #region Static Fields
 
         private static readonly object _lockObject = new object();
-        private static bool _memoryManagerIsReady;
+        private static volatile int _memoryManagerIsReady;
         private static readonly Dictionary<ulong, long> _linkToMappingIndex = new Dictionary<ulong, long>();
 
         #endregion
@@ -209,13 +210,13 @@ namespace Platform.Data.Triplets
         {
             lock (_lockObject)
             {
-                if (!_memoryManagerIsReady)
+                if (_memoryManagerIsReady == default)
                 {
                     if (OpenLinks(storageFilename) == 0)
                     {
                         throw new InvalidOperationException($"Файл ({storageFilename}) хранилища не удалось открыть.");
                     }
-                    _memoryManagerIsReady = true;
+                    Interlocked.Exchange(ref _memoryManagerIsReady, 1);
                 }
             }
         }
@@ -224,13 +225,13 @@ namespace Platform.Data.Triplets
         {
             lock (_lockObject)
             {
-                if (_memoryManagerIsReady)
+                if (_memoryManagerIsReady != default)
                 {
                     if (CloseLinks() == 0)
                     {
                         throw new InvalidOperationException("Файл хранилища не удалось закрыть. Возможно он был уже закрыт, или не открывался вовсе.");
                     }
-                    _memoryManagerIsReady = false;
+                    Interlocked.Exchange(ref _memoryManagerIsReady, 0);
                 }
             }
         }
@@ -284,7 +285,7 @@ namespace Platform.Data.Triplets
 
         public static Link Create(Link source, Link linker, Link target)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
@@ -313,7 +314,7 @@ namespace Platform.Data.Triplets
 
         public static Link Restore(LinkIndex index)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
@@ -340,7 +341,7 @@ namespace Platform.Data.Triplets
 
         public static Link CreateMapped(Link source, Link linker, Link target, Int mappingIndex)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
@@ -410,7 +411,7 @@ namespace Platform.Data.Triplets
 
         public static bool TryGetMapped(Int mappingIndex, out Link mappedLink)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
@@ -430,7 +431,7 @@ namespace Platform.Data.Triplets
 
         public static void Update(ref Link link, Link newSource, Link newLinker, Link newTarget)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }
@@ -497,7 +498,7 @@ namespace Platform.Data.Triplets
 
         public static Link Search(Link source, Link linker, Link target)
         {
-            if (!_memoryManagerIsReady)
+            if (_memoryManagerIsReady == default)
             {
                 throw new InvalidOperationException("Менеджер памяти ещё не готов.");
             }

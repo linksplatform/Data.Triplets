@@ -8,92 +8,107 @@ namespace Platform.Data.Triplets.Tests
         [Fact]
         public static void FileMappingTest()
         {
-            string filename = "db.links";
+            lock (LinkTests.Lock)
+            {
+                string filename = "db.links";
 
-            File.Delete(filename);
+                File.Delete(filename);
 
-            Link.StartMemoryManager(filename);
+                Link.StartMemoryManager(filename);
 
-            Link.StopMemoryManager();
+                Link.StopMemoryManager();
 
-            File.Delete(filename);
+                File.Delete(filename);
+            }
         }
 
         [Fact]
         public static void AllocateAndFreeLinkTest()
         {
-            string filename = "db.links";
+            lock (LinkTests.Lock)
+            {
+                string filename = "db.links";
 
-            File.Delete(filename);
+                File.Delete(filename);
 
-            Link.StartMemoryManager(filename);
+                Link.StartMemoryManager(filename);
 
-            Link link = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                Link link = Link.Create(Link.Itself, Link.Itself, Link.Itself);
 
-            Link.Delete(link);
+                Link.Delete(link);
 
-            Link.StopMemoryManager();
+                Link.StopMemoryManager();
 
-            File.Delete(filename);
+                File.Delete(filename);
+            }
         }
 
         [Fact]
         public static void AttachToUnusedLinkTest()
         {
-            string filename = "db.links";
+            lock (LinkTests.Lock)
+            {
+                string filename = "db.links";
 
-            File.Delete(filename);
+                File.Delete(filename);
 
-            Link.StartMemoryManager(filename);
+                Link.StartMemoryManager(filename);
 
-            Link link1 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
-            Link link2 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                Link link1 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                Link link2 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
 
-            Link.Delete(link1); // Creates "hole" and forces "Attach" to be executed
+                Link.Delete(link1); // Creates "hole" and forces "Attach" to be executed
 
-            Link.StopMemoryManager();
+                Link.StopMemoryManager();
 
-            File.Delete(filename);
+                File.Delete(filename);
+            }
         }
 
         [Fact]
         public static void DetachToUnusedLinkTest()
         {
-            string filename = "db.links";
+            lock (LinkTests.Lock)
+            {
+                string filename = "db.links";
 
-            File.Delete(filename);
+                File.Delete(filename);
 
-            Link.StartMemoryManager(filename);
+                Link.StartMemoryManager(filename);
 
-            Link link1 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
-            Link link2 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                Link link1 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                Link link2 = Link.Create(Link.Itself, Link.Itself, Link.Itself);
 
-            Link.Delete(link1); // Creates "hole" and forces "Attach" to be executed
-            Link.Delete(link2); // Removes both links, all "Attached" links forced to be "Detached" here
+                Link.Delete(link1); // Creates "hole" and forces "Attach" to be executed
+                Link.Delete(link2); // Removes both links, all "Attached" links forced to be "Detached" here
 
-            Link.StopMemoryManager();
+                Link.StopMemoryManager();
 
-            File.Delete(filename);
+                File.Delete(filename);
+            }
         }
 
         [Fact]
         public static void GetSetMappedLinkTest()
         {
-            string filename = "db.links";
+            lock (LinkTests.Lock)
+            {
+                string filename = "db.links";
 
-            File.Delete(filename);
+                File.Delete(filename);
 
-            Link.StartMemoryManager(filename);
+                Link.StartMemoryManager(filename);
 
-            var mapped = Link.GetMappedOrDefault(0);
+                var mapped = Link.GetMappedOrDefault(0);
 
-            var mappingSet = Link.TrySetMapped(mapped, 0);
+                var mappingSet = Link.TrySetMapped(mapped, 0);
 
-            Assert.True(mappingSet);
+                Assert.True(mappingSet);
 
-            Link.StopMemoryManager();
+                Link.StopMemoryManager();
 
-            File.Delete(filename);
+                File.Delete(filename);
+            }
         }
     }
 }
