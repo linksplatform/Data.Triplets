@@ -27,7 +27,7 @@ namespace Platform.Data.Triplets
 
     public partial struct Link : ILink<Link>, IEquatable<Link>
     {
-        private const string DllName = "Platform.Data.Kernel.dll";
+        private const string DllName = "Platform_Data_Triplets_Kernel";
 
         // TODO: Заменить на очередь событий, по примеру Node.js (+сделать выключаемым)
         public delegate void CreatedDelegate(LinkDefinition createdLink);
