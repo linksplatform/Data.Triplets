@@ -4,6 +4,8 @@ using System.Text;
 using Platform.Data.Sequences;
 using Platform.Data.Triplets.Sequences;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data.Triplets
 {
     public static class LinkExtensions

@@ -7,6 +7,8 @@ using Platform.Collections;
 using Platform.Communication.Protocol.Gexf;
 using GexfNode = Platform.Communication.Protocol.Gexf.Node;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data.Triplets
 {
     public static class GexfExporter

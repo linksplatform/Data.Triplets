@@ -1,5 +1,7 @@
 ﻿using Platform.Threading;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data.Triplets
 {
     public enum NetMapping : long

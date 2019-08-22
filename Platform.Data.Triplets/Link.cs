@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 using Int = System.Int64;
 using LinkIndex = System.UInt64;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Data.Triplets
 {
     public struct LinkDefinition : IEquatable<LinkDefinition>
