@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Data.Triplets", "Platform.Data.Triplets.csproj", "{D25E1A06-9C51-403C-8FDD-A1FCDFE9C76D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Data.Triplets", "Platform.Data.Triplets\Platform.Data.Triplets.csproj", "{6FD3123B-54D5-48F6-A2AE-F12036DCA685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Data.Triplets.Tests", "Platform.Data.Triplets.Tests\Platform.Data.Triplets.Tests.csproj", "{A831EBCE-FCE7-483F-B4EA-791550CE46E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D25E1A06-9C51-403C-8FDD-A1FCDFE9C76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D25E1A06-9C51-403C-8FDD-A1FCDFE9C76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D25E1A06-9C51-403C-8FDD-A1FCDFE9C76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D25E1A06-9C51-403C-8FDD-A1FCDFE9C76D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD3123B-54D5-48F6-A2AE-F12036DCA685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD3123B-54D5-48F6-A2AE-F12036DCA685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD3123B-54D5-48F6-A2AE-F12036DCA685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD3123B-54D5-48F6-A2AE-F12036DCA685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A831EBCE-FCE7-483F-B4EA-791550CE46E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A831EBCE-FCE7-483F-B4EA-791550CE46E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A831EBCE-FCE7-483F-B4EA-791550CE46E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A831EBCE-FCE7-483F-B4EA-791550CE46E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
