@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data.Triplets Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data.Triplets</AssemblyTitle>
-    <VersionPrefix>0.0.4</VersionPrefix>
+    <VersionPrefix>0.0.5</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -23,7 +23,14 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Communication dependency updated from 0.1.1 to 0.1.2.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for .NET Framework 4.7.1.
+Platform.Communication dependency updated from 0.1.2 to 0.1.4.
+Platform.Data dependency updated from 0.0.3 to 0.1.1.
+Platform.Data.Triplets.Kernel dependency updated from 0.0.3 to 0.0.4.
+Project files updated to support multiple build environments: dotnet, Travis CI, MonoDevelop, and Visual Studio.
+Travis CI configuration updated to support automatic NuGet package publishing.
+License updated to support usage as an unmodified dynamic library in larger projects of any kind.
+Build fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
