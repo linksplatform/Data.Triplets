@@ -178,7 +178,7 @@ namespace Platform.Data.Triplets
 
         public static void Recreate()
         {
-            ThreadHelpers.SyncInvokeWithExtendedStack(() => Link.Delete(IsA));
+            ThreadHelpers.InvokeWithExtendedMaxStackSize(() => Link.Delete(IsA));
             CharacterHelpers.Recreate();
             Create();
         }
