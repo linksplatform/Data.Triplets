@@ -2468,6 +2468,19 @@ references:
   commentId: F:Platform.Data.Triplets.Tests.LinkTests.Lock
   fullName: Platform.Data.Triplets.Tests.LinkTests.Lock
   nameWithType: LinkTests.Lock
+- uid: Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest
+  name: MultipleRandomCreationsAndDeletionsTest()
+  href: api/Platform.Data.Triplets.Tests.LinkTests.html#Platform_Data_Triplets_Tests_LinkTests_MultipleRandomCreationsAndDeletionsTest
+  commentId: M:Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest
+  fullName: Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest()
+  nameWithType: LinkTests.MultipleRandomCreationsAndDeletionsTest()
+- uid: Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest*
+  name: MultipleRandomCreationsAndDeletionsTest
+  href: api/Platform.Data.Triplets.Tests.LinkTests.html#Platform_Data_Triplets_Tests_LinkTests_MultipleRandomCreationsAndDeletionsTest_
+  commentId: Overload:Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Tests.LinkTests.MultipleRandomCreationsAndDeletionsTest
+  nameWithType: LinkTests.MultipleRandomCreationsAndDeletionsTest
 - uid: Platform.Data.Triplets.Tests.PersistentMemoryManagerTests
   name: PersistentMemoryManagerTests
   href: api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.html
