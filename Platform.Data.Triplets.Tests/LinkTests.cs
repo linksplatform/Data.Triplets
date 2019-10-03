@@ -1,5 +1,7 @@
 ﻿using System.IO;
 using Xunit;
+using Platform.Random;
+using Platform.Ranges;
 
 namespace Platform.Data.Triplets.Tests
 {
@@ -117,6 +119,65 @@ namespace Platform.Data.Triplets.Tests
                 Link.StopMemoryManager();
 
                 File.Delete(filename);
+            }
+        }
+
+        [Fact]
+        public static void MultipleRandomCreationsAndDeletionsTest()
+        {
+            lock (Lock)
+            {
+                string filename = "db.links";
+
+                File.Delete(filename);
+
+                Link.StartMemoryManager(filename);
+
+                TestMultipleRandomCreationsAndDeletions(2000);
+
+                Link.StopMemoryManager();
+
+                File.Delete(filename);
+            }
+        }
+
+        private static void TestMultipleRandomCreationsAndDeletions(int maximumOperationsPerCycle)
+        {
+            var and = Link.Create(Link.Itself, Link.Itself, Link.Itself);
+            //var comparer = Comparer<TLink>.Default;
+            for (var N = 1; N < maximumOperationsPerCycle; N++)
+            {
+                var random = new System.Random(N);
+                var linksCount = 1;
+                for (var i = 0; i < N; i++)
+                {
+                    var createPoint = random.NextBoolean();
+                    if (linksCount > 2 && createPoint)
+                    {
+                        var linksAddressRange = new Range<ulong>(1, (ulong)linksCount);
+                        Link source = random.NextUInt64(linksAddressRange);
+                        Link target = random.NextUInt64(linksAddressRange); //-V3086
+                        var resultLink = Link.Create(source, and, target);
+                        if (resultLink > linksCount)
+                        {
+                            linksCount++;
+                        }
+                    }
+                    else
+                    {
+                        Link.Create(Link.Itself, Link.Itself, Link.Itself);
+                        linksCount++;
+                    }
+                }
+                for (var i = 0; i < N; i++)
+                {
+                    Link link = i + 2;
+                    if (link.Linker != null)
+                    {
+                        Link.Delete(link);
+                        linksCount--;
+                    }
+                }
             }
         }
     }
