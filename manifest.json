@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "IbfzdKh9g3T8zLCebVkJXA=="
+          "hash": "7g20nORkyJ6/8Lj8AvdlEg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html",
-          "hash": "WIBRSw1FPoev4xEcS/gZVQ=="
+          "hash": "7+z7kjnIOaoh+mGpotONJA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.html",
-          "hash": "C9//hqlWsZT8AKkbUmFuew=="
+          "hash": "dT2q5GEiJ2vyaz/eCW/+pg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.GexfExporter.html",
-          "hash": "ZNAOn6e2cUbY6wEFA+bs/Q=="
+          "hash": "XFL7P/5DkRw+vqT4k3qW9A=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.CreatedDelegate.html",
-          "hash": "0pXpIyIRUBGulTsFJGez5A=="
+          "hash": "PLhd93JviZmuyTaEXfXQVA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.DeletedDelegate.html",
-          "hash": "JaqXUakL9A4mHKAUGEd5Ng=="
+          "hash": "P6F5bTF3hf6qCSkwRwyYnQ=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.UpdatedDelegate.html",
-          "hash": "doBx/zO66wCIj/PH+oKbKw=="
+          "hash": "ijBNhp5zYK9act8S1UE8hQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.html",
-          "hash": "Lv1k08EfwP1P+mPPlPTlwA=="
+          "hash": "wL/rwNeK2VSBH+d1v2YIPg=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkConverter.html",
-          "hash": "isle+5mUW/ZLi+LRXiPT0Q=="
+          "hash": "4CT2Fli72QbxJULM8b0DSQ=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkDefinition.html",
-          "hash": "m2TYfi7XVEqZNwxV8HbtLw=="
+          "hash": "pKZezM5uDDghM6sIqXKlWQ=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkExtensions.html",
-          "hash": "uuvmUA/hR+KvdI8bHF+b0g=="
+          "hash": "3srifEx811WmgN4Lna8f5A=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Net.html",
-          "hash": "IHo/65cucEqrQuna7M18rg=="
+          "hash": "TXGU6G9oXmV5tXceBH3ZwQ=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.NetMapping.html",
-          "hash": "p2YzmAJFsRobI35LCVAPRg=="
+          "hash": "Eoo2AePCE0VVDEQdYu+NjA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.NumberHelpers.html",
-          "hash": "jeP7q+3xaGwP5ba7rJogaw=="
+          "hash": "84LnvKs+C+2aLUtL3D4hLQ=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Sequences.SequenceHelpers.html",
-          "hash": "oP1MMScFwarWqVoLLx5IKA=="
+          "hash": "n44Yr9ee2JimkHXwkJCvbg=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Sequences.html",
-          "hash": "tSNFdSDnc8rxy3/psZIVuQ=="
+          "hash": "W7UAbC42F6ETlx7myRAREA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Tests.LinkTests.html",
-          "hash": "eZz3XuBEButksyd5D6mQHA=="
+          "hash": "/1pStWBCtevLwvQ3QKlVww=="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.html",
-          "hash": "BiCNlxDDc+OoAKZYKnmpoQ=="
+          "hash": "pHQyrtbrAN+bXMN43uDukQ=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Tests.html",
-          "hash": "G+u2egphk7h4nIKG7XH9sw=="
+          "hash": "LMN0kgOZd8vps21Ghxr0Uw=="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.html",
-          "hash": "wUWW3WfUVcwBdVjgZCtRDQ=="
+          "hash": "pAatYnGb3DE5fGUsEXtmVw=="
         }
       },
       "is_incremental": false,
@@ -298,16 +298,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 19,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
           "skipped_file_count": 0
         }
       }
