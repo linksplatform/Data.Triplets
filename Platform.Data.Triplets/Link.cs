@@ -260,7 +260,7 @@ namespace Platform.Data.Triplets
 
         public static Link operator &(Link first, Link second) => Create(first, Net.And, second);
 
-        public override bool Equals(object obj) => Equals((Link)obj);
+        public override bool Equals(object obj) => obj is Link link ? Equals(link) : false;
 
         public bool Equals(Link other) => _link == other._link || (LinkDoesNotExist(_link) && LinkDoesNotExist(other._link));
 
