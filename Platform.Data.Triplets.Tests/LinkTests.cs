@@ -7,7 +7,7 @@ namespace Platform.Data.Triplets.Tests
 {
     public static class LinkTests
     {
-        public static object Lock = new object();
+        public static object Lock = new object(); //-V3090
 
         private static ulong _thingVisitorCounter;
         private static ulong _isAVisitorCounter;
