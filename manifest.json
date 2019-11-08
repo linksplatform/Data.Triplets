@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/home/travis/build/linksplatform/Data.Triplets",
+  "source_base_path": "/home/runner/work/Data.Triplets/Data.Triplets",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "I/p8Froh53ohPLVGjx5/EA=="
+          "hash": "gpklL/90sVjMVN4mjuGALQ=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html",
-          "hash": "f5WTpLyMNy/K+Sj5Eoh8LQ=="
+          "hash": "bP1bSot1QUv4O0DQ6lblZQ=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.CharacterHelpers.html",
-          "hash": "9qmgWacQPKJa9ALxg3PWmA=="
+          "hash": "YREokSTuiqL4hAfGpxFQSA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.GexfExporter.html",
-          "hash": "O3Oggdm8XtWOmumFtm1RDg=="
+          "hash": "g7cnfHL/RnjUNW940cCirw=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.CreatedDelegate.html",
-          "hash": "Ar4Jplmw0zRxP4a8f5teOQ=="
+          "hash": "CTNhBD40zR80+4TkQx4PlA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.DeletedDelegate.html",
-          "hash": "TIc9gccGKPzjK+JyEGB0vw=="
+          "hash": "qk/YQ6q0kbIqR/fgIyIeeA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.UpdatedDelegate.html",
-          "hash": "UsR7v5a22IT9Lpo3YRyuWw=="
+          "hash": "N6oPqM0ouaE5QNvXQ23Ssw=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Link.html",
-          "hash": "5D0ZKgeQKnHSTJ/jSbvobA=="
+          "hash": "ORvhjAubWfQFM16saYUNEg=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkConverter.html",
-          "hash": "dzcD3NPHw8HzIxC3evIl2g=="
+          "hash": "sCff8uRYhggysomgROnNFw=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkDefinition.html",
-          "hash": "15OHKfUo2KDe80wIrsK8vg=="
+          "hash": "bx14lBRcy25MppWauDFVHQ=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.LinkExtensions.html",
-          "hash": "eGaPmYh9MLohqsEv4adh+g=="
+          "hash": "iV0UtbYd3RT+5QX1IFT55Q=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Net.html",
-          "hash": "yjpuQipVHv7oGWYVxADE0g=="
+          "hash": "avR5CboItOWtJqhW44aqOQ=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.NetMapping.html",
-          "hash": "acb4UbeGwKtNyydcHP6TKQ=="
+          "hash": "M3rUjZ+RFV1TJ0q7rLaYzQ=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.NumberHelpers.html",
-          "hash": "DbhrKQjbloTC8wNbYW41wg=="
+          "hash": "+xnF4FrmIf6Cs83bmcLUtQ=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Sequences.SequenceHelpers.html",
-          "hash": "flrhJjKKNCrqTyG0hOGvdw=="
+          "hash": "l44Z7sCIVskLYS0lCwzx3w=="
         }
       },
       "is_incremental": false,
@@ -199,42 +199,6 @@
         ".html": {
           "relative_path": "api/Platform.Data.Triplets.Sequences.html",
           "hash": "3ON06S10Uzagmqii2wMdFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.LinkTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Data.Triplets.Tests.LinkTests.html",
-          "hash": "bdATtGn4SMnkf50XGFyxGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Data.Triplets.Tests.PersistentMemoryManagerTests.html",
-          "hash": "P3DYBsB6ONO4fQebux7EkQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Data.Triplets.Tests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Data.Triplets.Tests.html",
-          "hash": "9LWbeKXjW+CNmPA5PRrZxA=="
         }
       },
       "is_incremental": false,
@@ -258,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xUuX1BItKaekcCIVNFDVdw=="
+          "hash": "a9seN87RiwolHwf7AR3v2Q=="
         }
       },
       "is_incremental": false,
@@ -291,23 +255,23 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 1,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 1,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
