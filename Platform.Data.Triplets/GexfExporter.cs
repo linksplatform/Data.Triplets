@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
-using Platform.Collections;
+using Platform.Collections.Sets;
 using Platform.Communication.Protocol.Gexf;
 using GexfNode = Platform.Communication.Protocol.Gexf.Node;
 
