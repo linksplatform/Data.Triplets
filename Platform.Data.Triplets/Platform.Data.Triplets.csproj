@@ -43,7 +43,7 @@ Issues fix.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Communication" Version="0.1.6" />
+    <PackageReference Include="Platform.Communication" Version="0.1.7" />
     <PackageReference Include="Platform.Data" Version="0.2.2" />
     <PackageReference Include="Platform.Data.Triplets.Kernel" Version="0.0.4" />
   </ItemGroup>
