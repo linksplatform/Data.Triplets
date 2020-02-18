@@ -5,4 +5,8 @@ when defined windows:
 when (defined linux) or (hostOS == "linux"):
   const LIB_NAME*: string = "libPlatform_Data_Triplets_Kernel.so"
 
+type
+  stoppable_visitor* = proc(linkIndex: culonglong): clonglong {. cdecl .}
+  visitor* = proc(linkIndex: culonglong) {. cdecl .}
+
 echo "your host os - ", hostOS

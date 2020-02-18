@@ -1,10 +1,6 @@
 # authors: Ethosa, Konard
 import consts
 
-type
-  stoppable_visitor* = proc(linkIndex: culonglong): clonglong {. cdecl .}
-  visitor* = proc(linkIndex: culonglong) {. cdecl .}
-
 
 proc CreateLink*(sourceIndex, linkerIndex, targetIndex: culonglong): culonglong 
   {. cdecl, dynlib: LIB_NAME, importc .}
@@ -32,17 +28,17 @@ proc GetLinkNumberOfReferersBySource*(linkIndex: culonglong): culonglong {. cdec
 proc GetLinkNumberOfReferersByLinker*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
 proc GetLinkNumberOfReferersByTarget*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
 
-proc WalkThroughAllReferersBySource*(linkIndex: culonglong, v: visitor)
+proc WalkThroughAllReferersBySource*(linkIndex: culonglong, visitor: visitor)
   {. dynlib: LIB_NAME, importc .}
 proc WalkThroughReferersBySource*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
   {. dynlib: LIB_NAME, importc .}
 
-proc WalkThroughAllReferersByLinker*(linkIndex: culonglong, v: visitor)
+proc WalkThroughAllReferersByLinker*(linkIndex: culonglong, visitor: visitor)
   {. dynlib: LIB_NAME, importc .}
 proc WalkThroughReferersByLinker*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
   {. dynlib: LIB_NAME, importc .}
 
-proc WalkThroughAllReferersByTarget*(linkIndex: culonglong, v: visitor)
+proc WalkThroughAllReferersByTarget*(linkIndex: culonglong, visitor: visitor)
   {. dynlib: LIB_NAME, importc .}
 proc WalkThroughReferersByTarget*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
   {. dynlib: LIB_NAME, importc .}
