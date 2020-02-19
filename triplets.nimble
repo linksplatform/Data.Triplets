@@ -1,7 +1,7 @@
 [Package]
 name = "triplets"
 author = "Ethosa"
-version = "0.0.2"
+version = "0.0.3"
 description = "The Nim bindings for linksplatform/Data.Triplets.Kernel."
 license = "AGPLv3"
 srcDir = "nim/src"

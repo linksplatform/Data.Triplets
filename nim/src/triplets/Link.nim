@@ -1,44 +1,53 @@
-# authors: Ethosa, Konard
-import consts
+# author: Ethosa
+import LinkC
+export LinkC
 
 
-proc CreateLink*(sourceIndex, linkerIndex, targetIndex: culonglong): culonglong 
-  {. cdecl, dynlib: LIB_NAME, importc .}
-proc SearchLink*(sourceIndex, linkerIndex, targetIndex: culonglong): culonglong 
-  {. cdecl, dynlib: LIB_NAME, importc .}
+type
+  Link* = culonglong
 
-proc ReplaceLink*(linkIndex, replacementIndex: culonglong): culonglong 
-  {. cdecl, dynlib: LIB_NAME, importc .}
-proc UpdateLink*(linkIndex, sourceIndex, linkerIndex, targetIndex: culonglong): culonglong 
-  {. cdecl, dynlib: LIB_NAME, importc .}
+template create*(source, linker, target: culonglong): Link =
+  ## Creates a new Link object
+  ##
+  ## Arguments:
+  ## -   ``source`` -- start link.
+  ## -   ``linker``.
+  ## -   ``target`` -- target link.
+  Link CreateLink(source, linker, target)
 
-proc DeleteLink*(linkIndex: culonglong) {. cdecl, dynlib: LIB_NAME, importc .}
+template create*(index: culonglong): Link =
+  ## See `create template <#create,culonglong,culonglong,culonglong>`_
+  Link CreateLink(index, index, index)
 
-proc GetTime*(linkIndex: culonglong): clonglong {. dynlib: LIB_NAME, importc .}
+proc delete*(link: var Link) {.inline.} =
+  ## Deletes link, if available.
+  if link == 0:
+    return
+  DeleteLink link
+  link = 0
 
-proc GetSourceIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetLinkerIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetTargetIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
+proc merge*(link, other: var Link) {.inline.} =
+  link = ReplaceLink(link, other)
 
-proc GetFirstRefererBySourceIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetFirstRefererByLinkerIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetFirstRefererByTargetIndex*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
+template search*(source, linker, target: culonglong): Link =
+  ## Searchs created Link object.
+  ##
+  ## Arguments:
+  ## -   ``source`` -- start link.
+  ## -   ``linker``.
+  ## -   ``target`` -- target link.
+  Link SearchLink(source, linker, target)
 
-proc GetLinkNumberOfReferersBySource*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetLinkNumberOfReferersByLinker*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
-proc GetLinkNumberOfReferersByTarget*(linkIndex: culonglong): culonglong {. cdecl, dynlib: LIB_NAME, importc .}
+template search*(index: culonglong): Link =
+  ## See `search template <#search,culonglong,culonglong,culonglong>`_
+  Link SearchLink(index, index, index)
 
-proc WalkThroughAllReferersBySource*(linkIndex: culonglong, visitor: visitor)
-  {. dynlib: LIB_NAME, importc .}
-proc WalkThroughReferersBySource*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
-  {. dynlib: LIB_NAME, importc .}
+proc time*(index: Link): clonglong {.inline.} =
+  ## Returns time of link creation.
+  GetTime index
 
-proc WalkThroughAllReferersByLinker*(linkIndex: culonglong, visitor: visitor)
-  {. dynlib: LIB_NAME, importc .}
-proc WalkThroughReferersByLinker*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
-  {. dynlib: LIB_NAME, importc .}
+proc update*(link: var Link, s, l, t: culonglong) {.inline.} =
+  link = UpdateLink(link, s, l, t)
 
-proc WalkThroughAllReferersByTarget*(linkIndex: culonglong, visitor: visitor)
-  {. dynlib: LIB_NAME, importc .}
-proc WalkThroughReferersByTarget*(linkIndex: culonglong, stoppable_visitor: stoppable_visitor): clonglong
-  {. dynlib: LIB_NAME, importc .}
+proc update*(link: var Link, i: culonglong) {.inline.} =
+  link = UpdateLink(link, i, i, i)
