@@ -3,10 +3,10 @@ import LinkC
 export LinkC
 
 
-type
-  Link* = culonglong
+type Link* = culonglong
 
-template create*(source, linker, target: culonglong): Link =
+
+template link*(source, linker, target: culonglong): Link =
   ## Creates a new Link object
   ##
   ## Arguments:
@@ -15,7 +15,7 @@ template create*(source, linker, target: culonglong): Link =
   ## -   ``target`` -- target link.
   Link CreateLink(source, linker, target)
 
-template create*(index: culonglong): Link =
+template link*(index: culonglong): Link =
   ## See `create template <#create,culonglong,culonglong,culonglong>`_
   Link CreateLink(index, index, index)
 
