@@ -16,7 +16,7 @@ template link*(source, linker, target: culonglong): Link =
   Link CreateLink(source, linker, target)
 
 template link*(index: culonglong): Link =
-  ## See `create template <#create,culonglong,culonglong,culonglong>`_
+  ## See `create template <#create.t,culonglong,culonglong,culonglong>`_
   Link CreateLink(index, index, index)
 
 proc delete*(link: var Link) {.inline.} =
@@ -26,6 +26,15 @@ proc delete*(link: var Link) {.inline.} =
   DeleteLink link
   link = 0
 
+proc firstReferLinker(link: Link): culonglong {.inline.} =
+  GetFirstRefererByLinkerIndex link
+
+proc firstReferSource(link: Link): culonglong {.inline.} =
+  GetFirstRefererBySourceIndex link
+
+proc firstReferTarget(link: Link): culonglong {.inline.} =
+  GetFirstRefererByTargetIndex link
+
 proc linker*(link: Link): culonglong {.inline.} =
   ## Gets Link's linker index.
   GetLinkerIndex(link)
@@ -33,6 +42,15 @@ proc linker*(link: Link): culonglong {.inline.} =
 proc merge*(link, other: var Link) {.inline.} =
   ## Merges two Links.
   link = ReplaceLink(link, other)
+
+proc referCountLinker(link: Link): culonglong {.inline.} =
+  GetLinkNumberOfReferersByLinker link
+
+proc referCountSource(link: Link): culonglong {.inline.} =
+  GetLinkNumberOfReferersBySource link
+
+proc referCountTarget(link: Link): culonglong {.inline.} =
+  GetLinkNumberOfReferersByTarget link
 
 template search*(source, linker, target: culonglong): Link =
   ## Searchs created Link object.
@@ -44,7 +62,7 @@ template search*(source, linker, target: culonglong): Link =
   Link SearchLink(source, linker, target)
 
 template search*(index: culonglong): Link =
-  ## See `search template <#search,culonglong,culonglong,culonglong>`_
+  ## See `search template <#search.t,culonglong,culonglong,culonglong>`_
   Link SearchLink(index, index, index)
 
 proc source*(link: Link): culonglong {.inline.} =
