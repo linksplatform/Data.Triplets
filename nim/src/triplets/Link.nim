@@ -26,7 +26,12 @@ proc delete*(link: var Link) {.inline.} =
   DeleteLink link
   link = 0
 
+proc linker*(link: Link): culonglong {.inline.} =
+  ## Gets Link's linker index.
+  GetLinkerIndex(link)
+
 proc merge*(link, other: var Link) {.inline.} =
+  ## Merges two Links.
   link = ReplaceLink(link, other)
 
 template search*(source, linker, target: culonglong): Link =
@@ -41,6 +46,14 @@ template search*(source, linker, target: culonglong): Link =
 template search*(index: culonglong): Link =
   ## See `search template <#search,culonglong,culonglong,culonglong>`_
   Link SearchLink(index, index, index)
+
+proc source*(link: Link): culonglong {.inline.} =
+  ## Gets Link's source index.
+  GetSourceIndex(link)
+
+proc target*(link: Link): culonglong {.inline.} =
+  ## Gets Link's target index.
+  GetTargetIndex(link)
 
 proc time*(index: Link): clonglong {.inline.} =
   ## Returns time of link creation.
