@@ -835,6 +835,9 @@ function main() {
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#Link"
     title="Link = culonglong"><wbr />Link<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#LinkMode"
+    title="LinkMode = enum
+  sourcemode, linkermode, targetmode"><wbr />Link<wbr />Mode<span class="attachedType"></span></a></li>
 
   </ul>
 </li>
@@ -847,6 +850,8 @@ function main() {
     title="linker(link: Link): culonglong"><wbr />linker<span class="attachedType">Link</span></a></li>
   <li><a class="reference" href="#merge%2CLink%2CLink"
     title="merge(link, other: var Link)"><wbr />merge<span class="attachedType">Link</span></a></li>
+  <li><a class="reference" href="#count%2CLink%2CLinkMode%2Cculonglong"
+    title="count(link: Link; what: LinkMode; value: culonglong): culonglong"><wbr />count<span class="attachedType">Link</span></a></li>
   <li><a class="reference" href="#source%2CLink"
     title="source(link: Link): culonglong"><wbr />source<span class="attachedType">Link</span></a></li>
   <li><a class="reference" href="#target%2CLink"
@@ -903,6 +908,14 @@ function main() {
 Link is a convenient wrapper for LinkC.nim.
 
 </dd>
+<a id="LinkMode"></a>
+<dt><pre><a href="Link.html#LinkMode"><span class="Identifier">LinkMode</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
+  <span class="Identifier">sourcemode</span><span class="Other">,</span> <span class="Identifier">linkermode</span><span class="Other">,</span> <span class="Identifier">targetmode</span></pre></dt>
+<dd>
+
+
+
+</dd>
 
 </dl></div>
 <div class="section" id="12">
@@ -927,6 +940,19 @@ Gets Link's linker index.
 <dd>
 
 Merges two Links.
+
+</dd>
+<a id="count,Link,LinkMode,culonglong"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#count%2CLink%2CLinkMode%2Cculonglong"><span class="Identifier">count</span></a><span class="Other">(</span><span class="Identifier">link</span><span class="Other">:</span> <a href="Link.html#Link"><span class="Identifier">Link</span></a><span class="Other">;</span> <span class="Identifier">what</span><span class="Other">:</span> <a href="Link.html#LinkMode"><span class="Identifier">LinkMode</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">culonglong</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">culonglong</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Gets the count of Links by source, linker or target.</p>
+<p>Arguments:</p>
+<ul class="simple"><li><tt class="docutils literal"><span class="pre">what</span></tt> -- sourcemode, linkermode or targetmode</li>
+<li><tt class="docutils literal"><span class="pre">value</span></tt> -- source, target or link.</li>
+</ul>
+
 
 </dd>
 <a id="source,Link"></a>
@@ -1024,7 +1050,7 @@ See <a class="reference external" href="#search.t,culonglong,culonglong,culonglo
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small>Made with Nim. Generated: 2020-02-20 19:03:30 UTC</small>
+        <small>Made with Nim. Generated: 2020-02-22 12:20:17 UTC</small>
       </div>
     </div>
   </div>
