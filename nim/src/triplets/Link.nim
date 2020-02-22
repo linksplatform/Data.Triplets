@@ -3,7 +3,11 @@ import LinkC
 export LinkC
 
 
-type Link* = culonglong
+type
+  Link* = culonglong
+    ## Link is a convenient wrapper for LinkC.nim.
+  LinkMode* = enum
+    sourcemode, linkermode, targetmode
 
 
 template link*(source, linker, target: culonglong): Link =
@@ -26,15 +30,6 @@ proc delete*(link: var Link) {.inline.} =
   DeleteLink link
   link = 0
 
-proc firstReferLinker(link: Link): culonglong {.inline.} =
-  GetFirstRefererByLinkerIndex link
-
-proc firstReferSource(link: Link): culonglong {.inline.} =
-  GetFirstRefererBySourceIndex link
-
-proc firstReferTarget(link: Link): culonglong {.inline.} =
-  GetFirstRefererByTargetIndex link
-
 proc linker*(link: Link): culonglong {.inline.} =
   ## Gets Link's linker index.
   GetLinkerIndex(link)
@@ -43,14 +38,19 @@ proc merge*(link, other: var Link) {.inline.} =
   ## Merges two Links.
   link = ReplaceLink(link, other)
 
-proc referCountLinker(link: Link): culonglong {.inline.} =
-  GetLinkNumberOfReferersByLinker link
-
-proc referCountSource(link: Link): culonglong {.inline.} =
-  GetLinkNumberOfReferersBySource link
-
-proc referCountTarget(link: Link): culonglong {.inline.} =
-  GetLinkNumberOfReferersByTarget link
+proc count*(link: Link, what: LinkMode, value: culonglong): culonglong =
+  ## Gets the count of Links by source, linker or target.
+  ##
+  ## Arguments:
+  ## -   ``what`` -- sourcemode, linkermode or targetmode
+  ## -   ``value`` -- source, target or link.
+  case what
+  of sourcemode:
+    return GetLinkNumberOfReferersBySource value
+  of linkermode:
+    return GetLinkNumberOfReferersByLinker value
+  of targetmode:
+    return GetLinkNumberOfReferersByTarget value
 
 template search*(source, linker, target: culonglong): Link =
   ## Searchs created Link object.
