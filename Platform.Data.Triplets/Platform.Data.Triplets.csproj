@@ -39,7 +39,7 @@ Platform.Data dependency updated from 0.2.0 to 0.2.2.</PackageReleaseNotes>
 
   <ItemGroup>
     <PackageReference Include="Platform.Communication" Version="0.1.7" />
-    <PackageReference Include="Platform.Data" Version="0.2.2" />
+    <PackageReference Include="Platform.Data" Version="0.3.0" />
     <PackageReference Include="Platform.Data.Triplets.Kernel" Version="0.0.4" />
   </ItemGroup>
 
