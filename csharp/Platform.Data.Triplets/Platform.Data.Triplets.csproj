@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Data.Triplets Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Data.Triplets</AssemblyTitle>
-    <VersionPrefix>0.0.7</VersionPrefix>
+    <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -25,8 +25,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Communication dependency updated from 0.1.6 to 0.1.7.
-Platform.Data dependency updated from 0.2.0 to 0.2.2.</PackageReleaseNotes>
+    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
+Platform.Communication dependency updated from 0.1.7 to 0.2.0.
+Platform.Data dependency updated from 0.2.2 to 0.3.0.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -34,7 +35,7 @@ Platform.Data dependency updated from 0.2.0 to 0.2.2.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
