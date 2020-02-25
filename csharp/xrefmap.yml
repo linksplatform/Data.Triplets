@@ -1,0 +1,2413 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.Data.Triplets
+  name: Platform.Data.Triplets
+  href: api/Platform.Data.Triplets.html
+  commentId: N:Platform.Data.Triplets
+  fullName: Platform.Data.Triplets
+  nameWithType: Platform.Data.Triplets
+- uid: Platform.Data.Triplets.CharacterHelpers
+  name: CharacterHelpers
+  href: api/Platform.Data.Triplets.CharacterHelpers.html
+  commentId: T:Platform.Data.Triplets.CharacterHelpers
+  fullName: Platform.Data.Triplets.CharacterHelpers
+  nameWithType: CharacterHelpers
+- uid: Platform.Data.Triplets.CharacterHelpers.CharacterMapping
+  name: CharacterHelpers.CharacterMapping
+  href: api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html
+  commentId: T:Platform.Data.Triplets.CharacterHelpers.CharacterMapping
+  fullName: Platform.Data.Triplets.CharacterHelpers.CharacterMapping
+  nameWithType: CharacterHelpers.CharacterMapping
+- uid: Platform.Data.Triplets.CharacterHelpers.CharacterMapping.CyrillicAlphabet
+  name: CyrillicAlphabet
+  href: api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html#Platform_Data_Triplets_CharacterHelpers_CharacterMapping_CyrillicAlphabet
+  commentId: F:Platform.Data.Triplets.CharacterHelpers.CharacterMapping.CyrillicAlphabet
+  fullName: Platform.Data.Triplets.CharacterHelpers.CharacterMapping.CyrillicAlphabet
+  nameWithType: CharacterHelpers.CharacterMapping.CyrillicAlphabet
+- uid: Platform.Data.Triplets.CharacterHelpers.CharacterMapping.LatinAlphabet
+  name: LatinAlphabet
+  href: api/Platform.Data.Triplets.CharacterHelpers.CharacterMapping.html#Platform_Data_Triplets_CharacterHelpers_CharacterMapping_LatinAlphabet
+  commentId: F:Platform.Data.Triplets.CharacterHelpers.CharacterMapping.LatinAlphabet
+  fullName: Platform.Data.Triplets.CharacterHelpers.CharacterMapping.LatinAlphabet
+  nameWithType: CharacterHelpers.CharacterMapping.LatinAlphabet
+- uid: Platform.Data.Triplets.CharacterHelpers.FromChar(System.Char)
+  name: FromChar(Char)
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_FromChar_System_Char_
+  commentId: M:Platform.Data.Triplets.CharacterHelpers.FromChar(System.Char)
+  fullName: Platform.Data.Triplets.CharacterHelpers.FromChar(System.Char)
+  nameWithType: CharacterHelpers.FromChar(Char)
+- uid: Platform.Data.Triplets.CharacterHelpers.FromChar*
+  name: FromChar
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_FromChar_
+  commentId: Overload:Platform.Data.Triplets.CharacterHelpers.FromChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.CharacterHelpers.FromChar
+  nameWithType: CharacterHelpers.FromChar
+- uid: Platform.Data.Triplets.CharacterHelpers.IsChar(Platform.Data.Triplets.Link)
+  name: IsChar(Link)
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_IsChar_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.CharacterHelpers.IsChar(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.CharacterHelpers.IsChar(Platform.Data.Triplets.Link)
+  nameWithType: CharacterHelpers.IsChar(Link)
+- uid: Platform.Data.Triplets.CharacterHelpers.IsChar*
+  name: IsChar
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_IsChar_
+  commentId: Overload:Platform.Data.Triplets.CharacterHelpers.IsChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.CharacterHelpers.IsChar
+  nameWithType: CharacterHelpers.IsChar
+- uid: Platform.Data.Triplets.CharacterHelpers.Recreate
+  name: Recreate()
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_Recreate
+  commentId: M:Platform.Data.Triplets.CharacterHelpers.Recreate
+  fullName: Platform.Data.Triplets.CharacterHelpers.Recreate()
+  nameWithType: CharacterHelpers.Recreate()
+- uid: Platform.Data.Triplets.CharacterHelpers.Recreate*
+  name: Recreate
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_Recreate_
+  commentId: Overload:Platform.Data.Triplets.CharacterHelpers.Recreate
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.CharacterHelpers.Recreate
+  nameWithType: CharacterHelpers.Recreate
+- uid: Platform.Data.Triplets.CharacterHelpers.ToChar(Platform.Data.Triplets.Link)
+  name: ToChar(Link)
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_ToChar_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.CharacterHelpers.ToChar(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.CharacterHelpers.ToChar(Platform.Data.Triplets.Link)
+  nameWithType: CharacterHelpers.ToChar(Link)
+- uid: Platform.Data.Triplets.CharacterHelpers.ToChar*
+  name: ToChar
+  href: api/Platform.Data.Triplets.CharacterHelpers.html#Platform_Data_Triplets_CharacterHelpers_ToChar_
+  commentId: Overload:Platform.Data.Triplets.CharacterHelpers.ToChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.CharacterHelpers.ToChar
+  nameWithType: CharacterHelpers.ToChar
+- uid: Platform.Data.Triplets.GexfExporter
+  name: GexfExporter
+  href: api/Platform.Data.Triplets.GexfExporter.html
+  commentId: T:Platform.Data.Triplets.GexfExporter
+  fullName: Platform.Data.Triplets.GexfExporter
+  nameWithType: GexfExporter
+- uid: Platform.Data.Triplets.GexfExporter.ToFile(System.String)
+  name: ToFile(String)
+  href: api/Platform.Data.Triplets.GexfExporter.html#Platform_Data_Triplets_GexfExporter_ToFile_System_String_
+  commentId: M:Platform.Data.Triplets.GexfExporter.ToFile(System.String)
+  fullName: Platform.Data.Triplets.GexfExporter.ToFile(System.String)
+  nameWithType: GexfExporter.ToFile(String)
+- uid: Platform.Data.Triplets.GexfExporter.ToFile(System.String,System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: ToFile(String, Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.GexfExporter.html#Platform_Data_Triplets_GexfExporter_ToFile_System_String_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.GexfExporter.ToFile(System.String,System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: ToFile(String, Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.GexfExporter.ToFile(System.String, System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.GexfExporter.ToFile(System.String, System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: GexfExporter.ToFile(String, Func<Link, Boolean>)
+  nameWithType.vb: GexfExporter.ToFile(String, Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.GexfExporter.ToFile*
+  name: ToFile
+  href: api/Platform.Data.Triplets.GexfExporter.html#Platform_Data_Triplets_GexfExporter_ToFile_
+  commentId: Overload:Platform.Data.Triplets.GexfExporter.ToFile
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.GexfExporter.ToFile
+  nameWithType: GexfExporter.ToFile
+- uid: Platform.Data.Triplets.GexfExporter.ToXml
+  name: ToXml()
+  href: api/Platform.Data.Triplets.GexfExporter.html#Platform_Data_Triplets_GexfExporter_ToXml
+  commentId: M:Platform.Data.Triplets.GexfExporter.ToXml
+  fullName: Platform.Data.Triplets.GexfExporter.ToXml()
+  nameWithType: GexfExporter.ToXml()
+- uid: Platform.Data.Triplets.GexfExporter.ToXml*
+  name: ToXml
+  href: api/Platform.Data.Triplets.GexfExporter.html#Platform_Data_Triplets_GexfExporter_ToXml_
+  commentId: Overload:Platform.Data.Triplets.GexfExporter.ToXml
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.GexfExporter.ToXml
+  nameWithType: GexfExporter.ToXml
+- uid: Platform.Data.Triplets.Link
+  name: Link
+  href: api/Platform.Data.Triplets.Link.html
+  commentId: T:Platform.Data.Triplets.Link
+  fullName: Platform.Data.Triplets.Link
+  nameWithType: Link
+- uid: Platform.Data.Triplets.Link.#ctor(System.UInt64)
+  name: Link(UInt64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link__ctor_System_UInt64_
+  commentId: M:Platform.Data.Triplets.Link.#ctor(System.UInt64)
+  fullName: Platform.Data.Triplets.Link.Link(System.UInt64)
+  nameWithType: Link.Link(UInt64)
+- uid: Platform.Data.Triplets.Link.#ctor*
+  name: Link
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link__ctor_
+  commentId: Overload:Platform.Data.Triplets.Link.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Link
+  nameWithType: Link.Link
+- uid: Platform.Data.Triplets.Link.Continue
+  name: Continue
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Continue
+  commentId: F:Platform.Data.Triplets.Link.Continue
+  fullName: Platform.Data.Triplets.Link.Continue
+  nameWithType: Link.Continue
+- uid: Platform.Data.Triplets.Link.Create(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Create(Link, Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Create_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Create(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Create(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Create(Link, Link, Link)
+- uid: Platform.Data.Triplets.Link.Create*
+  name: Create
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Create_
+  commentId: Overload:Platform.Data.Triplets.Link.Create
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Create
+  nameWithType: Link.Create
+- uid: Platform.Data.Triplets.Link.CreatedDelegate
+  name: Link.CreatedDelegate
+  href: api/Platform.Data.Triplets.Link.CreatedDelegate.html
+  commentId: T:Platform.Data.Triplets.Link.CreatedDelegate
+  fullName: Platform.Data.Triplets.Link.CreatedDelegate
+  nameWithType: Link.CreatedDelegate
+- uid: Platform.Data.Triplets.Link.CreatedEvent
+  name: CreatedEvent
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_CreatedEvent
+  commentId: E:Platform.Data.Triplets.Link.CreatedEvent
+  fullName: Platform.Data.Triplets.Link.CreatedEvent
+  nameWithType: Link.CreatedEvent
+- uid: Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,System.Int64)
+  name: CreateMapped(Link, Link, Link, Int64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_CreateMapped_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_System_Int64_
+  commentId: M:Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,System.Int64)
+  fullName: Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, System.Int64)
+  nameWithType: Link.CreateMapped(Link, Link, Link, Int64)
+- uid: Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,System.Object)
+  name: CreateMapped(Link, Link, Link, Object)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_CreateMapped_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_System_Object_
+  commentId: M:Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,System.Object)
+  fullName: Platform.Data.Triplets.Link.CreateMapped(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, System.Object)
+  nameWithType: Link.CreateMapped(Link, Link, Link, Object)
+- uid: Platform.Data.Triplets.Link.CreateMapped*
+  name: CreateMapped
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_CreateMapped_
+  commentId: Overload:Platform.Data.Triplets.Link.CreateMapped
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.CreateMapped
+  nameWithType: Link.CreateMapped
+- uid: Platform.Data.Triplets.Link.Delete(Platform.Data.Triplets.Link)
+  name: Delete(Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Delete_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Delete(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Delete(Platform.Data.Triplets.Link)
+  nameWithType: Link.Delete(Link)
+- uid: Platform.Data.Triplets.Link.Delete(Platform.Data.Triplets.Link@)
+  name: Delete(ref Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Delete_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.Delete(Platform.Data.Triplets.Link@)
+  name.vb: Delete(ByRef Link)
+  fullName: Platform.Data.Triplets.Link.Delete(ref Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Delete(ByRef Platform.Data.Triplets.Link)
+  nameWithType: Link.Delete(ref Link)
+  nameWithType.vb: Link.Delete(ByRef Link)
+- uid: Platform.Data.Triplets.Link.Delete*
+  name: Delete
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Delete_
+  commentId: Overload:Platform.Data.Triplets.Link.Delete
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Delete
+  nameWithType: Link.Delete
+- uid: Platform.Data.Triplets.Link.DeletedDelegate
+  name: Link.DeletedDelegate
+  href: api/Platform.Data.Triplets.Link.DeletedDelegate.html
+  commentId: T:Platform.Data.Triplets.Link.DeletedDelegate
+  fullName: Platform.Data.Triplets.Link.DeletedDelegate
+  nameWithType: Link.DeletedDelegate
+- uid: Platform.Data.Triplets.Link.DeletedEvent
+  name: DeletedEvent
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_DeletedEvent
+  commentId: E:Platform.Data.Triplets.Link.DeletedEvent
+  fullName: Platform.Data.Triplets.Link.DeletedEvent
+  nameWithType: Link.DeletedEvent
+- uid: Platform.Data.Triplets.Link.Equals(Platform.Data.Triplets.Link)
+  name: Equals(Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Equals_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Equals(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Equals(Platform.Data.Triplets.Link)
+  nameWithType: Link.Equals(Link)
+- uid: Platform.Data.Triplets.Link.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Equals_System_Object_
+  commentId: M:Platform.Data.Triplets.Link.Equals(System.Object)
+  fullName: Platform.Data.Triplets.Link.Equals(System.Object)
+  nameWithType: Link.Equals(Object)
+- uid: Platform.Data.Triplets.Link.Equals*
+  name: Equals
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Equals_
+  commentId: Overload:Platform.Data.Triplets.Link.Equals
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Equals
+  nameWithType: Link.Equals
+- uid: Platform.Data.Triplets.Link.Exists(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Exists(Link, Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Exists_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Exists(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Exists(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Exists(Link, Link, Link)
+- uid: Platform.Data.Triplets.Link.Exists*
+  name: Exists
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Exists_
+  commentId: Overload:Platform.Data.Triplets.Link.Exists
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Exists
+  nameWithType: Link.Exists
+- uid: Platform.Data.Triplets.Link.FirstRefererByLinker
+  name: FirstRefererByLinker
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererByLinker
+  commentId: P:Platform.Data.Triplets.Link.FirstRefererByLinker
+  fullName: Platform.Data.Triplets.Link.FirstRefererByLinker
+  nameWithType: Link.FirstRefererByLinker
+- uid: Platform.Data.Triplets.Link.FirstRefererByLinker*
+  name: FirstRefererByLinker
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererByLinker_
+  commentId: Overload:Platform.Data.Triplets.Link.FirstRefererByLinker
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.FirstRefererByLinker
+  nameWithType: Link.FirstRefererByLinker
+- uid: Platform.Data.Triplets.Link.FirstRefererBySource
+  name: FirstRefererBySource
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererBySource
+  commentId: P:Platform.Data.Triplets.Link.FirstRefererBySource
+  fullName: Platform.Data.Triplets.Link.FirstRefererBySource
+  nameWithType: Link.FirstRefererBySource
+- uid: Platform.Data.Triplets.Link.FirstRefererBySource*
+  name: FirstRefererBySource
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererBySource_
+  commentId: Overload:Platform.Data.Triplets.Link.FirstRefererBySource
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.FirstRefererBySource
+  nameWithType: Link.FirstRefererBySource
+- uid: Platform.Data.Triplets.Link.FirstRefererByTarget
+  name: FirstRefererByTarget
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererByTarget
+  commentId: P:Platform.Data.Triplets.Link.FirstRefererByTarget
+  fullName: Platform.Data.Triplets.Link.FirstRefererByTarget
+  nameWithType: Link.FirstRefererByTarget
+- uid: Platform.Data.Triplets.Link.FirstRefererByTarget*
+  name: FirstRefererByTarget
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_FirstRefererByTarget_
+  commentId: Overload:Platform.Data.Triplets.Link.FirstRefererByTarget
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.FirstRefererByTarget
+  nameWithType: Link.FirstRefererByTarget
+- uid: Platform.Data.Triplets.Link.GetHashCode
+  name: GetHashCode()
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetHashCode
+  commentId: M:Platform.Data.Triplets.Link.GetHashCode
+  fullName: Platform.Data.Triplets.Link.GetHashCode()
+  nameWithType: Link.GetHashCode()
+- uid: Platform.Data.Triplets.Link.GetHashCode*
+  name: GetHashCode
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetHashCode_
+  commentId: Overload:Platform.Data.Triplets.Link.GetHashCode
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.GetHashCode
+  nameWithType: Link.GetHashCode
+- uid: Platform.Data.Triplets.Link.GetMapped(System.Int64)
+  name: GetMapped(Int64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMapped_System_Int64_
+  commentId: M:Platform.Data.Triplets.Link.GetMapped(System.Int64)
+  fullName: Platform.Data.Triplets.Link.GetMapped(System.Int64)
+  nameWithType: Link.GetMapped(Int64)
+- uid: Platform.Data.Triplets.Link.GetMapped(System.Object)
+  name: GetMapped(Object)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMapped_System_Object_
+  commentId: M:Platform.Data.Triplets.Link.GetMapped(System.Object)
+  fullName: Platform.Data.Triplets.Link.GetMapped(System.Object)
+  nameWithType: Link.GetMapped(Object)
+- uid: Platform.Data.Triplets.Link.GetMapped*
+  name: GetMapped
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMapped_
+  commentId: Overload:Platform.Data.Triplets.Link.GetMapped
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.GetMapped
+  nameWithType: Link.GetMapped
+- uid: Platform.Data.Triplets.Link.GetMappedOrDefault(System.Int64)
+  name: GetMappedOrDefault(Int64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMappedOrDefault_System_Int64_
+  commentId: M:Platform.Data.Triplets.Link.GetMappedOrDefault(System.Int64)
+  fullName: Platform.Data.Triplets.Link.GetMappedOrDefault(System.Int64)
+  nameWithType: Link.GetMappedOrDefault(Int64)
+- uid: Platform.Data.Triplets.Link.GetMappedOrDefault(System.Object)
+  name: GetMappedOrDefault(Object)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMappedOrDefault_System_Object_
+  commentId: M:Platform.Data.Triplets.Link.GetMappedOrDefault(System.Object)
+  fullName: Platform.Data.Triplets.Link.GetMappedOrDefault(System.Object)
+  nameWithType: Link.GetMappedOrDefault(Object)
+- uid: Platform.Data.Triplets.Link.GetMappedOrDefault*
+  name: GetMappedOrDefault
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_GetMappedOrDefault_
+  commentId: Overload:Platform.Data.Triplets.Link.GetMappedOrDefault
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.GetMappedOrDefault
+  nameWithType: Link.GetMappedOrDefault
+- uid: Platform.Data.Triplets.Link.Itself
+  name: Itself
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Itself
+  commentId: F:Platform.Data.Triplets.Link.Itself
+  fullName: Platform.Data.Triplets.Link.Itself
+  nameWithType: Link.Itself
+- uid: Platform.Data.Triplets.Link.Linker
+  name: Linker
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Linker
+  commentId: P:Platform.Data.Triplets.Link.Linker
+  fullName: Platform.Data.Triplets.Link.Linker
+  nameWithType: Link.Linker
+- uid: Platform.Data.Triplets.Link.Linker*
+  name: Linker
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Linker_
+  commentId: Overload:Platform.Data.Triplets.Link.Linker
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Linker
+  nameWithType: Link.Linker
+- uid: Platform.Data.Triplets.Link.op_BitwiseAnd(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: BitwiseAnd(Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_BitwiseAnd_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.op_BitwiseAnd(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.BitwiseAnd(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.BitwiseAnd(Link, Link)
+- uid: Platform.Data.Triplets.Link.op_BitwiseAnd*
+  name: BitwiseAnd
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_BitwiseAnd_
+  commentId: Overload:Platform.Data.Triplets.Link.op_BitwiseAnd
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.BitwiseAnd
+  nameWithType: Link.BitwiseAnd
+- uid: Platform.Data.Triplets.Link.op_Equality(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Equality(Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Equality_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.op_Equality(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Equality(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Equality(Link, Link)
+- uid: Platform.Data.Triplets.Link.op_Equality*
+  name: Equality
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Equality_
+  commentId: Overload:Platform.Data.Triplets.Link.op_Equality
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Equality
+  nameWithType: Link.Equality
+- uid: Platform.Data.Triplets.Link.op_Explicit(Platform.Data.Triplets.Link[])~Platform.Data.Triplets.Link
+  name: Explicit(Link[] to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Explicit_Platform_Data_Triplets_Link____Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Explicit(Platform.Data.Triplets.Link[])~Platform.Data.Triplets.Link
+  name.vb: Narrowing(Link() to Link)
+  fullName: Platform.Data.Triplets.Link.Explicit(Platform.Data.Triplets.Link[] to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Narrowing(Platform.Data.Triplets.Link() to Platform.Data.Triplets.Link)
+  nameWithType: Link.Explicit(Link[] to Link)
+  nameWithType.vb: Link.Narrowing(Link() to Link)
+- uid: Platform.Data.Triplets.Link.op_Explicit(System.Collections.Generic.List{Platform.Data.Triplets.Link})~Platform.Data.Triplets.Link
+  name: Explicit(List<Link> to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Explicit_System_Collections_Generic_List_Platform_Data_Triplets_Link___Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Explicit(System.Collections.Generic.List{Platform.Data.Triplets.Link})~Platform.Data.Triplets.Link
+  name.vb: Narrowing(List(Of Link) to Link)
+  fullName: Platform.Data.Triplets.Link.Explicit(System.Collections.Generic.List<Platform.Data.Triplets.Link> to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Narrowing(System.Collections.Generic.List(Of Platform.Data.Triplets.Link) to Platform.Data.Triplets.Link)
+  nameWithType: Link.Explicit(List<Link> to Link)
+  nameWithType.vb: Link.Narrowing(List(Of Link) to Link)
+- uid: Platform.Data.Triplets.Link.op_Explicit(System.String)~Platform.Data.Triplets.Link
+  name: Explicit(String to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Explicit_System_String__Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Explicit(System.String)~Platform.Data.Triplets.Link
+  name.vb: Narrowing(String to Link)
+  fullName: Platform.Data.Triplets.Link.Explicit(System.String to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Narrowing(System.String to Platform.Data.Triplets.Link)
+  nameWithType: Link.Explicit(String to Link)
+  nameWithType.vb: Link.Narrowing(String to Link)
+- uid: Platform.Data.Triplets.Link.op_Explicit*
+  name: Explicit
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Explicit_
+  commentId: Overload:Platform.Data.Triplets.Link.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: Platform.Data.Triplets.Link.Explicit
+  fullName.vb: Platform.Data.Triplets.Link.Narrowing
+  nameWithType: Link.Explicit
+  nameWithType.vb: Link.Narrowing
+- uid: Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.Int64
+  name: Implicit(Link to Int64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_Platform_Data_Triplets_Link__System_Int64
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.Int64
+  name.vb: Widening(Link to Int64)
+  fullName: Platform.Data.Triplets.Link.Implicit(Platform.Data.Triplets.Link to System.Int64)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(Platform.Data.Triplets.Link to System.Int64)
+  nameWithType: Link.Implicit(Link to Int64)
+  nameWithType.vb: Link.Widening(Link to Int64)
+- uid: Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.Nullable{System.UInt64}
+  name: Implicit(Link to Nullable<UInt64>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_Platform_Data_Triplets_Link__System_Nullable_System_UInt64_
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.Nullable{System.UInt64}
+  name.vb: Widening(Link to Nullable(Of UInt64))
+  fullName: Platform.Data.Triplets.Link.Implicit(Platform.Data.Triplets.Link to System.Nullable<System.UInt64>)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(Platform.Data.Triplets.Link to System.Nullable(Of System.UInt64))
+  nameWithType: Link.Implicit(Link to Nullable<UInt64>)
+  nameWithType.vb: Link.Widening(Link to Nullable(Of UInt64))
+- uid: Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.UInt64
+  name: Implicit(Link to UInt64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_Platform_Data_Triplets_Link__System_UInt64
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(Platform.Data.Triplets.Link)~System.UInt64
+  name.vb: Widening(Link to UInt64)
+  fullName: Platform.Data.Triplets.Link.Implicit(Platform.Data.Triplets.Link to System.UInt64)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(Platform.Data.Triplets.Link to System.UInt64)
+  nameWithType: Link.Implicit(Link to UInt64)
+  nameWithType.vb: Link.Widening(Link to UInt64)
+- uid: Platform.Data.Triplets.Link.op_Implicit(System.Int64)~Platform.Data.Triplets.Link
+  name: Implicit(Int64 to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_System_Int64__Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(System.Int64)~Platform.Data.Triplets.Link
+  name.vb: Widening(Int64 to Link)
+  fullName: Platform.Data.Triplets.Link.Implicit(System.Int64 to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(System.Int64 to Platform.Data.Triplets.Link)
+  nameWithType: Link.Implicit(Int64 to Link)
+  nameWithType.vb: Link.Widening(Int64 to Link)
+- uid: Platform.Data.Triplets.Link.op_Implicit(System.Nullable{System.UInt64})~Platform.Data.Triplets.Link
+  name: Implicit(Nullable<UInt64> to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_System_Nullable_System_UInt64___Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(System.Nullable{System.UInt64})~Platform.Data.Triplets.Link
+  name.vb: Widening(Nullable(Of UInt64) to Link)
+  fullName: Platform.Data.Triplets.Link.Implicit(System.Nullable<System.UInt64> to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(System.Nullable(Of System.UInt64) to Platform.Data.Triplets.Link)
+  nameWithType: Link.Implicit(Nullable<UInt64> to Link)
+  nameWithType.vb: Link.Widening(Nullable(Of UInt64) to Link)
+- uid: Platform.Data.Triplets.Link.op_Implicit(System.UInt64)~Platform.Data.Triplets.Link
+  name: Implicit(UInt64 to Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_System_UInt64__Platform_Data_Triplets_Link
+  commentId: M:Platform.Data.Triplets.Link.op_Implicit(System.UInt64)~Platform.Data.Triplets.Link
+  name.vb: Widening(UInt64 to Link)
+  fullName: Platform.Data.Triplets.Link.Implicit(System.UInt64 to Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Widening(System.UInt64 to Platform.Data.Triplets.Link)
+  nameWithType: Link.Implicit(UInt64 to Link)
+  nameWithType.vb: Link.Widening(UInt64 to Link)
+- uid: Platform.Data.Triplets.Link.op_Implicit*
+  name: Implicit
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Implicit_
+  commentId: Overload:Platform.Data.Triplets.Link.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Platform.Data.Triplets.Link.Implicit
+  fullName.vb: Platform.Data.Triplets.Link.Widening
+  nameWithType: Link.Implicit
+  nameWithType.vb: Link.Widening
+- uid: Platform.Data.Triplets.Link.op_Inequality(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Inequality(Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Inequality_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.op_Inequality(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Inequality(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Inequality(Link, Link)
+- uid: Platform.Data.Triplets.Link.op_Inequality*
+  name: Inequality
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_op_Inequality_
+  commentId: Overload:Platform.Data.Triplets.Link.op_Inequality
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Inequality
+  nameWithType: Link.Inequality
+- uid: Platform.Data.Triplets.Link.ReferersByLinkerCount
+  name: ReferersByLinkerCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersByLinkerCount
+  commentId: P:Platform.Data.Triplets.Link.ReferersByLinkerCount
+  fullName: Platform.Data.Triplets.Link.ReferersByLinkerCount
+  nameWithType: Link.ReferersByLinkerCount
+- uid: Platform.Data.Triplets.Link.ReferersByLinkerCount*
+  name: ReferersByLinkerCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersByLinkerCount_
+  commentId: Overload:Platform.Data.Triplets.Link.ReferersByLinkerCount
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ReferersByLinkerCount
+  nameWithType: Link.ReferersByLinkerCount
+- uid: Platform.Data.Triplets.Link.ReferersBySourceCount
+  name: ReferersBySourceCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersBySourceCount
+  commentId: P:Platform.Data.Triplets.Link.ReferersBySourceCount
+  fullName: Platform.Data.Triplets.Link.ReferersBySourceCount
+  nameWithType: Link.ReferersBySourceCount
+- uid: Platform.Data.Triplets.Link.ReferersBySourceCount*
+  name: ReferersBySourceCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersBySourceCount_
+  commentId: Overload:Platform.Data.Triplets.Link.ReferersBySourceCount
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ReferersBySourceCount
+  nameWithType: Link.ReferersBySourceCount
+- uid: Platform.Data.Triplets.Link.ReferersByTargetCount
+  name: ReferersByTargetCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersByTargetCount
+  commentId: P:Platform.Data.Triplets.Link.ReferersByTargetCount
+  fullName: Platform.Data.Triplets.Link.ReferersByTargetCount
+  nameWithType: Link.ReferersByTargetCount
+- uid: Platform.Data.Triplets.Link.ReferersByTargetCount*
+  name: ReferersByTargetCount
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ReferersByTargetCount_
+  commentId: Overload:Platform.Data.Triplets.Link.ReferersByTargetCount
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ReferersByTargetCount
+  nameWithType: Link.ReferersByTargetCount
+- uid: Platform.Data.Triplets.Link.Restore(System.Int64)
+  name: Restore(Int64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Restore_System_Int64_
+  commentId: M:Platform.Data.Triplets.Link.Restore(System.Int64)
+  fullName: Platform.Data.Triplets.Link.Restore(System.Int64)
+  nameWithType: Link.Restore(Int64)
+- uid: Platform.Data.Triplets.Link.Restore(System.UInt64)
+  name: Restore(UInt64)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Restore_System_UInt64_
+  commentId: M:Platform.Data.Triplets.Link.Restore(System.UInt64)
+  fullName: Platform.Data.Triplets.Link.Restore(System.UInt64)
+  nameWithType: Link.Restore(UInt64)
+- uid: Platform.Data.Triplets.Link.Restore*
+  name: Restore
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Restore_
+  commentId: Overload:Platform.Data.Triplets.Link.Restore
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Restore
+  nameWithType: Link.Restore
+- uid: Platform.Data.Triplets.Link.Search(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Search(Link, Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Search_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Search(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Search(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Search(Link, Link, Link)
+- uid: Platform.Data.Triplets.Link.Search*
+  name: Search
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Search_
+  commentId: Overload:Platform.Data.Triplets.Link.Search
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Search
+  nameWithType: Link.Search
+- uid: Platform.Data.Triplets.Link.Source
+  name: Source
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Source
+  commentId: P:Platform.Data.Triplets.Link.Source
+  fullName: Platform.Data.Triplets.Link.Source
+  nameWithType: Link.Source
+- uid: Platform.Data.Triplets.Link.Source*
+  name: Source
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Source_
+  commentId: Overload:Platform.Data.Triplets.Link.Source
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Source
+  nameWithType: Link.Source
+- uid: Platform.Data.Triplets.Link.StartMemoryManager(System.String)
+  name: StartMemoryManager(String)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_StartMemoryManager_System_String_
+  commentId: M:Platform.Data.Triplets.Link.StartMemoryManager(System.String)
+  fullName: Platform.Data.Triplets.Link.StartMemoryManager(System.String)
+  nameWithType: Link.StartMemoryManager(String)
+- uid: Platform.Data.Triplets.Link.StartMemoryManager*
+  name: StartMemoryManager
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_StartMemoryManager_
+  commentId: Overload:Platform.Data.Triplets.Link.StartMemoryManager
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.StartMemoryManager
+  nameWithType: Link.StartMemoryManager
+- uid: Platform.Data.Triplets.Link.Stop
+  name: Stop
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Stop
+  commentId: F:Platform.Data.Triplets.Link.Stop
+  fullName: Platform.Data.Triplets.Link.Stop
+  nameWithType: Link.Stop
+- uid: Platform.Data.Triplets.Link.StopMemoryManager
+  name: StopMemoryManager()
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_StopMemoryManager
+  commentId: M:Platform.Data.Triplets.Link.StopMemoryManager
+  fullName: Platform.Data.Triplets.Link.StopMemoryManager()
+  nameWithType: Link.StopMemoryManager()
+- uid: Platform.Data.Triplets.Link.StopMemoryManager*
+  name: StopMemoryManager
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_StopMemoryManager_
+  commentId: Overload:Platform.Data.Triplets.Link.StopMemoryManager
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.StopMemoryManager
+  nameWithType: Link.StopMemoryManager
+- uid: Platform.Data.Triplets.Link.Target
+  name: Target
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Target
+  commentId: P:Platform.Data.Triplets.Link.Target
+  fullName: Platform.Data.Triplets.Link.Target
+  nameWithType: Link.Target
+- uid: Platform.Data.Triplets.Link.Target*
+  name: Target
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Target_
+  commentId: Overload:Platform.Data.Triplets.Link.Target
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Target
+  nameWithType: Link.Target
+- uid: Platform.Data.Triplets.Link.Timestamp
+  name: Timestamp
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Timestamp
+  commentId: P:Platform.Data.Triplets.Link.Timestamp
+  fullName: Platform.Data.Triplets.Link.Timestamp
+  nameWithType: Link.Timestamp
+- uid: Platform.Data.Triplets.Link.Timestamp*
+  name: Timestamp
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Timestamp_
+  commentId: Overload:Platform.Data.Triplets.Link.Timestamp
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Timestamp
+  nameWithType: Link.Timestamp
+- uid: Platform.Data.Triplets.Link.ToIndex
+  name: ToIndex()
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToIndex
+  commentId: M:Platform.Data.Triplets.Link.ToIndex
+  fullName: Platform.Data.Triplets.Link.ToIndex()
+  nameWithType: Link.ToIndex()
+- uid: Platform.Data.Triplets.Link.ToIndex*
+  name: ToIndex
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToIndex_
+  commentId: Overload:Platform.Data.Triplets.Link.ToIndex
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ToIndex
+  nameWithType: Link.ToIndex
+- uid: Platform.Data.Triplets.Link.ToInt
+  name: ToInt()
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToInt
+  commentId: M:Platform.Data.Triplets.Link.ToInt
+  fullName: Platform.Data.Triplets.Link.ToInt()
+  nameWithType: Link.ToInt()
+- uid: Platform.Data.Triplets.Link.ToInt*
+  name: ToInt
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToInt_
+  commentId: Overload:Platform.Data.Triplets.Link.ToInt
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ToInt
+  nameWithType: Link.ToInt
+- uid: Platform.Data.Triplets.Link.ToString
+  name: ToString()
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToString
+  commentId: M:Platform.Data.Triplets.Link.ToString
+  fullName: Platform.Data.Triplets.Link.ToString()
+  nameWithType: Link.ToString()
+- uid: Platform.Data.Triplets.Link.ToString*
+  name: ToString
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_ToString_
+  commentId: Overload:Platform.Data.Triplets.Link.ToString
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.ToString
+  nameWithType: Link.ToString
+- uid: Platform.Data.Triplets.Link.TotalReferers
+  name: TotalReferers
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TotalReferers
+  commentId: P:Platform.Data.Triplets.Link.TotalReferers
+  fullName: Platform.Data.Triplets.Link.TotalReferers
+  nameWithType: Link.TotalReferers
+- uid: Platform.Data.Triplets.Link.TotalReferers*
+  name: TotalReferers
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TotalReferers_
+  commentId: Overload:Platform.Data.Triplets.Link.TotalReferers
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.TotalReferers
+  nameWithType: Link.TotalReferers
+- uid: Platform.Data.Triplets.Link.TryGetMapped(System.Int64,Platform.Data.Triplets.Link@)
+  name: TryGetMapped(Int64, out Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TryGetMapped_System_Int64_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.TryGetMapped(System.Int64,Platform.Data.Triplets.Link@)
+  name.vb: TryGetMapped(Int64, ByRef Link)
+  fullName: Platform.Data.Triplets.Link.TryGetMapped(System.Int64, out Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.TryGetMapped(System.Int64, ByRef Platform.Data.Triplets.Link)
+  nameWithType: Link.TryGetMapped(Int64, out Link)
+  nameWithType.vb: Link.TryGetMapped(Int64, ByRef Link)
+- uid: Platform.Data.Triplets.Link.TryGetMapped(System.Object,Platform.Data.Triplets.Link@)
+  name: TryGetMapped(Object, out Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TryGetMapped_System_Object_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.TryGetMapped(System.Object,Platform.Data.Triplets.Link@)
+  name.vb: TryGetMapped(Object, ByRef Link)
+  fullName: Platform.Data.Triplets.Link.TryGetMapped(System.Object, out Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.TryGetMapped(System.Object, ByRef Platform.Data.Triplets.Link)
+  nameWithType: Link.TryGetMapped(Object, out Link)
+  nameWithType.vb: Link.TryGetMapped(Object, ByRef Link)
+- uid: Platform.Data.Triplets.Link.TryGetMapped*
+  name: TryGetMapped
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TryGetMapped_
+  commentId: Overload:Platform.Data.Triplets.Link.TryGetMapped
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.TryGetMapped
+  nameWithType: Link.TryGetMapped
+- uid: Platform.Data.Triplets.Link.TrySetMapped(Platform.Data.Triplets.Link,System.Int64,System.Boolean)
+  name: TrySetMapped(Link, Int64, Boolean)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TrySetMapped_Platform_Data_Triplets_Link_System_Int64_System_Boolean_
+  commentId: M:Platform.Data.Triplets.Link.TrySetMapped(Platform.Data.Triplets.Link,System.Int64,System.Boolean)
+  fullName: Platform.Data.Triplets.Link.TrySetMapped(Platform.Data.Triplets.Link, System.Int64, System.Boolean)
+  nameWithType: Link.TrySetMapped(Link, Int64, Boolean)
+- uid: Platform.Data.Triplets.Link.TrySetMapped*
+  name: TrySetMapped
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_TrySetMapped_
+  commentId: Overload:Platform.Data.Triplets.Link.TrySetMapped
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.TrySetMapped
+  nameWithType: Link.TrySetMapped
+- uid: Platform.Data.Triplets.Link.Update(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Update(Link, Link, Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Update_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Update(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Link.Update(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Update(Link, Link, Link, Link)
+- uid: Platform.Data.Triplets.Link.Update(Platform.Data.Triplets.Link@,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Update(ref Link, Link, Link, Link)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Update_Platform_Data_Triplets_Link__Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Link.Update(Platform.Data.Triplets.Link@,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name.vb: Update(ByRef Link, Link, Link, Link)
+  fullName: Platform.Data.Triplets.Link.Update(ref Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  fullName.vb: Platform.Data.Triplets.Link.Update(ByRef Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: Link.Update(ref Link, Link, Link, Link)
+  nameWithType.vb: Link.Update(ByRef Link, Link, Link, Link)
+- uid: Platform.Data.Triplets.Link.Update*
+  name: Update
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_Update_
+  commentId: Overload:Platform.Data.Triplets.Link.Update
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.Update
+  nameWithType: Link.Update
+- uid: Platform.Data.Triplets.Link.UpdatedDelegate
+  name: Link.UpdatedDelegate
+  href: api/Platform.Data.Triplets.Link.UpdatedDelegate.html
+  commentId: T:Platform.Data.Triplets.Link.UpdatedDelegate
+  fullName: Platform.Data.Triplets.Link.UpdatedDelegate
+  nameWithType: Link.UpdatedDelegate
+- uid: Platform.Data.Triplets.Link.UpdatedEvent
+  name: UpdatedEvent
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_UpdatedEvent
+  commentId: E:Platform.Data.Triplets.Link.UpdatedEvent
+  fullName: Platform.Data.Triplets.Link.UpdatedEvent
+  nameWithType: Link.UpdatedEvent
+- uid: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughAllLinks(Action<Link>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughAllLinks_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughAllLinks(Action(Of Link))
+  fullName: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: Link.WalkThroughAllLinks(Action<Link>)
+  nameWithType.vb: Link.WalkThroughAllLinks(Action(Of Link))
+- uid: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: WalkThroughAllLinks(Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughAllLinks_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: WalkThroughAllLinks(Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughAllLinks(System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: Link.WalkThroughAllLinks(Func<Link, Boolean>)
+  nameWithType.vb: Link.WalkThroughAllLinks(Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.Link.WalkThroughAllLinks*
+  name: WalkThroughAllLinks
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughAllLinks_
+  commentId: Overload:Platform.Data.Triplets.Link.WalkThroughAllLinks
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.WalkThroughAllLinks
+  nameWithType: Link.WalkThroughAllLinks
+- uid: Platform.Data.Triplets.Link.WalkThroughReferers(System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughReferers(Action<Link>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferers_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferers(System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughReferers(Action(Of Link))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferers(System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferers(System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: Link.WalkThroughReferers(Action<Link>)
+  nameWithType.vb: Link.WalkThroughReferers(Action(Of Link))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferers(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: WalkThroughReferers(Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferers_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferers(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: WalkThroughReferers(Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferers(System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferers(System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: Link.WalkThroughReferers(Func<Link, Boolean>)
+  nameWithType.vb: Link.WalkThroughReferers(Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferers*
+  name: WalkThroughReferers
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferers_
+  commentId: Overload:Platform.Data.Triplets.Link.WalkThroughReferers
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferers
+  nameWithType: Link.WalkThroughReferers
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughReferersAsLinker(Action<Link>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsLinker_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughReferersAsLinker(Action(Of Link))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: Link.WalkThroughReferersAsLinker(Action<Link>)
+  nameWithType.vb: Link.WalkThroughReferersAsLinker(Action(Of Link))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: WalkThroughReferersAsLinker(Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsLinker_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: WalkThroughReferersAsLinker(Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker(System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: Link.WalkThroughReferersAsLinker(Func<Link, Boolean>)
+  nameWithType.vb: Link.WalkThroughReferersAsLinker(Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker*
+  name: WalkThroughReferersAsLinker
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsLinker_
+  commentId: Overload:Platform.Data.Triplets.Link.WalkThroughReferersAsLinker
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsLinker
+  nameWithType: Link.WalkThroughReferersAsLinker
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughReferersAsSource(Action<Link>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsSource_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughReferersAsSource(Action(Of Link))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: Link.WalkThroughReferersAsSource(Action<Link>)
+  nameWithType.vb: Link.WalkThroughReferersAsSource(Action(Of Link))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: WalkThroughReferersAsSource(Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsSource_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: WalkThroughReferersAsSource(Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsSource(System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: Link.WalkThroughReferersAsSource(Func<Link, Boolean>)
+  nameWithType.vb: Link.WalkThroughReferersAsSource(Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsSource*
+  name: WalkThroughReferersAsSource
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsSource_
+  commentId: Overload:Platform.Data.Triplets.Link.WalkThroughReferersAsSource
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsSource
+  nameWithType: Link.WalkThroughReferersAsSource
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughReferersAsTarget(Action<Link>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsTarget_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughReferersAsTarget(Action(Of Link))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: Link.WalkThroughReferersAsTarget(Action<Link>)
+  nameWithType.vb: Link.WalkThroughReferersAsTarget(Action(Of Link))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name: WalkThroughReferersAsTarget(Func<Link, Boolean>)
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsTarget_System_Func_Platform_Data_Triplets_Link_System_Boolean__
+  commentId: M:Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Func{Platform.Data.Triplets.Link,System.Boolean})
+  name.vb: WalkThroughReferersAsTarget(Func(Of Link, Boolean))
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Func<Platform.Data.Triplets.Link, System.Boolean>)
+  fullName.vb: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget(System.Func(Of Platform.Data.Triplets.Link, System.Boolean))
+  nameWithType: Link.WalkThroughReferersAsTarget(Func<Link, Boolean>)
+  nameWithType.vb: Link.WalkThroughReferersAsTarget(Func(Of Link, Boolean))
+- uid: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget*
+  name: WalkThroughReferersAsTarget
+  href: api/Platform.Data.Triplets.Link.html#Platform_Data_Triplets_Link_WalkThroughReferersAsTarget_
+  commentId: Overload:Platform.Data.Triplets.Link.WalkThroughReferersAsTarget
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Link.WalkThroughReferersAsTarget
+  nameWithType: Link.WalkThroughReferersAsTarget
+- uid: Platform.Data.Triplets.LinkConverter
+  name: LinkConverter
+  href: api/Platform.Data.Triplets.LinkConverter.html
+  commentId: T:Platform.Data.Triplets.LinkConverter
+  fullName: Platform.Data.Triplets.LinkConverter
+  nameWithType: LinkConverter
+- uid: Platform.Data.Triplets.LinkConverter.FromChar(System.Char)
+  name: FromChar(Char)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChar_System_Char_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromChar(System.Char)
+  fullName: Platform.Data.Triplets.LinkConverter.FromChar(System.Char)
+  nameWithType: LinkConverter.FromChar(Char)
+- uid: Platform.Data.Triplets.LinkConverter.FromChar*
+  name: FromChar
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChar_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromChar
+  nameWithType: LinkConverter.FromChar
+- uid: Platform.Data.Triplets.LinkConverter.FromChars(System.Char[])
+  name: FromChars(Char[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChars_System_Char___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromChars(System.Char[])
+  name.vb: FromChars(Char())
+  fullName: Platform.Data.Triplets.LinkConverter.FromChars(System.Char[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromChars(System.Char())
+  nameWithType: LinkConverter.FromChars(Char[])
+  nameWithType.vb: LinkConverter.FromChars(Char())
+- uid: Platform.Data.Triplets.LinkConverter.FromChars(System.Char[],System.Int32,System.Int32)
+  name: FromChars(Char[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChars_System_Char___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromChars(System.Char[],System.Int32,System.Int32)
+  name.vb: FromChars(Char(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromChars(System.Char[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromChars(System.Char(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromChars(Char[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromChars(Char(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromChars(System.String)
+  name: FromChars(String)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChars_System_String_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromChars(System.String)
+  fullName: Platform.Data.Triplets.LinkConverter.FromChars(System.String)
+  nameWithType: LinkConverter.FromChars(String)
+- uid: Platform.Data.Triplets.LinkConverter.FromChars*
+  name: FromChars
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromChars_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromChars
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromChars
+  nameWithType: LinkConverter.FromChars
+- uid: Platform.Data.Triplets.LinkConverter.FromList(Platform.Data.Triplets.Link[])
+  name: FromList(Link[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromList_Platform_Data_Triplets_Link___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromList(Platform.Data.Triplets.Link[])
+  name.vb: FromList(Link())
+  fullName: Platform.Data.Triplets.LinkConverter.FromList(Platform.Data.Triplets.Link[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromList(Platform.Data.Triplets.Link())
+  nameWithType: LinkConverter.FromList(Link[])
+  nameWithType.vb: LinkConverter.FromList(Link())
+- uid: Platform.Data.Triplets.LinkConverter.FromList(System.Collections.Generic.List{Platform.Data.Triplets.Link})
+  name: FromList(List<Link>)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromList_System_Collections_Generic_List_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromList(System.Collections.Generic.List{Platform.Data.Triplets.Link})
+  name.vb: FromList(List(Of Link))
+  fullName: Platform.Data.Triplets.LinkConverter.FromList(System.Collections.Generic.List<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromList(System.Collections.Generic.List(Of Platform.Data.Triplets.Link))
+  nameWithType: LinkConverter.FromList(List<Link>)
+  nameWithType.vb: LinkConverter.FromList(List(Of Link))
+- uid: Platform.Data.Triplets.LinkConverter.FromList*
+  name: FromList
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromList_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromList
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromList
+  nameWithType: LinkConverter.FromList
+- uid: Platform.Data.Triplets.LinkConverter.FromNumber(System.Int64)
+  name: FromNumber(Int64)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumber_System_Int64_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumber(System.Int64)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumber(System.Int64)
+  nameWithType: LinkConverter.FromNumber(Int64)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumber*
+  name: FromNumber
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumber_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromNumber
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumber
+  nameWithType: LinkConverter.FromNumber
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[])
+  name: FromNumbers(Boolean[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Boolean___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[])
+  name.vb: FromNumbers(Boolean())
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean())
+  nameWithType: LinkConverter.FromNumbers(Boolean[])
+  nameWithType.vb: LinkConverter.FromNumbers(Boolean())
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[],System.Int32,System.Int32)
+  name: FromNumbers(Boolean[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Boolean___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[],System.Int32,System.Int32)
+  name.vb: FromNumbers(Boolean(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Boolean(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromNumbers(Boolean[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromNumbers(Boolean(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[])
+  name: FromNumbers(Byte[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Byte___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[])
+  name.vb: FromNumbers(Byte())
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte())
+  nameWithType: LinkConverter.FromNumbers(Byte[])
+  nameWithType.vb: LinkConverter.FromNumbers(Byte())
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[],System.Int32,System.Int32)
+  name: FromNumbers(Byte[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Byte___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[],System.Int32,System.Int32)
+  name.vb: FromNumbers(Byte(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Byte(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromNumbers(Byte[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromNumbers(Byte(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[])
+  name: FromNumbers(Int64[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Int64___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[])
+  name.vb: FromNumbers(Int64())
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64())
+  nameWithType: LinkConverter.FromNumbers(Int64[])
+  nameWithType.vb: LinkConverter.FromNumbers(Int64())
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[],System.Int32,System.Int32)
+  name: FromNumbers(Int64[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_Int64___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[],System.Int32,System.Int32)
+  name.vb: FromNumbers(Int64(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.Int64(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromNumbers(Int64[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromNumbers(Int64(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[])
+  name: FromNumbers(UInt16[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_UInt16___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[])
+  name.vb: FromNumbers(UInt16())
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16())
+  nameWithType: LinkConverter.FromNumbers(UInt16[])
+  nameWithType.vb: LinkConverter.FromNumbers(UInt16())
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[],System.Int32,System.Int32)
+  name: FromNumbers(UInt16[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_UInt16___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[],System.Int32,System.Int32)
+  name.vb: FromNumbers(UInt16(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt16(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromNumbers(UInt16[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromNumbers(UInt16(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[])
+  name: FromNumbers(UInt32[])
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_UInt32___
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[])
+  name.vb: FromNumbers(UInt32())
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[])
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32())
+  nameWithType: LinkConverter.FromNumbers(UInt32[])
+  nameWithType.vb: LinkConverter.FromNumbers(UInt32())
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[],System.Int32,System.Int32)
+  name: FromNumbers(UInt32[], Int32, Int32)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_System_UInt32___System_Int32_System_Int32_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[],System.Int32,System.Int32)
+  name.vb: FromNumbers(UInt32(), Int32, Int32)
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32[], System.Int32, System.Int32)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromNumbers(System.UInt32(), System.Int32, System.Int32)
+  nameWithType: LinkConverter.FromNumbers(UInt32[], Int32, Int32)
+  nameWithType.vb: LinkConverter.FromNumbers(UInt32(), Int32, Int32)
+- uid: Platform.Data.Triplets.LinkConverter.FromNumbers*
+  name: FromNumbers
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromNumbers_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromNumbers
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromNumbers
+  nameWithType: LinkConverter.FromNumbers
+- uid: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence*
+  name: FromObjectsToSequence
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromObjectsToSequence_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromObjectsToSequence
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence
+  nameWithType: LinkConverter.FromObjectsToSequence
+- uid: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence``1(``0[],System.Func{``0,Platform.Data.Triplets.Link})
+  name: FromObjectsToSequence<T>(T[], Func<T, Link>)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromObjectsToSequence__1___0___System_Func___0_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromObjectsToSequence``1(``0[],System.Func{``0,Platform.Data.Triplets.Link})
+  name.vb: FromObjectsToSequence(Of T)(T(), Func(Of T, Link))
+  fullName: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence<T>(T[], System.Func<T, Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence(Of T)(T(), System.Func(Of T, Platform.Data.Triplets.Link))
+  nameWithType: LinkConverter.FromObjectsToSequence<T>(T[], Func<T, Link>)
+  nameWithType.vb: LinkConverter.FromObjectsToSequence(Of T)(T(), Func(Of T, Link))
+- uid: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence``1(``0[],System.Int32,System.Int32,System.Func{``0,Platform.Data.Triplets.Link})
+  name: FromObjectsToSequence<T>(T[], Int32, Int32, Func<T, Link>)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromObjectsToSequence__1___0___System_Int32_System_Int32_System_Func___0_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromObjectsToSequence``1(``0[],System.Int32,System.Int32,System.Func{``0,Platform.Data.Triplets.Link})
+  name.vb: FromObjectsToSequence(Of T)(T(), Int32, Int32, Func(Of T, Link))
+  fullName: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence<T>(T[], System.Int32, System.Int32, System.Func<T, Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.FromObjectsToSequence(Of T)(T(), System.Int32, System.Int32, System.Func(Of T, Platform.Data.Triplets.Link))
+  nameWithType: LinkConverter.FromObjectsToSequence<T>(T[], Int32, Int32, Func<T, Link>)
+  nameWithType.vb: LinkConverter.FromObjectsToSequence(Of T)(T(), Int32, Int32, Func(Of T, Link))
+- uid: Platform.Data.Triplets.LinkConverter.FromString(System.String)
+  name: FromString(String)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromString_System_String_
+  commentId: M:Platform.Data.Triplets.LinkConverter.FromString(System.String)
+  fullName: Platform.Data.Triplets.LinkConverter.FromString(System.String)
+  nameWithType: LinkConverter.FromString(String)
+- uid: Platform.Data.Triplets.LinkConverter.FromString*
+  name: FromString
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_FromString_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.FromString
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.FromString
+  nameWithType: LinkConverter.FromString
+- uid: Platform.Data.Triplets.LinkConverter.ToChar(Platform.Data.Triplets.Link)
+  name: ToChar(Link)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToChar_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkConverter.ToChar(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkConverter.ToChar(Platform.Data.Triplets.Link)
+  nameWithType: LinkConverter.ToChar(Link)
+- uid: Platform.Data.Triplets.LinkConverter.ToChar*
+  name: ToChar
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToChar_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.ToChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.ToChar
+  nameWithType: LinkConverter.ToChar
+- uid: Platform.Data.Triplets.LinkConverter.ToList(Platform.Data.Triplets.Link)
+  name: ToList(Link)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToList_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkConverter.ToList(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkConverter.ToList(Platform.Data.Triplets.Link)
+  nameWithType: LinkConverter.ToList(Link)
+- uid: Platform.Data.Triplets.LinkConverter.ToList*
+  name: ToList
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToList_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.ToList
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.ToList
+  nameWithType: LinkConverter.ToList
+- uid: Platform.Data.Triplets.LinkConverter.ToNumber(Platform.Data.Triplets.Link)
+  name: ToNumber(Link)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToNumber_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkConverter.ToNumber(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkConverter.ToNumber(Platform.Data.Triplets.Link)
+  nameWithType: LinkConverter.ToNumber(Link)
+- uid: Platform.Data.Triplets.LinkConverter.ToNumber*
+  name: ToNumber
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToNumber_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.ToNumber
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.ToNumber
+  nameWithType: LinkConverter.ToNumber
+- uid: Platform.Data.Triplets.LinkConverter.ToString(Platform.Data.Triplets.Link)
+  name: ToString(Link)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToString_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkConverter.ToString(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkConverter.ToString(Platform.Data.Triplets.Link)
+  nameWithType: LinkConverter.ToString(Link)
+- uid: Platform.Data.Triplets.LinkConverter.ToString(System.Collections.Generic.List{Platform.Data.Triplets.Link})
+  name: ToString(List<Link>)
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToString_System_Collections_Generic_List_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.LinkConverter.ToString(System.Collections.Generic.List{Platform.Data.Triplets.Link})
+  name.vb: ToString(List(Of Link))
+  fullName: Platform.Data.Triplets.LinkConverter.ToString(System.Collections.Generic.List<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.LinkConverter.ToString(System.Collections.Generic.List(Of Platform.Data.Triplets.Link))
+  nameWithType: LinkConverter.ToString(List<Link>)
+  nameWithType.vb: LinkConverter.ToString(List(Of Link))
+- uid: Platform.Data.Triplets.LinkConverter.ToString*
+  name: ToString
+  href: api/Platform.Data.Triplets.LinkConverter.html#Platform_Data_Triplets_LinkConverter_ToString_
+  commentId: Overload:Platform.Data.Triplets.LinkConverter.ToString
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkConverter.ToString
+  nameWithType: LinkConverter.ToString
+- uid: Platform.Data.Triplets.LinkDefinition
+  name: LinkDefinition
+  href: api/Platform.Data.Triplets.LinkDefinition.html
+  commentId: T:Platform.Data.Triplets.LinkDefinition
+  fullName: Platform.Data.Triplets.LinkDefinition
+  nameWithType: LinkDefinition
+- uid: Platform.Data.Triplets.LinkDefinition.#ctor(Platform.Data.Triplets.Link)
+  name: LinkDefinition(Link)
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition__ctor_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkDefinition.#ctor(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkDefinition.LinkDefinition(Platform.Data.Triplets.Link)
+  nameWithType: LinkDefinition.LinkDefinition(Link)
+- uid: Platform.Data.Triplets.LinkDefinition.#ctor(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: LinkDefinition(Link, Link, Link)
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition__ctor_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkDefinition.#ctor(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkDefinition.LinkDefinition(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: LinkDefinition.LinkDefinition(Link, Link, Link)
+- uid: Platform.Data.Triplets.LinkDefinition.#ctor*
+  name: LinkDefinition
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition__ctor_
+  commentId: Overload:Platform.Data.Triplets.LinkDefinition.#ctor
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkDefinition.LinkDefinition
+  nameWithType: LinkDefinition.LinkDefinition
+- uid: Platform.Data.Triplets.LinkDefinition.Equals(Platform.Data.Triplets.LinkDefinition)
+  name: Equals(LinkDefinition)
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition_Equals_Platform_Data_Triplets_LinkDefinition_
+  commentId: M:Platform.Data.Triplets.LinkDefinition.Equals(Platform.Data.Triplets.LinkDefinition)
+  fullName: Platform.Data.Triplets.LinkDefinition.Equals(Platform.Data.Triplets.LinkDefinition)
+  nameWithType: LinkDefinition.Equals(LinkDefinition)
+- uid: Platform.Data.Triplets.LinkDefinition.Equals*
+  name: Equals
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition_Equals_
+  commentId: Overload:Platform.Data.Triplets.LinkDefinition.Equals
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkDefinition.Equals
+  nameWithType: LinkDefinition.Equals
+- uid: Platform.Data.Triplets.LinkDefinition.Linker
+  name: Linker
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition_Linker
+  commentId: F:Platform.Data.Triplets.LinkDefinition.Linker
+  fullName: Platform.Data.Triplets.LinkDefinition.Linker
+  nameWithType: LinkDefinition.Linker
+- uid: Platform.Data.Triplets.LinkDefinition.Source
+  name: Source
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition_Source
+  commentId: F:Platform.Data.Triplets.LinkDefinition.Source
+  fullName: Platform.Data.Triplets.LinkDefinition.Source
+  nameWithType: LinkDefinition.Source
+- uid: Platform.Data.Triplets.LinkDefinition.Target
+  name: Target
+  href: api/Platform.Data.Triplets.LinkDefinition.html#Platform_Data_Triplets_LinkDefinition_Target
+  commentId: F:Platform.Data.Triplets.LinkDefinition.Target
+  fullName: Platform.Data.Triplets.LinkDefinition.Target
+  nameWithType: LinkDefinition.Target
+- uid: Platform.Data.Triplets.LinkExtensions
+  name: LinkExtensions
+  href: api/Platform.Data.Triplets.LinkExtensions.html
+  commentId: T:Platform.Data.Triplets.LinkExtensions
+  fullName: Platform.Data.Triplets.LinkExtensions
+  nameWithType: LinkExtensions
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker(Platform.Data.Triplets.Link)
+  name: GetArrayOfRererersByLinker(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersByLinker_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.GetArrayOfRererersByLinker(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker*
+  name: GetArrayOfRererersByLinker
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersByLinker_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByLinker
+  nameWithType: LinkExtensions.GetArrayOfRererersByLinker
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource(Platform.Data.Triplets.Link)
+  name: GetArrayOfRererersBySource(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersBySource_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.GetArrayOfRererersBySource(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource*
+  name: GetArrayOfRererersBySource
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersBySource_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersBySource
+  nameWithType: LinkExtensions.GetArrayOfRererersBySource
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget(Platform.Data.Triplets.Link)
+  name: GetArrayOfRererersByTarget(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersByTarget_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.GetArrayOfRererersByTarget(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget*
+  name: GetArrayOfRererersByTarget
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_GetArrayOfRererersByTarget_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.GetArrayOfRererersByTarget
+  nameWithType: LinkExtensions.GetArrayOfRererersByTarget
+- uid: Platform.Data.Triplets.LinkExtensions.Is(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: Is(Link, Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_Is_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.Is(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.Is(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.Is(Link, Link)
+- uid: Platform.Data.Triplets.LinkExtensions.Is*
+  name: Is
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_Is_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.Is
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.Is
+  nameWithType: LinkExtensions.Is
+- uid: Platform.Data.Triplets.LinkExtensions.IsChar(Platform.Data.Triplets.Link)
+  name: IsChar(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsChar_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.IsChar(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.IsChar(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.IsChar(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.IsChar*
+  name: IsChar
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsChar_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.IsChar
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.IsChar
+  nameWithType: LinkExtensions.IsChar
+- uid: Platform.Data.Triplets.LinkExtensions.IsGroup(Platform.Data.Triplets.Link)
+  name: IsGroup(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsGroup_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.IsGroup(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.IsGroup(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.IsGroup(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.IsGroup*
+  name: IsGroup
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsGroup_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.IsGroup
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.IsGroup
+  nameWithType: LinkExtensions.IsGroup
+- uid: Platform.Data.Triplets.LinkExtensions.IsName(Platform.Data.Triplets.Link)
+  name: IsName(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsName_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.IsName(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.IsName(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.IsName(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.IsName*
+  name: IsName
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsName_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.IsName
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.IsName
+  nameWithType: LinkExtensions.IsName
+- uid: Platform.Data.Triplets.LinkExtensions.IsString(Platform.Data.Triplets.Link)
+  name: IsString(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsString_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.IsString(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.IsString(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.IsString(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.IsString*
+  name: IsString
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsString_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.IsString
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.IsString
+  nameWithType: LinkExtensions.IsString
+- uid: Platform.Data.Triplets.LinkExtensions.IsSum(Platform.Data.Triplets.Link)
+  name: IsSum(Link)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsSum_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.IsSum(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.LinkExtensions.IsSum(Platform.Data.Triplets.Link)
+  nameWithType: LinkExtensions.IsSum(Link)
+- uid: Platform.Data.Triplets.LinkExtensions.IsSum*
+  name: IsSum
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_IsSum_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.IsSum
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.IsSum
+  nameWithType: LinkExtensions.IsSum
+- uid: Platform.Data.Triplets.LinkExtensions.SetName(Platform.Data.Triplets.Link,System.String)
+  name: SetName(Link, String)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_SetName_Platform_Data_Triplets_Link_System_String_
+  commentId: M:Platform.Data.Triplets.LinkExtensions.SetName(Platform.Data.Triplets.Link,System.String)
+  fullName: Platform.Data.Triplets.LinkExtensions.SetName(Platform.Data.Triplets.Link, System.String)
+  nameWithType: LinkExtensions.SetName(Link, String)
+- uid: Platform.Data.Triplets.LinkExtensions.SetName*
+  name: SetName
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_SetName_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.SetName
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.SetName
+  nameWithType: LinkExtensions.SetName
+- uid: Platform.Data.Triplets.LinkExtensions.TryGetName(Platform.Data.Triplets.Link,System.String@)
+  name: TryGetName(Link, out String)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_TryGetName_Platform_Data_Triplets_Link_System_String__
+  commentId: M:Platform.Data.Triplets.LinkExtensions.TryGetName(Platform.Data.Triplets.Link,System.String@)
+  name.vb: TryGetName(Link, ByRef String)
+  fullName: Platform.Data.Triplets.LinkExtensions.TryGetName(Platform.Data.Triplets.Link, out System.String)
+  fullName.vb: Platform.Data.Triplets.LinkExtensions.TryGetName(Platform.Data.Triplets.Link, ByRef System.String)
+  nameWithType: LinkExtensions.TryGetName(Link, out String)
+  nameWithType.vb: LinkExtensions.TryGetName(Link, ByRef String)
+- uid: Platform.Data.Triplets.LinkExtensions.TryGetName*
+  name: TryGetName
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_TryGetName_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.TryGetName
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.TryGetName
+  nameWithType: LinkExtensions.TryGetName
+- uid: Platform.Data.Triplets.LinkExtensions.TryGetSpecificName(Platform.Data.Triplets.Link,System.String@)
+  name: TryGetSpecificName(Link, out String)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_TryGetSpecificName_Platform_Data_Triplets_Link_System_String__
+  commentId: M:Platform.Data.Triplets.LinkExtensions.TryGetSpecificName(Platform.Data.Triplets.Link,System.String@)
+  name.vb: TryGetSpecificName(Link, ByRef String)
+  fullName: Platform.Data.Triplets.LinkExtensions.TryGetSpecificName(Platform.Data.Triplets.Link, out System.String)
+  fullName.vb: Platform.Data.Triplets.LinkExtensions.TryGetSpecificName(Platform.Data.Triplets.Link, ByRef System.String)
+  nameWithType: LinkExtensions.TryGetSpecificName(Link, out String)
+  nameWithType.vb: LinkExtensions.TryGetSpecificName(Link, ByRef String)
+- uid: Platform.Data.Triplets.LinkExtensions.TryGetSpecificName*
+  name: TryGetSpecificName
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_TryGetSpecificName_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.TryGetSpecificName
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.TryGetSpecificName
+  nameWithType: LinkExtensions.TryGetSpecificName
+- uid: Platform.Data.Triplets.LinkExtensions.WalkThroughSequence(Platform.Data.Triplets.Link,System.Action{Platform.Data.Triplets.Link})
+  name: WalkThroughSequence(Link, Action<Link>)
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_WalkThroughSequence_Platform_Data_Triplets_Link_System_Action_Platform_Data_Triplets_Link__
+  commentId: M:Platform.Data.Triplets.LinkExtensions.WalkThroughSequence(Platform.Data.Triplets.Link,System.Action{Platform.Data.Triplets.Link})
+  name.vb: WalkThroughSequence(Link, Action(Of Link))
+  fullName: Platform.Data.Triplets.LinkExtensions.WalkThroughSequence(Platform.Data.Triplets.Link, System.Action<Platform.Data.Triplets.Link>)
+  fullName.vb: Platform.Data.Triplets.LinkExtensions.WalkThroughSequence(Platform.Data.Triplets.Link, System.Action(Of Platform.Data.Triplets.Link))
+  nameWithType: LinkExtensions.WalkThroughSequence(Link, Action<Link>)
+  nameWithType.vb: LinkExtensions.WalkThroughSequence(Link, Action(Of Link))
+- uid: Platform.Data.Triplets.LinkExtensions.WalkThroughSequence*
+  name: WalkThroughSequence
+  href: api/Platform.Data.Triplets.LinkExtensions.html#Platform_Data_Triplets_LinkExtensions_WalkThroughSequence_
+  commentId: Overload:Platform.Data.Triplets.LinkExtensions.WalkThroughSequence
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.LinkExtensions.WalkThroughSequence
+  nameWithType: LinkExtensions.WalkThroughSequence
+- uid: Platform.Data.Triplets.Net
+  name: Net
+  href: api/Platform.Data.Triplets.Net.html
+  commentId: T:Platform.Data.Triplets.Net
+  fullName: Platform.Data.Triplets.Net
+  nameWithType: Net
+- uid: Platform.Data.Triplets.Net.Alphabet
+  name: Alphabet
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Alphabet
+  commentId: P:Platform.Data.Triplets.Net.Alphabet
+  fullName: Platform.Data.Triplets.Net.Alphabet
+  nameWithType: Net.Alphabet
+- uid: Platform.Data.Triplets.Net.Alphabet*
+  name: Alphabet
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Alphabet_
+  commentId: Overload:Platform.Data.Triplets.Net.Alphabet
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Alphabet
+  nameWithType: Net.Alphabet
+- uid: Platform.Data.Triplets.Net.And
+  name: And
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_And
+  commentId: P:Platform.Data.Triplets.Net.And
+  fullName: Platform.Data.Triplets.Net.And
+  nameWithType: Net.And
+- uid: Platform.Data.Triplets.Net.And*
+  name: And
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_And_
+  commentId: Overload:Platform.Data.Triplets.Net.And
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.And
+  nameWithType: Net.And
+- uid: Platform.Data.Triplets.Net.Case
+  name: Case
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Case
+  commentId: P:Platform.Data.Triplets.Net.Case
+  fullName: Platform.Data.Triplets.Net.Case
+  nameWithType: Net.Case
+- uid: Platform.Data.Triplets.Net.Case*
+  name: Case
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Case_
+  commentId: Overload:Platform.Data.Triplets.Net.Case
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Case
+  nameWithType: Net.Case
+- uid: Platform.Data.Triplets.Net.Character
+  name: Character
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Character
+  commentId: P:Platform.Data.Triplets.Net.Character
+  fullName: Platform.Data.Triplets.Net.Character
+  nameWithType: Net.Character
+- uid: Platform.Data.Triplets.Net.Character*
+  name: Character
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Character_
+  commentId: Overload:Platform.Data.Triplets.Net.Character
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Character
+  nameWithType: Net.Character
+- uid: Platform.Data.Triplets.Net.Code
+  name: Code
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Code
+  commentId: P:Platform.Data.Triplets.Net.Code
+  fullName: Platform.Data.Triplets.Net.Code
+  nameWithType: Net.Code
+- uid: Platform.Data.Triplets.Net.Code*
+  name: Code
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Code_
+  commentId: Overload:Platform.Data.Triplets.Net.Code
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Code
+  nameWithType: Net.Code
+- uid: Platform.Data.Triplets.Net.ContainedBy
+  name: ContainedBy
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ContainedBy
+  commentId: P:Platform.Data.Triplets.Net.ContainedBy
+  fullName: Platform.Data.Triplets.Net.ContainedBy
+  nameWithType: Net.ContainedBy
+- uid: Platform.Data.Triplets.Net.ContainedBy*
+  name: ContainedBy
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ContainedBy_
+  commentId: Overload:Platform.Data.Triplets.Net.ContainedBy
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ContainedBy
+  nameWithType: Net.ContainedBy
+- uid: Platform.Data.Triplets.Net.Contains
+  name: Contains
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Contains
+  commentId: P:Platform.Data.Triplets.Net.Contains
+  fullName: Platform.Data.Triplets.Net.Contains
+  nameWithType: Net.Contains
+- uid: Platform.Data.Triplets.Net.Contains*
+  name: Contains
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Contains_
+  commentId: Overload:Platform.Data.Triplets.Net.Contains
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Contains
+  nameWithType: Net.Contains
+- uid: Platform.Data.Triplets.Net.Content
+  name: Content
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Content
+  commentId: P:Platform.Data.Triplets.Net.Content
+  fullName: Platform.Data.Triplets.Net.Content
+  nameWithType: Net.Content
+- uid: Platform.Data.Triplets.Net.Content*
+  name: Content
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Content_
+  commentId: Overload:Platform.Data.Triplets.Net.Content
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Content
+  nameWithType: Net.Content
+- uid: Platform.Data.Triplets.Net.CreateLink
+  name: CreateLink()
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateLink
+  commentId: M:Platform.Data.Triplets.Net.CreateLink
+  fullName: Platform.Data.Triplets.Net.CreateLink()
+  nameWithType: Net.CreateLink()
+- uid: Platform.Data.Triplets.Net.CreateLink*
+  name: CreateLink
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateLink_
+  commentId: Overload:Platform.Data.Triplets.Net.CreateLink
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.CreateLink
+  nameWithType: Net.CreateLink
+- uid: Platform.Data.Triplets.Net.CreateMappedLink(System.Object)
+  name: CreateMappedLink(Object)
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateMappedLink_System_Object_
+  commentId: M:Platform.Data.Triplets.Net.CreateMappedLink(System.Object)
+  fullName: Platform.Data.Triplets.Net.CreateMappedLink(System.Object)
+  nameWithType: Net.CreateMappedLink(Object)
+- uid: Platform.Data.Triplets.Net.CreateMappedLink*
+  name: CreateMappedLink
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateMappedLink_
+  commentId: Overload:Platform.Data.Triplets.Net.CreateMappedLink
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.CreateMappedLink
+  nameWithType: Net.CreateMappedLink
+- uid: Platform.Data.Triplets.Net.CreateMappedThing(System.Object)
+  name: CreateMappedThing(Object)
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateMappedThing_System_Object_
+  commentId: M:Platform.Data.Triplets.Net.CreateMappedThing(System.Object)
+  fullName: Platform.Data.Triplets.Net.CreateMappedThing(System.Object)
+  nameWithType: Net.CreateMappedThing(Object)
+- uid: Platform.Data.Triplets.Net.CreateMappedThing*
+  name: CreateMappedThing
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateMappedThing_
+  commentId: Overload:Platform.Data.Triplets.Net.CreateMappedThing
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.CreateMappedThing
+  nameWithType: Net.CreateMappedThing
+- uid: Platform.Data.Triplets.Net.CreateSet
+  name: CreateSet()
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateSet
+  commentId: M:Platform.Data.Triplets.Net.CreateSet
+  fullName: Platform.Data.Triplets.Net.CreateSet()
+  nameWithType: Net.CreateSet()
+- uid: Platform.Data.Triplets.Net.CreateSet*
+  name: CreateSet
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateSet_
+  commentId: Overload:Platform.Data.Triplets.Net.CreateSet
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.CreateSet
+  nameWithType: Net.CreateSet
+- uid: Platform.Data.Triplets.Net.CreateThing
+  name: CreateThing()
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateThing
+  commentId: M:Platform.Data.Triplets.Net.CreateThing
+  fullName: Platform.Data.Triplets.Net.CreateThing()
+  nameWithType: Net.CreateThing()
+- uid: Platform.Data.Triplets.Net.CreateThing*
+  name: CreateThing
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_CreateThing_
+  commentId: Overload:Platform.Data.Triplets.Net.CreateThing
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.CreateThing
+  nameWithType: Net.CreateThing
+- uid: Platform.Data.Triplets.Net.Empty
+  name: Empty
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Empty
+  commentId: P:Platform.Data.Triplets.Net.Empty
+  fullName: Platform.Data.Triplets.Net.Empty
+  nameWithType: Net.Empty
+- uid: Platform.Data.Triplets.Net.Empty*
+  name: Empty
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Empty_
+  commentId: Overload:Platform.Data.Triplets.Net.Empty
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Empty
+  nameWithType: Net.Empty
+- uid: Platform.Data.Triplets.Net.EmptyContent
+  name: EmptyContent
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_EmptyContent
+  commentId: P:Platform.Data.Triplets.Net.EmptyContent
+  fullName: Platform.Data.Triplets.Net.EmptyContent
+  nameWithType: Net.EmptyContent
+- uid: Platform.Data.Triplets.Net.EmptyContent*
+  name: EmptyContent
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_EmptyContent_
+  commentId: Overload:Platform.Data.Triplets.Net.EmptyContent
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.EmptyContent
+  nameWithType: Net.EmptyContent
+- uid: Platform.Data.Triplets.Net.Group
+  name: Group
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Group
+  commentId: P:Platform.Data.Triplets.Net.Group
+  fullName: Platform.Data.Triplets.Net.Group
+  nameWithType: Net.Group
+- uid: Platform.Data.Triplets.Net.Group*
+  name: Group
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Group_
+  commentId: Overload:Platform.Data.Triplets.Net.Group
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Group
+  nameWithType: Net.Group
+- uid: Platform.Data.Triplets.Net.Has
+  name: Has
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Has
+  commentId: P:Platform.Data.Triplets.Net.Has
+  fullName: Platform.Data.Triplets.Net.Has
+  nameWithType: Net.Has
+- uid: Platform.Data.Triplets.Net.Has*
+  name: Has
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Has_
+  commentId: Overload:Platform.Data.Triplets.Net.Has
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Has
+  nameWithType: Net.Has
+- uid: Platform.Data.Triplets.Net.IsA
+  name: IsA
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_IsA
+  commentId: P:Platform.Data.Triplets.Net.IsA
+  fullName: Platform.Data.Triplets.Net.IsA
+  nameWithType: Net.IsA
+- uid: Platform.Data.Triplets.Net.IsA*
+  name: IsA
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_IsA_
+  commentId: Overload:Platform.Data.Triplets.Net.IsA
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.IsA
+  nameWithType: Net.IsA
+- uid: Platform.Data.Triplets.Net.IsNotA
+  name: IsNotA
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_IsNotA
+  commentId: P:Platform.Data.Triplets.Net.IsNotA
+  fullName: Platform.Data.Triplets.Net.IsNotA
+  nameWithType: Net.IsNotA
+- uid: Platform.Data.Triplets.Net.IsNotA*
+  name: IsNotA
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_IsNotA_
+  commentId: Overload:Platform.Data.Triplets.Net.IsNotA
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.IsNotA
+  nameWithType: Net.IsNotA
+- uid: Platform.Data.Triplets.Net.Letter
+  name: Letter
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Letter
+  commentId: P:Platform.Data.Triplets.Net.Letter
+  fullName: Platform.Data.Triplets.Net.Letter
+  nameWithType: Net.Letter
+- uid: Platform.Data.Triplets.Net.Letter*
+  name: Letter
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Letter_
+  commentId: Overload:Platform.Data.Triplets.Net.Letter
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Letter
+  nameWithType: Net.Letter
+- uid: Platform.Data.Triplets.Net.Link
+  name: Link
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Link
+  commentId: P:Platform.Data.Triplets.Net.Link
+  fullName: Platform.Data.Triplets.Net.Link
+  nameWithType: Net.Link
+- uid: Platform.Data.Triplets.Net.Link*
+  name: Link
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Link_
+  commentId: Overload:Platform.Data.Triplets.Net.Link
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Link
+  nameWithType: Net.Link
+- uid: Platform.Data.Triplets.Net.Lower
+  name: Lower
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Lower
+  commentId: P:Platform.Data.Triplets.Net.Lower
+  fullName: Platform.Data.Triplets.Net.Lower
+  nameWithType: Net.Lower
+- uid: Platform.Data.Triplets.Net.Lower*
+  name: Lower
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Lower_
+  commentId: Overload:Platform.Data.Triplets.Net.Lower
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Lower
+  nameWithType: Net.Lower
+- uid: Platform.Data.Triplets.Net.LowerCase
+  name: LowerCase
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_LowerCase
+  commentId: P:Platform.Data.Triplets.Net.LowerCase
+  fullName: Platform.Data.Triplets.Net.LowerCase
+  nameWithType: Net.LowerCase
+- uid: Platform.Data.Triplets.Net.LowerCase*
+  name: LowerCase
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_LowerCase_
+  commentId: Overload:Platform.Data.Triplets.Net.LowerCase
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.LowerCase
+  nameWithType: Net.LowerCase
+- uid: Platform.Data.Triplets.Net.Name
+  name: Name
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Name
+  commentId: P:Platform.Data.Triplets.Net.Name
+  fullName: Platform.Data.Triplets.Net.Name
+  nameWithType: Net.Name
+- uid: Platform.Data.Triplets.Net.Name*
+  name: Name
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Name_
+  commentId: Overload:Platform.Data.Triplets.Net.Name
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Name
+  nameWithType: Net.Name
+- uid: Platform.Data.Triplets.Net.Of
+  name: Of
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Of
+  commentId: P:Platform.Data.Triplets.Net.Of
+  fullName: Platform.Data.Triplets.Net.Of
+  nameWithType: Net.Of
+- uid: Platform.Data.Triplets.Net.Of*
+  name: Of
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Of_
+  commentId: Overload:Platform.Data.Triplets.Net.Of
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Of
+  nameWithType: Net.Of
+- uid: Platform.Data.Triplets.Net.One
+  name: One
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_One
+  commentId: P:Platform.Data.Triplets.Net.One
+  fullName: Platform.Data.Triplets.Net.One
+  nameWithType: Net.One
+- uid: Platform.Data.Triplets.Net.One*
+  name: One
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_One_
+  commentId: Overload:Platform.Data.Triplets.Net.One
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.One
+  nameWithType: Net.One
+- uid: Platform.Data.Triplets.Net.ParsedFrom
+  name: ParsedFrom
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ParsedFrom
+  commentId: P:Platform.Data.Triplets.Net.ParsedFrom
+  fullName: Platform.Data.Triplets.Net.ParsedFrom
+  nameWithType: Net.ParsedFrom
+- uid: Platform.Data.Triplets.Net.ParsedFrom*
+  name: ParsedFrom
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ParsedFrom_
+  commentId: Overload:Platform.Data.Triplets.Net.ParsedFrom
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ParsedFrom
+  nameWithType: Net.ParsedFrom
+- uid: Platform.Data.Triplets.Net.Path
+  name: Path
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Path
+  commentId: P:Platform.Data.Triplets.Net.Path
+  fullName: Platform.Data.Triplets.Net.Path
+  nameWithType: Net.Path
+- uid: Platform.Data.Triplets.Net.Path*
+  name: Path
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Path_
+  commentId: Overload:Platform.Data.Triplets.Net.Path
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Path
+  nameWithType: Net.Path
+- uid: Platform.Data.Triplets.Net.Recreate
+  name: Recreate()
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Recreate
+  commentId: M:Platform.Data.Triplets.Net.Recreate
+  fullName: Platform.Data.Triplets.Net.Recreate()
+  nameWithType: Net.Recreate()
+- uid: Platform.Data.Triplets.Net.Recreate*
+  name: Recreate
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Recreate_
+  commentId: Overload:Platform.Data.Triplets.Net.Recreate
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Recreate
+  nameWithType: Net.Recreate
+- uid: Platform.Data.Triplets.Net.Set
+  name: Set
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Set
+  commentId: P:Platform.Data.Triplets.Net.Set
+  fullName: Platform.Data.Triplets.Net.Set
+  nameWithType: Net.Set
+- uid: Platform.Data.Triplets.Net.Set*
+  name: Set
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Set_
+  commentId: Overload:Platform.Data.Triplets.Net.Set
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Set
+  nameWithType: Net.Set
+- uid: Platform.Data.Triplets.Net.String
+  name: String
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_String
+  commentId: P:Platform.Data.Triplets.Net.String
+  fullName: Platform.Data.Triplets.Net.String
+  nameWithType: Net.String
+- uid: Platform.Data.Triplets.Net.String*
+  name: String
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_String_
+  commentId: Overload:Platform.Data.Triplets.Net.String
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.String
+  nameWithType: Net.String
+- uid: Platform.Data.Triplets.Net.Sum
+  name: Sum
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Sum
+  commentId: P:Platform.Data.Triplets.Net.Sum
+  fullName: Platform.Data.Triplets.Net.Sum
+  nameWithType: Net.Sum
+- uid: Platform.Data.Triplets.Net.Sum*
+  name: Sum
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Sum_
+  commentId: Overload:Platform.Data.Triplets.Net.Sum
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Sum
+  nameWithType: Net.Sum
+- uid: Platform.Data.Triplets.Net.Text
+  name: Text
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Text
+  commentId: P:Platform.Data.Triplets.Net.Text
+  fullName: Platform.Data.Triplets.Net.Text
+  nameWithType: Net.Text
+- uid: Platform.Data.Triplets.Net.Text*
+  name: Text
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Text_
+  commentId: Overload:Platform.Data.Triplets.Net.Text
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Text
+  nameWithType: Net.Text
+- uid: Platform.Data.Triplets.Net.ThatConsistsOf
+  name: ThatConsistsOf
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatConsistsOf
+  commentId: P:Platform.Data.Triplets.Net.ThatConsistsOf
+  fullName: Platform.Data.Triplets.Net.ThatConsistsOf
+  nameWithType: Net.ThatConsistsOf
+- uid: Platform.Data.Triplets.Net.ThatConsistsOf*
+  name: ThatConsistsOf
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatConsistsOf_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatConsistsOf
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatConsistsOf
+  nameWithType: Net.ThatConsistsOf
+- uid: Platform.Data.Triplets.Net.ThatHas
+  name: ThatHas
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatHas
+  commentId: P:Platform.Data.Triplets.Net.ThatHas
+  fullName: Platform.Data.Triplets.Net.ThatHas
+  nameWithType: Net.ThatHas
+- uid: Platform.Data.Triplets.Net.ThatHas*
+  name: ThatHas
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatHas_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatHas
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatHas
+  nameWithType: Net.ThatHas
+- uid: Platform.Data.Triplets.Net.ThatIs
+  name: ThatIs
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIs
+  commentId: P:Platform.Data.Triplets.Net.ThatIs
+  fullName: Platform.Data.Triplets.Net.ThatIs
+  nameWithType: Net.ThatIs
+- uid: Platform.Data.Triplets.Net.ThatIs*
+  name: ThatIs
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIs_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatIs
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatIs
+  nameWithType: Net.ThatIs
+- uid: Platform.Data.Triplets.Net.ThatIsAfter
+  name: ThatIsAfter
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsAfter
+  commentId: P:Platform.Data.Triplets.Net.ThatIsAfter
+  fullName: Platform.Data.Triplets.Net.ThatIsAfter
+  nameWithType: Net.ThatIsAfter
+- uid: Platform.Data.Triplets.Net.ThatIsAfter*
+  name: ThatIsAfter
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsAfter_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatIsAfter
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatIsAfter
+  nameWithType: Net.ThatIsAfter
+- uid: Platform.Data.Triplets.Net.ThatIsBefore
+  name: ThatIsBefore
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsBefore
+  commentId: P:Platform.Data.Triplets.Net.ThatIsBefore
+  fullName: Platform.Data.Triplets.Net.ThatIsBefore
+  nameWithType: Net.ThatIsBefore
+- uid: Platform.Data.Triplets.Net.ThatIsBefore*
+  name: ThatIsBefore
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsBefore_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatIsBefore
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatIsBefore
+  nameWithType: Net.ThatIsBefore
+- uid: Platform.Data.Triplets.Net.ThatIsBetween
+  name: ThatIsBetween
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsBetween
+  commentId: P:Platform.Data.Triplets.Net.ThatIsBetween
+  fullName: Platform.Data.Triplets.Net.ThatIsBetween
+  nameWithType: Net.ThatIsBetween
+- uid: Platform.Data.Triplets.Net.ThatIsBetween*
+  name: ThatIsBetween
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsBetween_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatIsBetween
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatIsBetween
+  nameWithType: Net.ThatIsBetween
+- uid: Platform.Data.Triplets.Net.ThatIsRepresentedBy
+  name: ThatIsRepresentedBy
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsRepresentedBy
+  commentId: P:Platform.Data.Triplets.Net.ThatIsRepresentedBy
+  fullName: Platform.Data.Triplets.Net.ThatIsRepresentedBy
+  nameWithType: Net.ThatIsRepresentedBy
+- uid: Platform.Data.Triplets.Net.ThatIsRepresentedBy*
+  name: ThatIsRepresentedBy
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_ThatIsRepresentedBy_
+  commentId: Overload:Platform.Data.Triplets.Net.ThatIsRepresentedBy
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.ThatIsRepresentedBy
+  nameWithType: Net.ThatIsRepresentedBy
+- uid: Platform.Data.Triplets.Net.Thing
+  name: Thing
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Thing
+  commentId: P:Platform.Data.Triplets.Net.Thing
+  fullName: Platform.Data.Triplets.Net.Thing
+  nameWithType: Net.Thing
+- uid: Platform.Data.Triplets.Net.Thing*
+  name: Thing
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Thing_
+  commentId: Overload:Platform.Data.Triplets.Net.Thing
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Thing
+  nameWithType: Net.Thing
+- uid: Platform.Data.Triplets.Net.Upper
+  name: Upper
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Upper
+  commentId: P:Platform.Data.Triplets.Net.Upper
+  fullName: Platform.Data.Triplets.Net.Upper
+  nameWithType: Net.Upper
+- uid: Platform.Data.Triplets.Net.Upper*
+  name: Upper
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Upper_
+  commentId: Overload:Platform.Data.Triplets.Net.Upper
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Upper
+  nameWithType: Net.Upper
+- uid: Platform.Data.Triplets.Net.UpperCase
+  name: UpperCase
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_UpperCase
+  commentId: P:Platform.Data.Triplets.Net.UpperCase
+  fullName: Platform.Data.Triplets.Net.UpperCase
+  nameWithType: Net.UpperCase
+- uid: Platform.Data.Triplets.Net.UpperCase*
+  name: UpperCase
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_UpperCase_
+  commentId: Overload:Platform.Data.Triplets.Net.UpperCase
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.UpperCase
+  nameWithType: Net.UpperCase
+- uid: Platform.Data.Triplets.Net.Zero
+  name: Zero
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Zero
+  commentId: P:Platform.Data.Triplets.Net.Zero
+  fullName: Platform.Data.Triplets.Net.Zero
+  nameWithType: Net.Zero
+- uid: Platform.Data.Triplets.Net.Zero*
+  name: Zero
+  href: api/Platform.Data.Triplets.Net.html#Platform_Data_Triplets_Net_Zero_
+  commentId: Overload:Platform.Data.Triplets.Net.Zero
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Net.Zero
+  nameWithType: Net.Zero
+- uid: Platform.Data.Triplets.NetMapping
+  name: NetMapping
+  href: api/Platform.Data.Triplets.NetMapping.html
+  commentId: T:Platform.Data.Triplets.NetMapping
+  fullName: Platform.Data.Triplets.NetMapping
+  nameWithType: NetMapping
+- uid: Platform.Data.Triplets.NetMapping.Alphabet
+  name: Alphabet
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Alphabet
+  commentId: F:Platform.Data.Triplets.NetMapping.Alphabet
+  fullName: Platform.Data.Triplets.NetMapping.Alphabet
+  nameWithType: NetMapping.Alphabet
+- uid: Platform.Data.Triplets.NetMapping.And
+  name: And
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_And
+  commentId: F:Platform.Data.Triplets.NetMapping.And
+  fullName: Platform.Data.Triplets.NetMapping.And
+  nameWithType: NetMapping.And
+- uid: Platform.Data.Triplets.NetMapping.Case
+  name: Case
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Case
+  commentId: F:Platform.Data.Triplets.NetMapping.Case
+  fullName: Platform.Data.Triplets.NetMapping.Case
+  nameWithType: NetMapping.Case
+- uid: Platform.Data.Triplets.NetMapping.Character
+  name: Character
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Character
+  commentId: F:Platform.Data.Triplets.NetMapping.Character
+  fullName: Platform.Data.Triplets.NetMapping.Character
+  nameWithType: NetMapping.Character
+- uid: Platform.Data.Triplets.NetMapping.Code
+  name: Code
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Code
+  commentId: F:Platform.Data.Triplets.NetMapping.Code
+  fullName: Platform.Data.Triplets.NetMapping.Code
+  nameWithType: NetMapping.Code
+- uid: Platform.Data.Triplets.NetMapping.ContainedBy
+  name: ContainedBy
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ContainedBy
+  commentId: F:Platform.Data.Triplets.NetMapping.ContainedBy
+  fullName: Platform.Data.Triplets.NetMapping.ContainedBy
+  nameWithType: NetMapping.ContainedBy
+- uid: Platform.Data.Triplets.NetMapping.Contains
+  name: Contains
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Contains
+  commentId: F:Platform.Data.Triplets.NetMapping.Contains
+  fullName: Platform.Data.Triplets.NetMapping.Contains
+  nameWithType: NetMapping.Contains
+- uid: Platform.Data.Triplets.NetMapping.Content
+  name: Content
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Content
+  commentId: F:Platform.Data.Triplets.NetMapping.Content
+  fullName: Platform.Data.Triplets.NetMapping.Content
+  nameWithType: NetMapping.Content
+- uid: Platform.Data.Triplets.NetMapping.Empty
+  name: Empty
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Empty
+  commentId: F:Platform.Data.Triplets.NetMapping.Empty
+  fullName: Platform.Data.Triplets.NetMapping.Empty
+  nameWithType: NetMapping.Empty
+- uid: Platform.Data.Triplets.NetMapping.EmptyContent
+  name: EmptyContent
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_EmptyContent
+  commentId: F:Platform.Data.Triplets.NetMapping.EmptyContent
+  fullName: Platform.Data.Triplets.NetMapping.EmptyContent
+  nameWithType: NetMapping.EmptyContent
+- uid: Platform.Data.Triplets.NetMapping.Group
+  name: Group
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Group
+  commentId: F:Platform.Data.Triplets.NetMapping.Group
+  fullName: Platform.Data.Triplets.NetMapping.Group
+  nameWithType: NetMapping.Group
+- uid: Platform.Data.Triplets.NetMapping.Has
+  name: Has
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Has
+  commentId: F:Platform.Data.Triplets.NetMapping.Has
+  fullName: Platform.Data.Triplets.NetMapping.Has
+  nameWithType: NetMapping.Has
+- uid: Platform.Data.Triplets.NetMapping.IsA
+  name: IsA
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_IsA
+  commentId: F:Platform.Data.Triplets.NetMapping.IsA
+  fullName: Platform.Data.Triplets.NetMapping.IsA
+  nameWithType: NetMapping.IsA
+- uid: Platform.Data.Triplets.NetMapping.IsNotA
+  name: IsNotA
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_IsNotA
+  commentId: F:Platform.Data.Triplets.NetMapping.IsNotA
+  fullName: Platform.Data.Triplets.NetMapping.IsNotA
+  nameWithType: NetMapping.IsNotA
+- uid: Platform.Data.Triplets.NetMapping.Letter
+  name: Letter
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Letter
+  commentId: F:Platform.Data.Triplets.NetMapping.Letter
+  fullName: Platform.Data.Triplets.NetMapping.Letter
+  nameWithType: NetMapping.Letter
+- uid: Platform.Data.Triplets.NetMapping.Link
+  name: Link
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Link
+  commentId: F:Platform.Data.Triplets.NetMapping.Link
+  fullName: Platform.Data.Triplets.NetMapping.Link
+  nameWithType: NetMapping.Link
+- uid: Platform.Data.Triplets.NetMapping.Lower
+  name: Lower
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Lower
+  commentId: F:Platform.Data.Triplets.NetMapping.Lower
+  fullName: Platform.Data.Triplets.NetMapping.Lower
+  nameWithType: NetMapping.Lower
+- uid: Platform.Data.Triplets.NetMapping.LowerCase
+  name: LowerCase
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_LowerCase
+  commentId: F:Platform.Data.Triplets.NetMapping.LowerCase
+  fullName: Platform.Data.Triplets.NetMapping.LowerCase
+  nameWithType: NetMapping.LowerCase
+- uid: Platform.Data.Triplets.NetMapping.Name
+  name: Name
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Name
+  commentId: F:Platform.Data.Triplets.NetMapping.Name
+  fullName: Platform.Data.Triplets.NetMapping.Name
+  nameWithType: NetMapping.Name
+- uid: Platform.Data.Triplets.NetMapping.Of
+  name: Of
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Of
+  commentId: F:Platform.Data.Triplets.NetMapping.Of
+  fullName: Platform.Data.Triplets.NetMapping.Of
+  nameWithType: NetMapping.Of
+- uid: Platform.Data.Triplets.NetMapping.One
+  name: One
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_One
+  commentId: F:Platform.Data.Triplets.NetMapping.One
+  fullName: Platform.Data.Triplets.NetMapping.One
+  nameWithType: NetMapping.One
+- uid: Platform.Data.Triplets.NetMapping.ParsedFrom
+  name: ParsedFrom
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ParsedFrom
+  commentId: F:Platform.Data.Triplets.NetMapping.ParsedFrom
+  fullName: Platform.Data.Triplets.NetMapping.ParsedFrom
+  nameWithType: NetMapping.ParsedFrom
+- uid: Platform.Data.Triplets.NetMapping.Path
+  name: Path
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Path
+  commentId: F:Platform.Data.Triplets.NetMapping.Path
+  fullName: Platform.Data.Triplets.NetMapping.Path
+  nameWithType: NetMapping.Path
+- uid: Platform.Data.Triplets.NetMapping.Set
+  name: Set
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Set
+  commentId: F:Platform.Data.Triplets.NetMapping.Set
+  fullName: Platform.Data.Triplets.NetMapping.Set
+  nameWithType: NetMapping.Set
+- uid: Platform.Data.Triplets.NetMapping.String
+  name: String
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_String
+  commentId: F:Platform.Data.Triplets.NetMapping.String
+  fullName: Platform.Data.Triplets.NetMapping.String
+  nameWithType: NetMapping.String
+- uid: Platform.Data.Triplets.NetMapping.Sum
+  name: Sum
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Sum
+  commentId: F:Platform.Data.Triplets.NetMapping.Sum
+  fullName: Platform.Data.Triplets.NetMapping.Sum
+  nameWithType: NetMapping.Sum
+- uid: Platform.Data.Triplets.NetMapping.Text
+  name: Text
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Text
+  commentId: F:Platform.Data.Triplets.NetMapping.Text
+  fullName: Platform.Data.Triplets.NetMapping.Text
+  nameWithType: NetMapping.Text
+- uid: Platform.Data.Triplets.NetMapping.ThatConsistsOf
+  name: ThatConsistsOf
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatConsistsOf
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatConsistsOf
+  fullName: Platform.Data.Triplets.NetMapping.ThatConsistsOf
+  nameWithType: NetMapping.ThatConsistsOf
+- uid: Platform.Data.Triplets.NetMapping.ThatHas
+  name: ThatHas
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatHas
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatHas
+  fullName: Platform.Data.Triplets.NetMapping.ThatHas
+  nameWithType: NetMapping.ThatHas
+- uid: Platform.Data.Triplets.NetMapping.ThatIs
+  name: ThatIs
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatIs
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatIs
+  fullName: Platform.Data.Triplets.NetMapping.ThatIs
+  nameWithType: NetMapping.ThatIs
+- uid: Platform.Data.Triplets.NetMapping.ThatIsAfter
+  name: ThatIsAfter
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatIsAfter
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatIsAfter
+  fullName: Platform.Data.Triplets.NetMapping.ThatIsAfter
+  nameWithType: NetMapping.ThatIsAfter
+- uid: Platform.Data.Triplets.NetMapping.ThatIsBefore
+  name: ThatIsBefore
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatIsBefore
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatIsBefore
+  fullName: Platform.Data.Triplets.NetMapping.ThatIsBefore
+  nameWithType: NetMapping.ThatIsBefore
+- uid: Platform.Data.Triplets.NetMapping.ThatIsBetween
+  name: ThatIsBetween
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatIsBetween
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatIsBetween
+  fullName: Platform.Data.Triplets.NetMapping.ThatIsBetween
+  nameWithType: NetMapping.ThatIsBetween
+- uid: Platform.Data.Triplets.NetMapping.ThatIsRepresentedBy
+  name: ThatIsRepresentedBy
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_ThatIsRepresentedBy
+  commentId: F:Platform.Data.Triplets.NetMapping.ThatIsRepresentedBy
+  fullName: Platform.Data.Triplets.NetMapping.ThatIsRepresentedBy
+  nameWithType: NetMapping.ThatIsRepresentedBy
+- uid: Platform.Data.Triplets.NetMapping.Thing
+  name: Thing
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Thing
+  commentId: F:Platform.Data.Triplets.NetMapping.Thing
+  fullName: Platform.Data.Triplets.NetMapping.Thing
+  nameWithType: NetMapping.Thing
+- uid: Platform.Data.Triplets.NetMapping.Upper
+  name: Upper
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Upper
+  commentId: F:Platform.Data.Triplets.NetMapping.Upper
+  fullName: Platform.Data.Triplets.NetMapping.Upper
+  nameWithType: NetMapping.Upper
+- uid: Platform.Data.Triplets.NetMapping.UpperCase
+  name: UpperCase
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_UpperCase
+  commentId: F:Platform.Data.Triplets.NetMapping.UpperCase
+  fullName: Platform.Data.Triplets.NetMapping.UpperCase
+  nameWithType: NetMapping.UpperCase
+- uid: Platform.Data.Triplets.NetMapping.Zero
+  name: Zero
+  href: api/Platform.Data.Triplets.NetMapping.html#Platform_Data_Triplets_NetMapping_Zero
+  commentId: F:Platform.Data.Triplets.NetMapping.Zero
+  fullName: Platform.Data.Triplets.NetMapping.Zero
+  nameWithType: NetMapping.Zero
+- uid: Platform.Data.Triplets.NumberHelpers
+  name: NumberHelpers
+  href: api/Platform.Data.Triplets.NumberHelpers.html
+  commentId: T:Platform.Data.Triplets.NumberHelpers
+  fullName: Platform.Data.Triplets.NumberHelpers
+  nameWithType: NumberHelpers
+- uid: Platform.Data.Triplets.NumberHelpers.FromNumber(System.Int64)
+  name: FromNumber(Int64)
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_FromNumber_System_Int64_
+  commentId: M:Platform.Data.Triplets.NumberHelpers.FromNumber(System.Int64)
+  fullName: Platform.Data.Triplets.NumberHelpers.FromNumber(System.Int64)
+  nameWithType: NumberHelpers.FromNumber(Int64)
+- uid: Platform.Data.Triplets.NumberHelpers.FromNumber*
+  name: FromNumber
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_FromNumber_
+  commentId: Overload:Platform.Data.Triplets.NumberHelpers.FromNumber
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.NumberHelpers.FromNumber
+  nameWithType: NumberHelpers.FromNumber
+- uid: Platform.Data.Triplets.NumberHelpers.LinksToNumbers
+  name: LinksToNumbers
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_LinksToNumbers
+  commentId: P:Platform.Data.Triplets.NumberHelpers.LinksToNumbers
+  fullName: Platform.Data.Triplets.NumberHelpers.LinksToNumbers
+  nameWithType: NumberHelpers.LinksToNumbers
+- uid: Platform.Data.Triplets.NumberHelpers.LinksToNumbers*
+  name: LinksToNumbers
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_LinksToNumbers_
+  commentId: Overload:Platform.Data.Triplets.NumberHelpers.LinksToNumbers
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.NumberHelpers.LinksToNumbers
+  nameWithType: NumberHelpers.LinksToNumbers
+- uid: Platform.Data.Triplets.NumberHelpers.NumbersToLinks
+  name: NumbersToLinks
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_NumbersToLinks
+  commentId: P:Platform.Data.Triplets.NumberHelpers.NumbersToLinks
+  fullName: Platform.Data.Triplets.NumberHelpers.NumbersToLinks
+  nameWithType: NumberHelpers.NumbersToLinks
+- uid: Platform.Data.Triplets.NumberHelpers.NumbersToLinks*
+  name: NumbersToLinks
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_NumbersToLinks_
+  commentId: Overload:Platform.Data.Triplets.NumberHelpers.NumbersToLinks
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.NumberHelpers.NumbersToLinks
+  nameWithType: NumberHelpers.NumbersToLinks
+- uid: Platform.Data.Triplets.NumberHelpers.Recreate
+  name: Recreate()
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_Recreate
+  commentId: M:Platform.Data.Triplets.NumberHelpers.Recreate
+  fullName: Platform.Data.Triplets.NumberHelpers.Recreate()
+  nameWithType: NumberHelpers.Recreate()
+- uid: Platform.Data.Triplets.NumberHelpers.Recreate*
+  name: Recreate
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_Recreate_
+  commentId: Overload:Platform.Data.Triplets.NumberHelpers.Recreate
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.NumberHelpers.Recreate
+  nameWithType: NumberHelpers.Recreate
+- uid: Platform.Data.Triplets.NumberHelpers.ToNumber(Platform.Data.Triplets.Link)
+  name: ToNumber(Link)
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_ToNumber_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.NumberHelpers.ToNumber(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.NumberHelpers.ToNumber(Platform.Data.Triplets.Link)
+  nameWithType: NumberHelpers.ToNumber(Link)
+- uid: Platform.Data.Triplets.NumberHelpers.ToNumber*
+  name: ToNumber
+  href: api/Platform.Data.Triplets.NumberHelpers.html#Platform_Data_Triplets_NumberHelpers_ToNumber_
+  commentId: Overload:Platform.Data.Triplets.NumberHelpers.ToNumber
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.NumberHelpers.ToNumber
+  nameWithType: NumberHelpers.ToNumber
+- uid: Platform.Data.Triplets.Sequences
+  name: Platform.Data.Triplets.Sequences
+  href: api/Platform.Data.Triplets.Sequences.html
+  commentId: N:Platform.Data.Triplets.Sequences
+  fullName: Platform.Data.Triplets.Sequences
+  nameWithType: Platform.Data.Triplets.Sequences
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers
+  name: SequenceHelpers
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html
+  commentId: T:Platform.Data.Triplets.Sequences.SequenceHelpers
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers
+  nameWithType: SequenceHelpers
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences(Platform.Data.Triplets.Link[])
+  name: CollectMatchingSequences(Link[])
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_CollectMatchingSequences_Platform_Data_Triplets_Link___
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences(Platform.Data.Triplets.Link[])
+  name.vb: CollectMatchingSequences(Link())
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences(Platform.Data.Triplets.Link[])
+  fullName.vb: Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences(Platform.Data.Triplets.Link())
+  nameWithType: SequenceHelpers.CollectMatchingSequences(Link[])
+  nameWithType.vb: SequenceHelpers.CollectMatchingSequences(Link())
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences*
+  name: CollectMatchingSequences
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_CollectMatchingSequences_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.CollectMatchingSequences
+  nameWithType: SequenceHelpers.CollectMatchingSequences
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence(Platform.Data.Triplets.Link)
+  name: FormatSequence(Link)
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_FormatSequence_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence(Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence(Platform.Data.Triplets.Link)
+  nameWithType: SequenceHelpers.FormatSequence(Link)
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence*
+  name: FormatSequence
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_FormatSequence_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.FormatSequence
+  nameWithType: SequenceHelpers.FormatSequence
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: GetLeftElements(Link, Link)
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_GetLeftElements_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: SequenceHelpers.GetLeftElements(Link, Link)
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements*
+  name: GetLeftElements
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_GetLeftElements_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.GetLeftElements
+  nameWithType: SequenceHelpers.GetLeftElements
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  name: GetRightElements(Link, Link)
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_GetRightElements_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link)
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link)
+  nameWithType: SequenceHelpers.GetRightElements(Link, Link)
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements*
+  name: GetRightElements
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_GetRightElements_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.GetRightElements
+  nameWithType: SequenceHelpers.GetRightElements
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.MaxSequenceFormatSize
+  name: MaxSequenceFormatSize
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_MaxSequenceFormatSize
+  commentId: F:Platform.Data.Triplets.Sequences.SequenceHelpers.MaxSequenceFormatSize
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.MaxSequenceFormatSize
+  nameWithType: SequenceHelpers.MaxSequenceFormatSize
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link[],System.Int32)
+  name: TryStepLeft(Link, Link, Link[], Int32)
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_TryStepLeft_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link___System_Int32_
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link[],System.Int32)
+  name.vb: TryStepLeft(Link, Link, Link(), Int32)
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link[], System.Int32)
+  fullName.vb: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link(), System.Int32)
+  nameWithType: SequenceHelpers.TryStepLeft(Link, Link, Link[], Int32)
+  nameWithType.vb: SequenceHelpers.TryStepLeft(Link, Link, Link(), Int32)
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft*
+  name: TryStepLeft
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_TryStepLeft_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepLeft
+  nameWithType: SequenceHelpers.TryStepLeft
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link[],System.Int32)
+  name: TryStepRight(Link, Link, Link[], Int32)
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_TryStepRight_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link_Platform_Data_Triplets_Link___System_Int32_
+  commentId: M:Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight(Platform.Data.Triplets.Link,Platform.Data.Triplets.Link,Platform.Data.Triplets.Link[],System.Int32)
+  name.vb: TryStepRight(Link, Link, Link(), Int32)
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link[], System.Int32)
+  fullName.vb: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight(Platform.Data.Triplets.Link, Platform.Data.Triplets.Link, Platform.Data.Triplets.Link(), System.Int32)
+  nameWithType: SequenceHelpers.TryStepRight(Link, Link, Link[], Int32)
+  nameWithType.vb: SequenceHelpers.TryStepRight(Link, Link, Link(), Int32)
+- uid: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight*
+  name: TryStepRight
+  href: api/Platform.Data.Triplets.Sequences.SequenceHelpers.html#Platform_Data_Triplets_Sequences_SequenceHelpers_TryStepRight_
+  commentId: Overload:Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight
+  isSpec: "True"
+  fullName: Platform.Data.Triplets.Sequences.SequenceHelpers.TryStepRight
+  nameWithType: SequenceHelpers.TryStepRight
