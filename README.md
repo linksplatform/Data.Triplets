@@ -21,3 +21,9 @@ NuGet package: [Platform.Data.Triplets](https://www.nuget.org/packages/Platform.
 *   [Platform.Communication](https://github.com/linksplatform/Communication)
 *   [Platform.Data](https://github.com/linksplatform/Data)
 *   [Platform.Data.Triplets.Kernel](https://github.com/linksplatform/Data.Triplets.Kernel)
+
+## Support
+
+Ask questions at [stackoverflow.com/tags/links-platform](https://stackoverflow.com/tags/links-platform) (or with tag links-platform) to get our free support.
+
+You can also get real-time support on [our official discord server](https://discord.gg/rJrRwfJsYc).
