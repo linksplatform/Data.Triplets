@@ -24,6 +24,6 @@ NuGet package: [Platform.Data.Triplets](https://www.nuget.org/packages/Platform.
 
 ## Support
 
-Ask questions at [stackoverflow.com/tags/links-platform](https://stackoverflow.com/tags/links-platform) (or with tag links-platform) to get our free support.
+Ask questions at [stackoverflow.com/tags/links-platform](https://stackoverflow.com/tags/links-platform) (or with tag `links-platform`) to get our free support.
 
-You can also get real-time support on [our official discord server](https://discord.gg/rJrRwfJsYc).
+You can also get real-time support on [our official Discord server](https://discord.gg/rJrRwfJsYc).
