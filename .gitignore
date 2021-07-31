@@ -342,9 +342,6 @@ org.kde.konsole.desktop
 *.kate-swp
 .swp.*
 
-# GitHub refuses chages to .github folder at the moment
-.github/
-
 # Nim lang
 nimcache/
 nimblecache/
