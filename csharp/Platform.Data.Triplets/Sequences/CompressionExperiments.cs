@@ -1,10 +1,30 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Platform.Data.Triplets.Sequences
 {
+    /// <summary>
+    /// <para>
+    /// Represents the compression experiments.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     internal static class CompressionExperiments
     {
+        /// <summary>
+        /// <para>
+        /// Rights the join using the specified subject.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="subject">
+        /// <para>The subject.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
         public static void RightJoin(ref Link subject, Link @object)
         {
             if (subject.Linker == Net.And && subject.ReferersBySourceCount == 0 && subject.ReferersByTargetCount == 0)
@@ -47,6 +67,20 @@ namespace Platform.Data.Triplets.Sequences
         ////    subject = Link.Create(@object, Net.And, subject);
         ////}
 
+        /// <summary>
+        /// <para>
+        /// Lefts the join using the specified subject.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="subject">
+        /// <para>The subject.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
         public static void LeftJoin(ref Link subject, Link @object)
         {
             if (subject.Linker == Net.And && subject.ReferersBySourceCount == 0 && subject.ReferersByTargetCount == 0)
@@ -151,8 +185,32 @@ namespace Platform.Data.Triplets.Sequences
         //    }
         //}
 
+        /// <summary>
+        /// <para>
+        /// The compressions count.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static int CompressionsCount;
 
+        /// <summary>
+        /// <para>
+        /// Combineds the join using the specified first.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="first">
+        /// <para>The first.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="second">
+        /// <para>The second.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The direct connection.</para>
+        /// <para></para>
+        /// </returns>
         public static Link CombinedJoin(ref Link first, ref Link second)
         {
             // Перестроение работает хорошо только когда одна из связей является парой и аккумулятором одновременно
@@ -354,6 +412,28 @@ namespace Platform.Data.Triplets.Sequences
             return directConnection;
         }
 
+        /// <summary>
+        /// <para>
+        /// Tries the reconstruct connection using the specified first.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="first">
+        /// <para>The first.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="second">
+        /// <para>The second.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="NotImplementedException">
+        /// <para></para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The direct connection.</para>
+        /// <para></para>
+        /// </returns>
         private static Link TryReconstructConnection(Link first, Link second)
         {
             Link directConnection = null;
@@ -534,6 +614,12 @@ namespace Platform.Data.Triplets.Sequences
         //    return Link.Create(@object, Net.And, subject);
         //}
 
+        /// <summary>
+        /// <para>
+        /// The chunk size.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static int ChunkSize = 2;
 
         //public static Link FromList(List<Link> links)
@@ -598,6 +684,24 @@ namespace Platform.Data.Triplets.Sequences
         //}
 
         // Заглушка, возможно опасная
+        /// <summary>
+        /// <para>
+        /// Combineds the join using the specified element.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="element">
+        /// <para>The element.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link</para>
+        /// <para></para>
+        /// </returns>
         private static Link CombinedJoin(Link element, Link link)
         {
             return CombinedJoin(ref element, ref link);
@@ -700,6 +804,20 @@ namespace Platform.Data.Triplets.Sequences
         //    return element;
         //}
 
+        /// <summary>
+        /// <para>
+        /// Creates the list using the specified links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="links">
+        /// <para>The links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The element.</para>
+        /// <para></para>
+        /// </returns>
         public static Link FromList(List<Link> links)
         {
             var i = links.Count - 1;
@@ -712,6 +830,20 @@ namespace Platform.Data.Triplets.Sequences
             return element;
         }
 
+        /// <summary>
+        /// <para>
+        /// Creates the list using the specified links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="links">
+        /// <para>The links.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The element.</para>
+        /// <para></para>
+        /// </returns>
         public static Link FromList(Link[] links)
         {
             var i = links.Length - 1;

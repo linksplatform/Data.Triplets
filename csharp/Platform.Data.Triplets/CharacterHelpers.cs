@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
@@ -6,30 +6,138 @@ using System.Collections.Generic;
 namespace Platform.Data.Triplets
 {
     // TODO: Split logic of Latin and Cyrillic alphabets into different files if possible
+    /// <summary>
+    /// <para>
+    /// Represents the character helpers.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class CharacterHelpers
     {
+        /// <summary>
+        /// <para>
+        /// The character mapping enum.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public enum CharacterMapping : long
         {
+            /// <summary>
+            /// <para>
+            /// The latin alphabet character mapping.
+            /// </para>
+            /// <para></para>
+            /// </summary>
             LatinAlphabet = 100,
+            /// <summary>
+            /// <para>
+            /// The cyrillic alphabet character mapping.
+            /// </para>
+            /// <para></para>
+            /// </summary>
             CyrillicAlphabet
         }
 
+        /// <summary>
+        /// <para>
+        /// The first lower сase latin letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char FirstLowerСaseLatinLetter = 'a';
+        /// <summary>
+        /// <para>
+        /// The last lower сase latin letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char LastLowerСaseLatinLetter = 'z';
+        /// <summary>
+        /// <para>
+        /// The first upper сase latin letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char FirstUpperСaseLatinLetter = 'A';
+        /// <summary>
+        /// <para>
+        /// The last upper сase latin letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char LastUpperСaseLatinLetter = 'Z';
+        /// <summary>
+        /// <para>
+        /// The first lower case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char FirstLowerCaseCyrillicLetter = 'а';
+        /// <summary>
+        /// <para>
+        /// The last lower case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char LastLowerCaseCyrillicLetter = 'я';
+        /// <summary>
+        /// <para>
+        /// The first upper case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char FirstUpperCaseCyrillicLetter = 'А';
+        /// <summary>
+        /// <para>
+        /// The last upper case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char LastUpperCaseCyrillicLetter = 'Я';
+        /// <summary>
+        /// <para>
+        /// The yo lower case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char YoLowerCaseCyrillicLetter = 'ё';
+        /// <summary>
+        /// <para>
+        /// The yo upper case cyrillic letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const char YoUpperCaseCyrillicLetter = 'Ё';
 
+        /// <summary>
+        /// <para>
+        /// The characters to links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static Link[] _charactersToLinks;
+        /// <summary>
+        /// <para>
+        /// The links to characters.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static Dictionary<Link, char> _linksToCharacters;
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="CharacterHelpers"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         static CharacterHelpers() => Create();
 
+        /// <summary>
+        /// <para>
+        /// Creates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void Create()
         {
             _charactersToLinks = new Link[char.MaxValue];
@@ -40,8 +148,24 @@ namespace Platform.Data.Triplets
             RegisterExistingCharacters();
         }
 
+        /// <summary>
+        /// <para>
+        /// Registers the existing characters.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void RegisterExistingCharacters() => Net.Character.WalkThroughReferersAsSource(referer => RegisterExistingCharacter(referer));
 
+        /// <summary>
+        /// <para>
+        /// Registers the existing character using the specified character.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="character">
+        /// <para>The character.</para>
+        /// <para></para>
+        /// </param>
         private static void RegisterExistingCharacter(Link character)
         {
             if (character.Source == Net.Character && character.Linker == Net.ThatHas)
@@ -56,8 +180,20 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Recreates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static void Recreate() => Create();
 
+        /// <summary>
+        /// <para>
+        /// Creates the latin alphabet.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void CreateLatinAlphabet()
         {
             var lettersCharacters = new[]
@@ -69,6 +205,12 @@ namespace Platform.Data.Triplets
             CreateAlphabet(lettersCharacters, "latin alphabet", CharacterMapping.LatinAlphabet);
         }
 
+        /// <summary>
+        /// <para>
+        /// Creates the cyrillic alphabet.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void CreateCyrillicAlphabet()
         {
             var lettersCharacters = new[]
@@ -81,6 +223,24 @@ namespace Platform.Data.Triplets
             CreateAlphabet(lettersCharacters, "cyrillic alphabet", CharacterMapping.CyrillicAlphabet);
         }
 
+        /// <summary>
+        /// <para>
+        /// Creates the alphabet using the specified letters characters.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="lettersCharacters">
+        /// <para>The letters characters.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="alphabetName">
+        /// <para>The alphabet name.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="mapping">
+        /// <para>The mapping.</para>
+        /// <para></para>
+        /// </param>
         private static void CreateAlphabet(char[] lettersCharacters, string alphabetName, CharacterMapping mapping)
         {
             if (Link.TryGetMapped(mapping, out Link alphabet))
@@ -137,6 +297,16 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Registers the existing letter using the specified letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="letter">
+        /// <para>The letter.</para>
+        /// <para></para>
+        /// </param>
         private static void RegisterExistingLetter(Link letter)
         {
             letter.WalkThroughReferersAsSource(referer =>
@@ -154,6 +324,24 @@ namespace Platform.Data.Triplets
                 });
         }
 
+        /// <summary>
+        /// <para>
+        /// Generates the alphabet basis using the specified alphabet.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="alphabet">
+        /// <para>The alphabet.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="letterOfAlphabet">
+        /// <para>The letter of alphabet.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="letters">
+        /// <para>The letters.</para>
+        /// <para></para>
+        /// </param>
         private static void GenerateAlphabetBasis(ref Link alphabet, ref Link letterOfAlphabet, Link[] letters)
         {
             // Принцип, на примере латинского алфавита.
@@ -180,6 +368,28 @@ namespace Platform.Data.Triplets
             Link.Update(ref alphabet, Net.Alphabet, Net.ThatConsistsOf, LinkConverter.FromList(letters));
         }
 
+        /// <summary>
+        /// <para>
+        /// Sets the letter codes using the specified letter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="letter">
+        /// <para>The letter.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="lowerCaseCharacter">
+        /// <para>The lower case character.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="lowerCase">
+        /// <para>The lower case.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="upperCase">
+        /// <para>The upper case.</para>
+        /// <para></para>
+        /// </param>
         private static void SetLetterCodes(Link letter, char lowerCaseCharacter, out Link lowerCase, out Link upperCase)
         {
             var upperCaseCharacter = char.ToUpper(lowerCaseCharacter);
@@ -200,17 +410,73 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Creates the simple character link using the specified character.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="character">
+        /// <para>The character.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link</para>
+        /// <para></para>
+        /// </returns>
         private static Link CreateSimpleCharacterLink(char character) => Link.Create(Net.Character, Net.ThatHas, Link.Create(Net.Code, Net.ThatIsRepresentedBy, LinkConverter.FromNumber(character)));
 
+        /// <summary>
+        /// <para>
+        /// Determines whether is letter of latin alphabet.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="character">
+        /// <para>The character.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         private static bool IsLetterOfLatinAlphabet(char character)
             => (character >= FirstLowerСaseLatinLetter && character <= LastLowerСaseLatinLetter)
             || (character >= FirstUpperСaseLatinLetter && character <= LastUpperСaseLatinLetter);
 
+        /// <summary>
+        /// <para>
+        /// Determines whether is letter of cyrillic alphabet.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="character">
+        /// <para>The character.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         private static bool IsLetterOfCyrillicAlphabet(char character)
             => (character >= FirstLowerCaseCyrillicLetter && character <= LastLowerCaseCyrillicLetter)
             || (character >= FirstUpperCaseCyrillicLetter && character <= LastUpperCaseCyrillicLetter)
             || character == YoLowerCaseCyrillicLetter || character == YoUpperCaseCyrillicLetter;
 
+        /// <summary>
+        /// <para>
+        /// Creates the char using the specified character.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="character">
+        /// <para>The character.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link</para>
+        /// <para></para>
+        /// </returns>
         public static Link FromChar(char character)
         {
             if (_charactersToLinks[character] == null)
@@ -239,6 +505,24 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Returns the char using the specified link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// <para>Указанная связь не являяется символом.</para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The char.</para>
+        /// <para></para>
+        /// </returns>
         public static char ToChar(Link link)
         {
             if (!_linksToCharacters.TryGetValue(link, out char @char))
@@ -248,6 +532,20 @@ namespace Platform.Data.Triplets
             return @char;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether is char.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         public static bool IsChar(Link link) => link != null && _linksToCharacters.ContainsKey(link);
     }
 }

@@ -1,32 +1,160 @@
-﻿using System;
+using System;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 namespace Platform.Data.Triplets
 {
+    /// <summary>
+    /// <para>
+    /// Defines the link.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     internal partial interface ILink<TLink>
         where TLink : ILink<TLink>
     {
+        /// <summary>
+        /// <para>
+        /// Gets the source value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         TLink Source { get; }
+        /// <summary>
+        /// <para>
+        /// Gets the linker value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         TLink Linker { get; }
+        /// <summary>
+        /// <para>
+        /// Gets the target value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         TLink Target { get; }
     }
 
+    /// <summary>
+    /// <para>
+    /// Defines the link.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     internal partial interface ILink<TLink>
         where TLink : ILink<TLink>
     {
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance walk through referers as linker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         bool WalkThroughReferersAsLinker(Func<TLink, bool> walker);
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance walk through referers as source.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         bool WalkThroughReferersAsSource(Func<TLink, bool> walker);
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance walk through referers as target.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         bool WalkThroughReferersAsTarget(Func<TLink, bool> walker);
+        /// <summary>
+        /// <para>
+        /// Walks the through referers using the specified walker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
         void WalkThroughReferers(Func<TLink, bool> walker);
     }
 
+    /// <summary>
+    /// <para>
+    /// Defines the link.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     internal partial interface ILink<TLink>
         where TLink : ILink<TLink>
     {
+        /// <summary>
+        /// <para>
+        /// Walks the through referers as linker using the specified walker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
         void WalkThroughReferersAsLinker(Action<TLink> walker);
+        /// <summary>
+        /// <para>
+        /// Walks the through referers as source using the specified walker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
         void WalkThroughReferersAsSource(Action<TLink> walker);
+        /// <summary>
+        /// <para>
+        /// Walks the through referers as target using the specified walker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
         void WalkThroughReferersAsTarget(Action<TLink> walker);
+        /// <summary>
+        /// <para>
+        /// Walks the through referers using the specified walker.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="walker">
+        /// <para>The walker.</para>
+        /// <para></para>
+        /// </param>
         void WalkThroughReferers(Action<TLink> walker);
     }
 }

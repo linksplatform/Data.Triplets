@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -11,12 +11,46 @@ using GexfNode = Platform.Communication.Protocol.Gexf.Node;
 
 namespace Platform.Data.Triplets
 {
+    /// <summary>
+    /// <para>
+    /// Represents the gexf exporter.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class GexfExporter
     {
+        /// <summary>
+        /// <para>
+        /// The source label.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string SourceLabel = "Source";
+        /// <summary>
+        /// <para>
+        /// The linker label.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string LinkerLabel = "Linker";
+        /// <summary>
+        /// <para>
+        /// The target label.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string TargetLabel = "Target";
 
+        /// <summary>
+        /// <para>
+        /// Returns the xml.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <returns>
+        /// <para>The string</para>
+        /// <para></para>
+        /// </returns>
         public static string ToXml()
         {
             var sb = new StringBuilder();
@@ -27,6 +61,16 @@ namespace Platform.Data.Triplets
             return sb.ToString();
         }
 
+        /// <summary>
+        /// <para>
+        /// Returns the file using the specified path.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="path">
+        /// <para>The path.</para>
+        /// <para></para>
+        /// </param>
         public static void ToFile(string path)
         {
             using (var file = File.OpenWrite(path))
@@ -36,6 +80,20 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Returns the file using the specified path.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="path">
+        /// <para>The path.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="filter">
+        /// <para>The filter.</para>
+        /// <para></para>
+        /// </param>
         public static void ToFile(string path, Func<Link, bool> filter)
         {
             using (var file = File.OpenWrite(path))
@@ -45,6 +103,20 @@ namespace Platform.Data.Triplets
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Collects the links using the specified link match.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="linkMatch">
+        /// <para>The link match.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The matching links.</para>
+        /// <para></para>
+        /// </returns>
         private static HashSet<Link> CollectLinks(Func<Link, bool> linkMatch)
         {
             var matchingLinks = new HashSet<Link>();
@@ -58,6 +130,16 @@ namespace Platform.Data.Triplets
             return matchingLinks;
         }
 
+        /// <summary>
+        /// <para>
+        /// Collects the links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <returns>
+        /// <para>The matching links.</para>
+        /// <para></para>
+        /// </returns>
         private static HashSet<Link> CollectLinks()
         {
             var matchingLinks = new HashSet<Link>();
@@ -65,6 +147,20 @@ namespace Platform.Data.Triplets
             return matchingLinks;
         }
 
+        /// <summary>
+        /// <para>
+        /// Writes the xml using the specified writer.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="writer">
+        /// <para>The writer.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="matchingLinks">
+        /// <para>The matching links.</para>
+        /// <para></para>
+        /// </param>
         private static void WriteXml(XmlWriter writer, HashSet<Link> matchingLinks)
         {
             var edgesCounter = 0;

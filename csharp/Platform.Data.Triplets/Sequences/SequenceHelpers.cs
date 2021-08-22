@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Platform.Data.Sequences;
@@ -13,12 +13,32 @@ namespace Platform.Data.Triplets.Sequences
     /// </remarks>
     public static class SequenceHelpers
     {
+        /// <summary>
+        /// <para>
+        /// The max sequence format size.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static readonly int MaxSequenceFormatSize = 20;
 
         //public static void DeleteSequence(Link sequence)
         //{
         //}
 
+        /// <summary>
+        /// <para>
+        /// Formats the sequence using the specified sequence.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="sequence">
+        /// <para>The sequence.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The string</para>
+        /// <para></para>
+        /// </returns>
         public static string FormatSequence(Link sequence)
         {
             var visitedElements = 0;
@@ -46,6 +66,24 @@ namespace Platform.Data.Triplets.Sequences
             return sb.ToString();
         }
 
+        /// <summary>
+        /// <para>
+        /// Collects the matching sequences using the specified links.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="links">
+        /// <para>The links.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="InvalidOperationException">
+        /// <para>Подпоследовательности с одним элементом не поддерживаются.</para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The results.</para>
+        /// <para></para>
+        /// </returns>
         public static List<Link> CollectMatchingSequences(Link[] links)
         {
             if (links.Length == 1)
@@ -61,6 +99,36 @@ namespace Platform.Data.Triplets.Sequences
             return results;
         }
 
+        /// <summary>
+        /// <para>
+        /// Collects the matching sequences using the specified left link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="leftLink">
+        /// <para>The left link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="leftBound">
+        /// <para>The left bound.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="middleLinks">
+        /// <para>The middle links.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="rightLink">
+        /// <para>The right link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="rightBound">
+        /// <para>The right bound.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="results">
+        /// <para>The results.</para>
+        /// <para></para>
+        /// </param>
         private static void CollectMatchingSequences(Link leftLink, int leftBound, Link[] middleLinks, Link rightLink, int rightBound, ref List<Link> results)
         {
             var leftLinkTotalReferers = leftLink.ReferersBySourceCount + leftLink.ReferersByTargetCount;
@@ -121,6 +189,24 @@ namespace Platform.Data.Triplets.Sequences
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the right elements using the specified start link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="startLink">
+        /// <para>The start link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="rightLink">
+        /// <para>The right link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </returns>
         public static Link[] GetRightElements(Link startLink, Link rightLink)
         {
             var result = new Link[4];
@@ -139,6 +225,32 @@ namespace Platform.Data.Triplets.Sequences
             return result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether try step right.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="startLink">
+        /// <para>The start link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="rightLink">
+        /// <para>The right link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="result">
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="offset">
+        /// <para>The offset.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         public static bool TryStepRight(Link startLink, Link rightLink, Link[] result, int offset)
         {
             var added = 0;
@@ -169,6 +281,24 @@ namespace Platform.Data.Triplets.Sequences
             return added > 0;
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the left elements using the specified start link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="startLink">
+        /// <para>The start link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="leftLink">
+        /// <para>The left link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </returns>
         public static Link[] GetLeftElements(Link startLink, Link leftLink)
         {
             var result = new Link[4];
@@ -187,6 +317,32 @@ namespace Platform.Data.Triplets.Sequences
             return result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether try step left.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="startLink">
+        /// <para>The start link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="leftLink">
+        /// <para>The left link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="result">
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="offset">
+        /// <para>The offset.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         public static bool TryStepLeft(Link startLink, Link leftLink, Link[] result, int offset)
         {
             var added = 0;

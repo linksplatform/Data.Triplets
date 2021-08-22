@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Platform.Numbers;
@@ -7,13 +7,43 @@ using Platform.Numbers;
 
 namespace Platform.Data.Triplets
 {
+    /// <summary>
+    /// <para>
+    /// Represents the number helpers.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class NumberHelpers
     {
+        /// <summary>
+        /// <para>
+        /// Gets or sets the numbers to links value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static Link[] NumbersToLinks { get; private set; }
+        /// <summary>
+        /// <para>
+        /// Gets or sets the links to numbers value.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static Dictionary<Link, long> LinksToNumbers { get; private set; }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="NumberHelpers"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         static NumberHelpers() => Create();
 
+        /// <summary>
+        /// <para>
+        /// Creates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void Create()
         {
             NumbersToLinks = new Link[64];
@@ -22,8 +52,28 @@ namespace Platform.Data.Triplets
             LinksToNumbers[Net.One] = 1;
         }
 
+        /// <summary>
+        /// <para>
+        /// Recreates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static void Recreate() => Create();
 
+        /// <summary>
+        /// <para>
+        /// Creates the power of 2 using the specified power of 2.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="powerOf2">
+        /// <para>The power of.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </returns>
         private static Link FromPowerOf2(long powerOf2)
         {
             var result = NumbersToLinks[powerOf2];
@@ -55,6 +105,24 @@ namespace Platform.Data.Triplets
             return result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Creates the number using the specified number.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="number">
+        /// <para>The number.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="NotSupportedException">
+        /// <para>Negative numbers are not supported yet.</para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The sum.</para>
+        /// <para></para>
+        /// </returns>
         public static Link FromNumber(long number)
         {
             if (number == 0)
@@ -85,6 +153,24 @@ namespace Platform.Data.Triplets
             return sum;
         }
 
+        /// <summary>
+        /// <para>
+        /// Returns the number using the specified link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// <para>Specified link is not a number.</para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The long</para>
+        /// <para></para>
+        /// </returns>
         public static long ToNumber(Link link)
         {
             if (link == Net.Zero)
@@ -109,6 +195,20 @@ namespace Platform.Data.Triplets
             throw new ArgumentOutOfRangeException(nameof(link), "Specified link is not a number.");
         }
 
+        /// <summary>
+        /// <para>
+        /// Goes the down and take it using the specified link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="number">
+        /// <para>The number.</para>
+        /// <para></para>
+        /// </param>
         private static void GoDownAndTakeIt(Link link, out long number)
         {
             if (!LinksToNumbers.TryGetValue(link, out number))
