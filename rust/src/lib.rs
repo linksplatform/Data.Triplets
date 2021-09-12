@@ -10,11 +10,6 @@ pub mod persistent_memory_manager;
 
 #[cfg(test)]
 mod test {
-    use std::ffi::{CStr, CString};
-    use std::fs::File;
-    use std::path::Path;
-    use std::time::{Duration, SystemTime};
-
     use crate::{*};
 
     #[test]
