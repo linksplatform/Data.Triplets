@@ -5,8 +5,10 @@ use link_c::{*};
 use persistent_memory_manager::{*};
 
 pub mod common;
-pub mod link_c;
+mod link_c;
+mod persistent_memory_manager_c;
 pub mod persistent_memory_manager;
+
 
 #[cfg(test)]
 mod test {
@@ -15,12 +17,12 @@ mod test {
     #[test]
     fn it_works() {
         {
-            let mem = PersistentMemoryManager::create("db.links");
+            let mem = Links::create("db.links");
             println!("{:?}", mem);
             // close db file
         }
 
-        let mem = PersistentMemoryManager::open("db.links").unwrap();
+        let mem = Links::open("db.links").unwrap();
         println!("{:?}", mem);
         mem.close().unwrap();
     }

@@ -1,31 +1,22 @@
 use crate::common::{*};
+use crate::persistent_memory_manager_c::{*};
 use libc::c_char;
 use std::path::Path;
 use std::io::{Error, ErrorKind};
 use std::ffi::{CStr, CString, NulError};
 
-extern "C" {
-    pub fn OpenLinks(filename: *const c_char) -> SignedInteger;
-    pub fn CloseLinks() -> SignedInteger;
-
-    pub fn GetMappedLink(mapped_index: SignedInteger) -> LinkIndex;
-    pub fn SetMappedLink(mapped_index: SignedInteger, link_index: LinkIndex);
-
-    pub fn WalkThroughAllLinks(visitor: Visitor);
-    pub fn WalkThroughLinks(visitor: StoppableVisitor) -> SignedInteger;
-
-    pub fn GetLinksCount() -> UnsignedInteger;
-
-    pub fn AllocateLink() -> LinkIndex;
-    pub fn FreeLink(link_index: LinkIndex);
-}
+pub struct Links;
 
 #[derive(Debug)]
 pub struct PersistentMemoryManager;
 
-impl PersistentMemoryManager {
-    pub fn open<P: AsRef<Path>>(path: P) -> std::io::Result<Self> {
-        //std::fs::File::open(&path)?; // wrapper to return an error if the file does not exist
+impl Links {
+    const ITSELF: LinkIndex = 0;
+    const CONTINUE: LinkIndex = 0;
+    const STOP: LinkIndex = 1;
+
+    pub fn open<P: AsRef<Path>>(path: P) -> std::io::Result<PersistentMemoryManager> {
+        std::fs::File::open(&path)?; // simulate return an error if the file does not exist
 
         let raw_path_str = path.as_ref().to_str();
         let path_str;
@@ -37,12 +28,12 @@ impl PersistentMemoryManager {
         let c_str = CString::new(path_str)?;
         let result = unsafe { OpenLinks(c_str.as_ptr()) };
         match result {
-            SUCCESS_RESULT => { Ok(Self { }) }
+            SUCCESS_RESULT => { Ok(PersistentMemoryManager { }) }
             _ => { Err(Error::from_raw_os_error(result as i32)) }
         }
     }
 
-    pub fn create<P: AsRef<Path>>(path: P) -> std::io::Result<Self> {
+    pub fn create<P: AsRef<Path>>(path: P) -> std::io::Result<PersistentMemoryManager> {
         let raw_parent = path.as_ref().parent();
         match raw_parent {
             None => { Err(Error::from(ErrorKind::NotFound)) }
@@ -53,7 +44,9 @@ impl PersistentMemoryManager {
             }
         }
     }
+}
 
+impl PersistentMemoryManager {
     pub fn close(&self) -> std::io::Result<()> {
         let result = unsafe { CloseLinks() };
         match result {
