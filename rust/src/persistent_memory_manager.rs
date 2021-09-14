@@ -2,7 +2,7 @@ use std::ffi::{CStr, CString, NulError};
 use std::io::{Error, ErrorKind};
 use std::path::Path;
 
-use libc::c_char;
+use libc::{c_char, c_void};
 
 use crate::common::{*};
 use crate::link_c::{*};
@@ -48,6 +48,12 @@ impl<'a> AsIndex for &LinkAdapter<'a> {
     }
 }
 
+impl<'a> AsIndex for &mut LinkAdapter<'a> {
+    fn index(&self) -> LinkIndex {
+        self.index
+    }
+}
+
 impl<'a> Deref for LinkAdapter<'a> {
     type Target = LinkIndex;
 
@@ -80,32 +86,23 @@ impl<'a> LinkAdapter<'a> {
     //     }
     // }
 
-    pub fn update<S, L, T>(&mut self, source: T, linker: L, target: S)
+    pub fn update<S, L, T>(&mut self, source: S, linker: L, target: T)
         where S: AsIndex, L: AsIndex, T: AsIndex
     {
-        self.index = unsafe { UpdateLink(self.index, source.index(), linker.index(), target.index()) }
+        self.index = *self.parent.update(&*self, source, linker, target)
     }
 
-    pub fn delete(self)  {
-        unsafe { DeleteLink(self.index) }
+    pub fn delete(self) {
+        self.parent.delete(self)
     }
-
-    // pub fn replace<O: AsIndex>(&mut self, other: O) {
-    //     self.index = unsafe { CreateLink(source.index(), linker.index(), target.index()) },
-    // }
-
-    // pub fn drop_index(self) -> LinkIndex {
-    //     self.index()
-    // }
 }
-
-#[thread_local]
-static mut LOCK: bool = false;
 
 pub struct Links;
 
 #[derive(Debug)]
-pub struct PersistentMemoryManager;
+pub struct PersistentMemoryManager {
+    db: *mut RawDB
+}
 
 impl Links {
     const ITSELF: LinkIndex = 0;
@@ -122,15 +119,13 @@ impl Links {
             Some(str) => { path_str = str }
         }
 
-        let c_str = CString::new(path_str)?;
-        let result = unsafe { OpenLinks(c_str.as_ptr()) };
+        let db = unsafe { RawDB_new() };
 
-        //if unsafe { LOCK } {
-        //    return Err(Error::from(ErrorKind::WouldBlock));
-        //}
+        let c_str = CString::new(path_str)?;
+        let result = unsafe { OpenLinks(db, c_str.as_ptr()) };
 
         match result {
-            SUCCESS_RESULT => { /*unsafe { LOCK = true; }*/ Ok(PersistentMemoryManager {}) }
+            SUCCESS_RESULT => { Ok(PersistentMemoryManager { db }) }
             _ => { Err(Error::from_raw_os_error(result as i32)) }
         }
     }
@@ -152,21 +147,29 @@ impl PersistentMemoryManager {
     pub fn create<S, L, T>(&'a self, source: S, linker: L, target: T) -> LinkAdapter<'a>
         where S: AsIndex, L: AsIndex, T: AsIndex
     {
-        LinkAdapter { parent: self, index: unsafe { CreateLink(source.index(), linker.index(), target.index()) } }
+        let index = unsafe { CreateLink(self.db, source.index(), linker.index(), target.index()) };
+        LinkAdapter { parent: self, index }
     }
 
-    // pub fn search(&'a self, source: LinkIndex, linker: LinkIndex, target: LinkIndex) -> LinkAdapter<'a> {
-    //     LinkAdapter { parent: self, index: unsafe { SearchLink(source, linker, target) } }
-    // }
+    pub fn update<I, S, L, T>(&'a self, index: I, source: S, linker: L, target: T) -> LinkAdapter<'a>
+        where I: AsIndex, S: AsIndex, L: AsIndex, T: AsIndex
+    {
+        let index = unsafe { UpdateLink(self.db, index.index(), source.index(), linker.index(), target.index()) };
+        LinkAdapter { parent: self, index }
+    }
+
+    pub fn delete<I: AsIndex>(&'a self, index: I) {
+        unsafe { DeleteLink(self.db, index.index()) };
+    }
 
     pub fn count(&self) -> usize {
-        (unsafe { GetLinksCount() }) as usize
+        (unsafe { GetLinksCount(self.db) }) as usize
     }
 
     pub fn close(&self) -> std::io::Result<()> {
-        let result = unsafe { CloseLinks() };
+        let result = unsafe { CloseLinks(self.db) };
         match result {
-            SUCCESS_RESULT => { /* unsafe { LOCK = false; }*/ Ok(()) }
+            SUCCESS_RESULT => { Ok(()) }
             _ => { Err(Error::from_raw_os_error(result as i32)) }
         }
     }
@@ -175,5 +178,6 @@ impl PersistentMemoryManager {
 impl Drop for PersistentMemoryManager {
     fn drop(&mut self) {
         self.close();
+        unsafe { libc::free(self.db as *mut c_void) }
     }
 }
