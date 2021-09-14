@@ -1,40 +1,50 @@
 use crate::common::{*};
 
 extern "C" {
+    pub fn RawDB_new() -> *mut RawDB;
+
     pub fn GetSourceIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetLinkerIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetTargetIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetTime(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> SignedInteger;
 
     pub fn CreateLink(
+        db: *mut RawDB,
         source: LinkIndex,
         linker: LinkIndex,
         target: LinkIndex,
     ) -> LinkIndex;
 
     pub fn SearchLink(
+        db: *mut RawDB,
         source: LinkIndex,
         linker: LinkIndex,
         target: LinkIndex,
     ) -> LinkIndex;
 
     pub fn ReplaceLink(
+        db: *mut RawDB,
         index: LinkIndex,
         replacement: LinkIndex,
     ) -> LinkIndex;
 
     pub fn UpdateLink(
+        db: *mut RawDB,
         index: LinkIndex,
         source: LinkIndex,
         linker: LinkIndex,
@@ -42,59 +52,72 @@ extern "C" {
     ) -> LinkIndex;
 
     pub fn DeleteLink(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     );
 
     pub fn GetFirstRefererBySourceIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetFirstRefererByLinkerIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetFirstRefererByTargetIndex(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> LinkIndex;
 
     pub fn GetLinkNumberOfReferersBySource(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> UnsignedInteger;
 
     pub fn GetLinkNumberOfReferersByLinker(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> UnsignedInteger;
 
     pub fn GetLinkNumberOfReferersByTarget(
-        index: LinkIndex
+        db: *mut RawDB,
+        index: LinkIndex,
     ) -> UnsignedInteger;
 
     pub fn WalkThroughAllReferersBySource(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: Visitor,
     );
 
     pub fn WalkThroughReferersBySource(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: StoppableVisitor,
     ) -> SignedInteger;
 
     pub fn WalkThroughAllReferersByLinker(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: Visitor,
     );
 
     pub fn WalkThroughReferersByLinker(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: StoppableVisitor,
     ) -> SignedInteger;
 
     pub fn WalkThroughAllReferersByTarget(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: Visitor,
     );
 
     pub fn WalkThroughReferersByTarget(
+        db: *mut RawDB,
         root: LinkIndex,
         visitor: StoppableVisitor,
     ) -> SignedInteger;

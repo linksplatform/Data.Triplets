@@ -2,17 +2,17 @@ use crate::common::{*};
 use libc::c_char;
 
 extern "C" {
-    pub fn OpenLinks(filename: *const c_char) -> SignedInteger;
-    pub fn CloseLinks() -> SignedInteger;
+    pub fn OpenLinks(db: *mut RawDB, filename: *const c_char) -> SignedInteger;
+    pub fn CloseLinks(db: *mut RawDB) -> SignedInteger;
 
-    pub fn GetMappedLink(mapped_index: SignedInteger) -> LinkIndex;
-    pub fn SetMappedLink(mapped_index: SignedInteger, link_index: LinkIndex);
+    pub fn GetMappedLink(db: *mut RawDB, mapped_index: SignedInteger) -> LinkIndex;
+    pub fn SetMappedLink(db: *mut RawDB, mapped_index: SignedInteger, link_index: LinkIndex);
 
-    pub fn WalkThroughAllLinks(visitor: Visitor);
-    pub fn WalkThroughLinks(visitor: StoppableVisitor) -> SignedInteger;
+    pub fn WalkThroughAllLinks(db: *mut RawDB, visitor: Visitor);
+    pub fn WalkThroughLinks(db: *mut RawDB, visitor: StoppableVisitor) -> SignedInteger;
 
-    pub fn GetLinksCount() -> UnsignedInteger;
+    pub fn GetLinksCount(db: *mut RawDB) -> UnsignedInteger;
 
-    pub fn AllocateLink() -> LinkIndex;
-    pub fn FreeLink(link_index: LinkIndex);
+    pub fn AllocateLink(db: *mut RawDB) -> LinkIndex;
+    pub fn FreeLink(db: *mut RawDB, link_index: LinkIndex);
 }

@@ -99,6 +99,9 @@ impl<'a> LinkAdapter<'a> {
     // }
 }
 
+#[thread_local]
+static mut LOCK: bool = false;
+
 pub struct Links;
 
 #[derive(Debug)]
@@ -121,8 +124,13 @@ impl Links {
 
         let c_str = CString::new(path_str)?;
         let result = unsafe { OpenLinks(c_str.as_ptr()) };
+
+        //if unsafe { LOCK } {
+        //    return Err(Error::from(ErrorKind::WouldBlock));
+        //}
+
         match result {
-            SUCCESS_RESULT => { Ok(PersistentMemoryManager {}) }
+            SUCCESS_RESULT => { /*unsafe { LOCK = true; }*/ Ok(PersistentMemoryManager {}) }
             _ => { Err(Error::from_raw_os_error(result as i32)) }
         }
     }
@@ -158,7 +166,7 @@ impl PersistentMemoryManager {
     pub fn close(&self) -> std::io::Result<()> {
         let result = unsafe { CloseLinks() };
         match result {
-            SUCCESS_RESULT => { Ok(()) }
+            SUCCESS_RESULT => { /* unsafe { LOCK = false; }*/ Ok(()) }
             _ => { Err(Error::from_raw_os_error(result as i32)) }
         }
     }
