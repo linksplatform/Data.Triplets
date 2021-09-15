@@ -20,9 +20,12 @@ jobs:
       with:
         submodules: true
     - name: Rustup nightly
-      run: rustup toolchain install nightly
+      run: |
+        rustup toolchain install nightly
     - name: Rust test
-      run: cargo +nightly test --verbose
+      run: |
+        cd rust
+        cargo +nightly test --verbose
 
   csharpTestAndDeploy:
     runs-on: ubuntu-latest
