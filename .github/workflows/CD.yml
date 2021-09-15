@@ -25,7 +25,7 @@ jobs:
     - name: Rust test
       run: |
         cd rust
-        cargo +nightly test --verbose
+        cargo +nightly test --verbose -- --show-output
 
   csharpTestAndDeploy:
     runs-on: ubuntu-latest
