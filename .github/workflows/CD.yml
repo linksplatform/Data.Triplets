@@ -71,18 +71,18 @@ jobs:
         wget "$SCRIPTS_BASE_URL/publish-release.sh"
         bash ./publish-release.sh
 
-  # pushCSharpNuGetToGitHubPackageRegistry:
-  #   needs: testAndDeploy
-  #   if: github.event_name == 'push'
-  #   runs-on: windows-latest
-  #   steps:
-  #     - uses: actions/checkout@v1
-  #       with:
-  #         submodules: true
-  #     - uses: nuget/setup-nuget@v1
-  #     - name: Publish CSharp NuGet to GitHub Package Registry
-  #       run: |
-  #         dotnet build -c Release
-  #         dotnet pack -c Release
-  #         nuget source Add -Name "GitHub" -Source "https://nuget.pkg.github.com/linksplatform/index.json" -UserName linksplatform -Password ${{ secrets.GITHUB_TOKEN }}
-  #         nuget push **/*.nupkg -Source "GitHub" -SkipDuplicate
+pushCSharpNuGetToGitHubPackageRegistry:
+  needs: testAndDeploy
+  if: github.event_name == 'push'
+  runs-on: windows-latest
+  steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - uses: nuget/setup-nuget@v1
+    - name: Publish CSharp NuGet to GitHub Package Registry
+      run: |
+        dotnet build -c Release
+        dotnet pack -c Release
+        nuget source Add -Name "GitHub" -Source "https://nuget.pkg.github.com/linksplatform/index.json" -UserName linksplatform -Password ${{ secrets.GITHUB_TOKEN }}
+        nuget push **/*.nupkg -Source "GitHub" -SkipDuplicate
