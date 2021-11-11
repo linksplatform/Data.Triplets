@@ -102,6 +102,12 @@ namespace Platform.Data.Triplets
     /// </summary>
     public partial struct Link : ILink<Link>, IEquatable<Link>
     {
+        /// <summary>
+        /// <para>
+        /// The dll name.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string DllName = "Platform_Data_Triplets_Kernel";
 
         // TODO: Заменить на очередь событий, по примеру Node.js (+сделать выключаемым)
@@ -490,7 +496,20 @@ namespace Platform.Data.Triplets
         #endregion
 
         #region Referers Walkers
+
+        /// <summary>
+        /// <para>
+        /// The visitor.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private delegate void Visitor(LinkIndex link);
+        /// <summary>
+        /// <para>
+        /// The stopable visitor.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private delegate Int StopableVisitor(LinkIndex link);
 
         /// <summary>
@@ -668,8 +687,27 @@ namespace Platform.Data.Triplets
         #endregion
 
         #region Static Fields
+
+        /// <summary>
+        /// <para>
+        /// The lock object.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly object _lockObject = new object();
+        /// <summary>
+        /// <para>
+        /// The memory manager is ready.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static volatile int _memoryManagerIsReady;
+        /// <summary>
+        /// <para>
+        /// The dictionary.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly Dictionary<ulong, long> _linkToMappingIndex = new Dictionary<ulong, long>();
 
         #endregion
@@ -925,8 +963,61 @@ namespace Platform.Data.Triplets
         /// <para></para>
         /// </returns>
         public override int GetHashCode() => base.GetHashCode();
+
+        /// <summary>
+        /// <para>
+        /// Determines whether link does not exist.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         private static bool LinkDoesNotExist(LinkIndex link) => link == 0 || GetLinkerIndex(link) == 0;
+
+        /// <summary>
+        /// <para>
+        /// Determines whether link was deleted.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         private static bool LinkWasDeleted(LinkIndex link) => link != 0 && GetLinkerIndex(link) == 0;
+
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance is matching to.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="source">
+        /// <para>The source.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="linker">
+        /// <para>The linker.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="target">
+        /// <para>The target.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         private bool IsMatchingTo(Link source, Link linker, Link target)
             => ((Source == this && source == null) || (Source == source))
             && ((Linker == this && linker == null) || (Linker == linker))

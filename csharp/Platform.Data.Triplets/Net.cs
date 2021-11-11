@@ -642,6 +642,13 @@ namespace Platform.Data.Triplets
         /// <para></para>
         /// </returns>
         public static Link CreateSet() => Link.Create(Link.Itself, IsA, Set);
+
+        /// <summary>
+        /// <para>
+        /// Creates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void Create()
         {
             #region Core
@@ -719,6 +726,13 @@ namespace Platform.Data.Triplets
             CharacterHelpers.Recreate();
             Create();
         }
+
+        /// <summary>
+        /// <para>
+        /// Sets the names.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void SetNames()
         {
             Thing.SetName("thing");

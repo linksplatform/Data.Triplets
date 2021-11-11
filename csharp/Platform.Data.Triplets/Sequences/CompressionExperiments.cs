@@ -411,6 +411,29 @@ namespace Platform.Data.Triplets.Sequences
             //}
             return directConnection;
         }
+
+        /// <summary>
+        /// <para>
+        /// Tries the reconstruct connection using the specified first.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="first">
+        /// <para>The first.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="second">
+        /// <para>The second.</para>
+        /// <para></para>
+        /// </param>
+        /// <exception cref="NotImplementedException">
+        /// <para></para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The direct connection.</para>
+        /// <para></para>
+        /// </returns>
         private static Link TryReconstructConnection(Link first, Link second)
         {
             Link directConnection = null;
@@ -661,6 +684,24 @@ namespace Platform.Data.Triplets.Sequences
         //}
 
         // Заглушка, возможно опасная
+        /// <summary>
+        /// <para>
+        /// Combineds the join using the specified element.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="element">
+        /// <para>The element.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The link</para>
+        /// <para></para>
+        /// </returns>
         private static Link CombinedJoin(Link element, Link link)
         {
             return CombinedJoin(ref element, ref link);

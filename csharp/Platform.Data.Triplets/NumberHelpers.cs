@@ -37,6 +37,13 @@ namespace Platform.Data.Triplets
         /// <para></para>
         /// </summary>
         static NumberHelpers() => Create();
+
+        /// <summary>
+        /// <para>
+        /// Creates.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static void Create()
         {
             NumbersToLinks = new Link[64];
@@ -52,6 +59,21 @@ namespace Platform.Data.Triplets
         /// <para></para>
         /// </summary>
         public static void Recreate() => Create();
+
+        /// <summary>
+        /// <para>
+        /// Creates the power of 2 using the specified power of 2.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="powerOf2">
+        /// <para>The power of.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </returns>
         private static Link FromPowerOf2(long powerOf2)
         {
             var result = NumbersToLinks[powerOf2];
@@ -172,6 +194,21 @@ namespace Platform.Data.Triplets
             }
             throw new ArgumentOutOfRangeException(nameof(link), "Specified link is not a number.");
         }
+
+        /// <summary>
+        /// <para>
+        /// Goes the down and take it using the specified link.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="link">
+        /// <para>The link.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="number">
+        /// <para>The number.</para>
+        /// <para></para>
+        /// </param>
         private static void GoDownAndTakeIt(Link link, out long number)
         {
             if (!LinksToNumbers.TryGetValue(link, out number))

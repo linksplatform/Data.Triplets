@@ -20,8 +20,27 @@ namespace Platform.Data.Triplets.Tests
         /// <para></para>
         /// </summary>
         public static object Lock = new object(); //-V3090
+
+        /// <summary>
+        /// <para>
+        /// The thing visitor counter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static ulong _thingVisitorCounter;
+        /// <summary>
+        /// <para>
+        /// The is visitor counter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static ulong _isAVisitorCounter;
+        /// <summary>
+        /// <para>
+        /// The link visitor counter.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static ulong _linkVisitorCounter;
 
         /// <summary>
@@ -205,6 +224,17 @@ namespace Platform.Data.Triplets.Tests
                 File.Delete(filename);
             }
         }
+
+        /// <summary>
+        /// <para>
+        /// Tests the multiple random creations and deletions using the specified maximum operations per cycle.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="maximumOperationsPerCycle">
+        /// <para>The maximum operations per cycle.</para>
+        /// <para></para>
+        /// </param>
         private static void TestMultipleRandomCreationsAndDeletions(int maximumOperationsPerCycle)
         {
             var and = Link.Create(Link.Itself, Link.Itself, Link.Itself);
