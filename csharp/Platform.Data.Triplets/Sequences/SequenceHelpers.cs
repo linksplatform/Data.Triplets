@@ -98,37 +98,6 @@ namespace Platform.Data.Triplets.Sequences
             CollectMatchingSequences(left, leftBound, links, right, rightBound, ref results);
             return results;
         }
-
-        /// <summary>
-        /// <para>
-        /// Collects the matching sequences using the specified left link.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="leftLink">
-        /// <para>The left link.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="leftBound">
-        /// <para>The left bound.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="middleLinks">
-        /// <para>The middle links.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="rightLink">
-        /// <para>The right link.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="rightBound">
-        /// <para>The right bound.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="results">
-        /// <para>The results.</para>
-        /// <para></para>
-        /// </param>
         private static void CollectMatchingSequences(Link leftLink, int leftBound, Link[] middleLinks, Link rightLink, int rightBound, ref List<Link> results)
         {
             var leftLinkTotalReferers = leftLink.ReferersBySourceCount + leftLink.ReferersByTargetCount;

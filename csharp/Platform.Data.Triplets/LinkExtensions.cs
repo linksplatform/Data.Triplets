@@ -39,13 +39,6 @@ namespace Platform.Data.Triplets
             Link.Create(link, Net.Has, Link.Create(Net.Name, Net.ThatIsRepresentedBy, LinkConverter.FromString(name)));
             return link; // Chaining
         }
-
-        /// <summary>
-        /// <para>
-        /// The link.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private static readonly HashSet<Link> _linksWithNamesGatheringProcess = new HashSet<Link>();
 
         /// <summary>
