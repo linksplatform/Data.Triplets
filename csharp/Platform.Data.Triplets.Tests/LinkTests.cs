@@ -5,76 +5,28 @@ using Platform.Ranges;
 
 namespace Platform.Data.Triplets.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the link tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public static class LinkTests
     {
-        /// <summary>
-        /// <para>
-        /// The lock.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         public static object Lock = new object(); //-V3090
         private static ulong _thingVisitorCounter;
         private static ulong _isAVisitorCounter;
         private static ulong _linkVisitorCounter;
 
-        /// <summary>
-        /// <para>
-        /// Things the visitor using the specified link index.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="linkIndex">
-        /// <para>The link index.</para>
-        /// <para></para>
-        /// </param>
         static void ThingVisitor(Link linkIndex)
         {
             _thingVisitorCounter += linkIndex;
         }
 
-        /// <summary>
-        /// <para>
-        /// Ises the a visitor using the specified link index.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="linkIndex">
-        /// <para>The link index.</para>
-        /// <para></para>
-        /// </param>
         static void IsAVisitor(Link linkIndex)
         {
             _isAVisitorCounter += linkIndex;
         }
 
-        /// <summary>
-        /// <para>
-        /// Links the visitor using the specified link index.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="linkIndex">
-        /// <para>The link index.</para>
-        /// <para></para>
-        /// </param>
         static void LinkVisitor(Link linkIndex)
         {
             _linkVisitorCounter += linkIndex;
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that create delete link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void CreateDeleteLinkTest()
         {
@@ -96,12 +48,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that deep create update delete link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void DeepCreateUpdateDeleteLinkTest()
         {
@@ -136,12 +82,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that link referers walk test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void LinkReferersWalkTest()
         {
@@ -181,12 +121,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that multiple random creations and deletions test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void MultipleRandomCreationsAndDeletionsTest()
         {

@@ -3,20 +3,8 @@ using Xunit;
 
 namespace Platform.Data.Triplets.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the persistent memory manager tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public static class PersistentMemoryManagerTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that file mapping test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void FileMappingTest()
         {
@@ -34,12 +22,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that allocate and free link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void AllocateAndFreeLinkTest()
         {
@@ -61,12 +43,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that attach to unused link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void AttachToUnusedLinkTest()
         {
@@ -89,12 +65,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that detach to unused link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void DetachToUnusedLinkTest()
         {
@@ -118,12 +88,6 @@ namespace Platform.Data.Triplets.Tests
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that get set mapped link test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void GetSetMappedLinkTest()
         {
