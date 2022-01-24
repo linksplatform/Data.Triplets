@@ -29,6 +29,7 @@
 Platform.Data.Sequences 0.0.2 dependency is added.
 Platform.Data dependency is updated from 0.3.0 to 0.5.0.
 Microsoft.NETFramework.ReferenceAssemblies dependency is updated from 1.0.0 to 1.0.2</PackageReleaseNotes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
