@@ -10,8 +10,8 @@ namespace Platform.Data.Triplets
     /// </para>
     /// <para></para>
     /// </summary>
-    internal partial interface ILink<TLink>
-        where TLink : ILink<TLink>
+    internal partial interface ILink<TLinkAddress>
+        where TLinkAddress : ILink<TLinkAddress>
     {
         /// <summary>
         /// <para>
@@ -19,21 +19,21 @@ namespace Platform.Data.Triplets
         /// </para>
         /// <para></para>
         /// </summary>
-        TLink Source { get; }
+        TLinkAddress Source { get; }
         /// <summary>
         /// <para>
         /// Gets the linker value.
         /// </para>
         /// <para></para>
         /// </summary>
-        TLink Linker { get; }
+        TLinkAddress Linker { get; }
         /// <summary>
         /// <para>
         /// Gets the target value.
         /// </para>
         /// <para></para>
         /// </summary>
-        TLink Target { get; }
+        TLinkAddress Target { get; }
     }
 
     /// <summary>
@@ -42,8 +42,8 @@ namespace Platform.Data.Triplets
     /// </para>
     /// <para></para>
     /// </summary>
-    internal partial interface ILink<TLink>
-        where TLink : ILink<TLink>
+    internal partial interface ILink<TLinkAddress>
+        where TLinkAddress : ILink<TLinkAddress>
     {
         /// <summary>
         /// <para>
@@ -59,7 +59,7 @@ namespace Platform.Data.Triplets
         /// <para>The bool</para>
         /// <para></para>
         /// </returns>
-        bool WalkThroughReferersAsLinker(Func<TLink, bool> walker);
+        bool WalkThroughReferersAsLinker(Func<TLinkAddress, bool> walker);
         /// <summary>
         /// <para>
         /// Determines whether this instance walk through referers as source.
@@ -74,7 +74,7 @@ namespace Platform.Data.Triplets
         /// <para>The bool</para>
         /// <para></para>
         /// </returns>
-        bool WalkThroughReferersAsSource(Func<TLink, bool> walker);
+        bool WalkThroughReferersAsSource(Func<TLinkAddress, bool> walker);
         /// <summary>
         /// <para>
         /// Determines whether this instance walk through referers as target.
@@ -89,7 +89,7 @@ namespace Platform.Data.Triplets
         /// <para>The bool</para>
         /// <para></para>
         /// </returns>
-        bool WalkThroughReferersAsTarget(Func<TLink, bool> walker);
+        bool WalkThroughReferersAsTarget(Func<TLinkAddress, bool> walker);
         /// <summary>
         /// <para>
         /// Walks the through referers using the specified walker.
@@ -100,7 +100,7 @@ namespace Platform.Data.Triplets
         /// <para>The walker.</para>
         /// <para></para>
         /// </param>
-        void WalkThroughReferers(Func<TLink, bool> walker);
+        void WalkThroughReferers(Func<TLinkAddress, bool> walker);
     }
 
     /// <summary>
@@ -109,8 +109,8 @@ namespace Platform.Data.Triplets
     /// </para>
     /// <para></para>
     /// </summary>
-    internal partial interface ILink<TLink>
-        where TLink : ILink<TLink>
+    internal partial interface ILink<TLinkAddress>
+        where TLinkAddress : ILink<TLinkAddress>
     {
         /// <summary>
         /// <para>
@@ -122,7 +122,7 @@ namespace Platform.Data.Triplets
         /// <para>The walker.</para>
         /// <para></para>
         /// </param>
-        void WalkThroughReferersAsLinker(Action<TLink> walker);
+        void WalkThroughReferersAsLinker(Action<TLinkAddress> walker);
         /// <summary>
         /// <para>
         /// Walks the through referers as source using the specified walker.
@@ -133,7 +133,7 @@ namespace Platform.Data.Triplets
         /// <para>The walker.</para>
         /// <para></para>
         /// </param>
-        void WalkThroughReferersAsSource(Action<TLink> walker);
+        void WalkThroughReferersAsSource(Action<TLinkAddress> walker);
         /// <summary>
         /// <para>
         /// Walks the through referers as target using the specified walker.
@@ -144,7 +144,7 @@ namespace Platform.Data.Triplets
         /// <para>The walker.</para>
         /// <para></para>
         /// </param>
-        void WalkThroughReferersAsTarget(Action<TLink> walker);
+        void WalkThroughReferersAsTarget(Action<TLinkAddress> walker);
         /// <summary>
         /// <para>
         /// Walks the through referers using the specified walker.
@@ -155,7 +155,7 @@ namespace Platform.Data.Triplets
         /// <para>The walker.</para>
         /// <para></para>
         /// </param>
-        void WalkThroughReferers(Action<TLink> walker);
+        void WalkThroughReferers(Action<TLinkAddress> walker);
     }
 }
 /*

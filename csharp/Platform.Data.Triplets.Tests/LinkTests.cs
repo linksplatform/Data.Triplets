@@ -142,7 +142,7 @@ namespace Platform.Data.Triplets.Tests
         private static void TestMultipleRandomCreationsAndDeletions(int maximumOperationsPerCycle)
         {
             var and = Link.Create(Link.Itself, Link.Itself, Link.Itself);
-            //var comparer = Comparer<TLink>.Default;
+            //var comparer = Comparer<TLinkAddress>.Default;
             for (var N = 1; N < maximumOperationsPerCycle; N++)
             {
                 var random = new System.Random(N);
