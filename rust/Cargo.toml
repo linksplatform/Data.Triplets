@@ -1,0 +1,10 @@
+[package]
+name = "triplets"
+version = "0.1.0"
+authors = ["uselessgoddess"]
+edition = "2018"
+
+build = "build.rs"
+
+[dependencies]
+libc = "0.1"
