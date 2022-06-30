@@ -1,0 +1,24 @@
+[package]
+name = "triplets"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "uselessgoddess",
+    "Linksplatform Team <linksplatformtechnologies@gmail.com>"
+]
+categories = [
+    "database-implementations", # wait rfcs#3185 "asynchronous"
+]
+keywords = [
+    "associative", "doublets", "db",
+]
+readme = "../README.md"
+license = "LGPL-3.0"
+repository = "https://github.com/linksplatform/Data.Triplets"
+homepage = "https://github.com/linksplatform/Data.Triplets/blob/main/rust"
+description = """
+Modular framework to automation by automation
+"""
+
+[dependencies]
+doublets = "0.1.0-beta.8"
