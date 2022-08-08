@@ -21,4 +21,12 @@ Modular framework to automation by automation
 """
 
 [dependencies]
-doublets = "0.1.0-beta.8"
+thiserror = "1.0"
+num-traits = "0.2"
+cfg-if = "1.0"
+static_assertions = "1.1"
+
+doublets = { git = "https://github.com/linksplatform/doublets-rs", features = ["full"] }
+
+# optional
+smallvec = { version = "1.9", optional = true }
