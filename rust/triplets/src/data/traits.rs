@@ -1,4 +1,4 @@
-use crate::{Each, Error, Fuse, Handler, Link};
+use crate::{Error, Fuse, Link};
 use doublets::data::{Flow, LinkType, LinksConstants, ToQuery};
 use std::{
     default::default,
@@ -184,7 +184,7 @@ pub trait Triplets<T: LinkType>: Links<T> {
         R: Try<Output = ()>,
         Self: Sized,
     {
-        self.each_by([], handler)
+        self.each_by([self.constants().any; 3], handler)
     }
 
     fn iter(&self) -> Box<dyn Iterator<Item = Link<T>>> {

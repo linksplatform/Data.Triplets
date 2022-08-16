@@ -1,21 +1,9 @@
-use crate::{Each, Error, Handler, Link, Links, ReadHandler, Triplets, WriteHandler};
+use crate::{Continue, Error, Link, Links, ReadHandler, Triplets, WriteHandler};
 use doublets::{
-    data::{Flow, LinkType, LinksConstants, Query, ToQuery},
-    Doublets,
+    data::{Flow, LinkType, LinksConstants, ToQuery},
+    Doublets, Link as Dink,
 };
-use std::{error, marker::PhantomData, ops::Try};
-
-#[inline]
-fn validate<T: LinkType>(query: &[T], len: usize) {
-    let query = query.to_query();
-
-    assert!(
-        query.len() >= len,
-        "invalid query size - expected {}, got {}",
-        len,
-        query.len(),
-    );
-}
+use std::{default::default, error, marker::PhantomData};
 
 pub struct Store<T, D>
 where
@@ -59,10 +47,6 @@ where
         T::funty(1)
     }
 
-    fn meta() -> T {
-        Self::triplet_root()
-    }
-
     fn match_link(query: &[T]) -> Link<T> {
         Link {
             id: query.get(Self::ID).copied().unwrap_or_default(),
@@ -73,9 +57,11 @@ where
     }
 
     fn raw_is_triplet(&self, id: T) -> Option<bool> {
-        self.doublets
-            .search(Self::triplet_root(), id)
-            .map(|x| x != Self::triplet_root())
+        let any = self.constants().any;
+        self.doublets.get_link(id).map(|doublet| {
+            self.doublets
+                .found([any, doublet.source, Self::triplet_root()])
+        })
     }
 }
 
@@ -92,26 +78,48 @@ impl<T: LinkType, D: Doublets<T>> Links<T> for Store<T, D> {
         let ret: Result<_, Box<dyn error::Error + Send + Sync>> = try {
             let store = &mut self.doublets;
 
-            let from = store.create()?;
-            let id = store.create_link(from, T::funty(0))?;
-            let _ = store.create_link(Self::triplet_root(), id)?;
+            // create triplet skeleton:
+            // (id:
+            //     (doublet: |from_id|, |to_id|)
+            //     |type_id|
+            // )
+            // |from_id| |to_id| |type_id| is 0
+            let doublet = store.create()?;
+            let id = store.get_or_create(doublet, T::funty(0))?;
+            let _ = store.get_or_create(doublet, Self::triplet_root())?;
 
-            handler(
-                Link::nothing(),
-                Link::new(id, T::funty(0), T::funty(0), T::funty(0)),
-            )
+            handler(Link::nothing(), Link { id, ..default() })
         };
         ret.map_err(Into::into)
     }
 
     fn each_links(&self, query: &[T], handler: ReadHandler<'_, T>) -> Flow {
+        assert_eq!(query.len(), 4);
+
+        let (ty, query) = query.split_last().expect("invalid query len");
+        let store = &self.doublets;
         let any = self.constants().any;
-        let flow = self
-            .doublets
-            .each_iter([any, Self::triplet_root(), any])
+
+        let flow = store
+            .each_iter(query)
             .filter(|link| link.index != Self::triplet_root())
-            // fixme: potential `.unwrap_unchecked`
-            .try_for_each(|link| handler(self.try_get_link(link.target).expect("useless message")));
+            .filter(|link| store.found([any, link.index, Self::triplet_root()]))
+            .try_for_each(|link| {
+                for triplet in store
+                    .each_iter([any, link.index, any])
+                    .filter(|link| link.target != Self::triplet_root())
+                    .filter(|link| *ty == link.target || *ty == any)
+                {
+                    handler(Link::new(
+                        triplet.index,
+                        link.source,
+                        link.target,
+                        triplet.target,
+                    ))?;
+                }
+                Continue
+            });
+
         flow
     }
 
@@ -143,12 +151,22 @@ impl<T: LinkType, D: Doublets<T>> Links<T> for Store<T, D> {
             return Err(Error::NotFound(type_id));
         }
 
-        let ret: Result<_, Box<dyn error::Error + Send + Sync>> = try {
+        let ret: Result<_, doublets::Error<_>> = try {
             let store = &mut self.doublets;
 
-            let doublet = store.try_get_link(id)?;
-            store.update(doublet.source, from_id, to_id)?;
-            store.update(doublet.index, doublet.source, type_id)?;
+            // forget old doublet part - it may be used in other triplets
+            // it is clone to satisfy borrow anti-pattern: 😐
+            // https://github.com/rust-unofficial/patterns/blob/main/anti_patterns/borrow_clone.md
+            let Dink {
+                source, /* doublet part */
+                ..
+            } = store.try_get_link(id)?;
+            let doublet = store.get_or_create(from_id, to_id)?;
+            // dont forget remove old link
+            if source != store.update(id, doublet, type_id)? {
+                store.delete(source)?;
+            }
+            let _ = store.get_or_create(doublet, Self::triplet_root())?;
 
             handler(link, Link::new(id, from_id, to_id, type_id))
         };
@@ -166,7 +184,7 @@ impl<T: LinkType, D: Doublets<T>> Links<T> for Store<T, D> {
 
 impl<T: LinkType, D: Doublets<T>> Triplets<T> for Store<T, D> {
     fn get_link(&self, id: T) -> Option<Link<T>> {
-        if let Some(true) = self.raw_is_triplet(id) {
+        if self.raw_is_triplet(id)? {
             let link = self.doublets.get_link(id)?;
             let doublet = self.doublets.get_link(link.source)?;
             Some(Link::new(id, doublet.source, doublet.target, link.target))

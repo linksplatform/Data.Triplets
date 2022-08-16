@@ -7,7 +7,7 @@ where
     T: LinkType,
     R: Try<Output = ()>,
 {
-    fn fuse(self) -> Fuse<T, Self, R>
+    fn fuse(self) -> Fuse<Self, (Link<T>, Link<T>)>
     where
         Self: Sized,
     {
@@ -28,6 +28,12 @@ where
     T: LinkType,
     R: Try<Output = ()>,
 {
+    fn fuse(self) -> Fuse<Self, (Link<T>,)>
+    where
+        Self: Sized,
+    {
+        Fuse::new(self)
+    }
 }
 
 impl<T, R, All> Each<T, R> for All
@@ -38,24 +44,20 @@ where
 {
 }
 
-// todo: impl generic `FuseHandler`
 #[derive(Debug)]
-pub struct Fuse<T, H, R>
+pub struct Fuse<H, A>
 where
-    T: LinkType,
-    H: Handler<T, R>,
-    R: Try<Output = ()>,
+    H: FnMut<A>,
 {
     handler: H,
     done: bool,
-    marker: PhantomData<(R, T)>,
+    marker: PhantomData<A>,
 }
 
-impl<T, F, R> Fuse<T, F, R>
+impl<F, A> Fuse<F, A>
 where
-    T: LinkType,
-    F: FnMut(Link<T>, Link<T>) -> R,
-    R: Try<Output = ()>,
+    F: FnMut<A>,
+    F::Output: Try<Output = ()>,
 {
     pub fn new(handler: F) -> Self {
         Self {
@@ -66,37 +68,33 @@ where
     }
 }
 
-impl<T, H, R> From<H> for Fuse<T, H, R>
+impl<F, A> From<F> for Fuse<F, A>
 where
-    T: LinkType,
-    H: Handler<T, R>,
-    R: Try<Output = ()>,
+    F: FnMut<A>,
+    F::Output: Try<Output = ()>,
 {
-    fn from(handler: H) -> Self {
+    fn from(handler: F) -> Self {
         Self::new(handler)
     }
 }
 
-impl<T, H, R> FnOnce<(Link<T>, Link<T>)> for Fuse<T, H, R>
+impl<F, A> FnOnce<A> for Fuse<F, A>
 where
-    H: FnMut(Link<T>, Link<T>) -> R,
-    R: Try<Output = ()>,
-    T: LinkType,
+    F: FnMut<A>,
+    F::Output: Try<Output = ()>,
 {
     type Output = Flow;
 
-    extern "rust-call" fn call_once(self, args: (Link<T>, Link<T>)) -> Self::Output {
+    extern "rust-call" fn call_once(self, args: A) -> Self::Output {
         self.handler.call_once(args).branch().into()
     }
 }
-
-impl<T, H, R> FnMut<(Link<T>, Link<T>)> for Fuse<T, H, R>
+impl<F, A> FnMut<A> for Fuse<F, A>
 where
-    T: LinkType,
-    H: Handler<T, R>,
-    R: Try<Output = ()>,
+    F: FnMut<A>,
+    F::Output: Try<Output = ()>,
 {
-    extern "rust-call" fn call_mut(&mut self, args: (Link<T>, Link<T>)) -> Self::Output {
+    extern "rust-call" fn call_mut(&mut self, args: A) -> Self::Output {
         if self.done {
             Flow::Break
         } else {

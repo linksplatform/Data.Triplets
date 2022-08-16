@@ -1,6 +1,5 @@
 #![feature(try_trait_v2)]
 #![feature(try_blocks)]
-#![feature(backtrace)]
 #![feature(box_syntax)]
 #![feature(default_free_fn)]
 #![feature(unboxed_closures)]
@@ -53,29 +52,23 @@ mod data;
 pub mod doublets;
 
 pub use self::data::{
-    Each, Error, Fuse, Handler, Link, Links, ReadHandler, Triplet, Triplets,
-    WriteHandler,
+    Each, Error, Fuse, Handler, Link, Links, ReadHandler, Triplet, Triplets, WriteHandler,
 };
-use ::doublets::{data::Flow::Continue, mem, unit, Doublets};
+use ::doublets::{data::Flow::Continue, mem, unit};
 
 #[test]
 fn basic() -> Result<(), Box<dyn std::error::Error>> {
     let doublets = unit::Store::<usize, _>::new(mem::Global::new())?;
     let mut store = doublets::Store::new(doublets)?;
 
-    let x = store.create()?;
-    let y = store.create()?;
-    let z = store.create()?;
+    let link = store.create().unwrap();
+    store.update(link, link, link, link).unwrap();
 
-    let x = store.update_with(x, y, z, 0, |_, link| {
-        println!("{link:?}");
-        Continue
-    })?;
+    let link2 = store.create().unwrap();
+    store.update(link2, link2, link2, link)?;
 
-    store.doublets.each(|link| {
-        println!("{link:?}");
-        Continue
-    });
+    let link3 = store.create()?;
+    store.update(link3, link, link, link2)?;
 
     store.each(|link| {
         println!("{link:?}");

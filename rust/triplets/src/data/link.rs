@@ -25,10 +25,6 @@ impl<T: LinkType> Link<T> {
         Self::new(T::funty(0), T::funty(0), T::funty(0), T::funty(0))
     }
 
-    pub(crate) fn from_doublet_link(link: &doublets::Link<T>, type_id: T) -> Self {
-        Self::new(link.index, link.source, link.target, type_id)
-    }
-
     fn as_slice(&self) -> &[T] {
         // SAFETY: `Self` is repr(C)
         unsafe { std::slice::from_raw_parts(&self.id, 4) }

@@ -1,6 +1,6 @@
 use crate::{Link, Triplet};
 use doublets::{data::LinkType, mem};
-use std::{error::Error as StdError, io};
+use std::error::Error as StdError;
 
 #[derive(thiserror::Error, Debug)]
 pub enum Error<T: LinkType> {
