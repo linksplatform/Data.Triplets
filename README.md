@@ -1,4 +1,4 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Data.Triplets)](https://www.nuget.org/packages/Platform.Data.Triplets)
+[![NuGet Version and Downloads count](https://img.shields.io/nuget/v/Platform.Data.Triplets?label=nuget&style=flat)](https://www.nuget.org/packages/Platform.Data.Triplets)
 [![Actions Status](https://github.com/linksplatform/Data.Triplets/workflows/CD/badge.svg)](https://github.com/linksplatform/Data.Triplets/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/97fe4f772ba44e7d9e5ea23964fa314b)](https://app.codacy.com/app/drakonard/Data.Triplets?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Data.Triplets&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/data.triplets/badge)](https://www.codefactor.io/repository/github/linksplatform/data.triplets)
