@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Data.Triplets</AssemblyTitle>
     <VersionPrefix>0.1.1</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>Platform.Data.Triplets</AssemblyName>
     <PackageId>Platform.Data.Triplets</PackageId>
