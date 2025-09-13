@@ -1,0 +1,36 @@
+name: nim
+
+on:
+  push:
+    branches: main 
+    paths:
+      - 'nim/**'
+      - '.github/workflows/nim.yml'
+      - 'triplets.nimble'
+      
+defaults:
+  run:
+    working-directory: nim
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: 'stable'
+      - name: Install dependencies
+        run: nimble install -y
+      - name: Run tests
+        run: |
+          cd tests
+          for test in test*.nim; do
+            echo "Running $test"
+            nim c -r "$test"
+          done
