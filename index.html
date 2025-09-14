@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data.Triplets Documentation - Language Selection</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f6f8fa;
+                color: #24292e;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+                color: #0366d6;
+            }
+            .header p {
+                font-size: 1.2rem;
+                color: #586069;
+                margin: 0;
+            }
+            .language-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                margin-top: 40px;
+            }
+            .language-card {
+                background: white;
+                border: 1px solid #e1e4e8;
+                border-radius: 6px;
+                padding: 24px;
+                text-decoration: none;
+                color: inherit;
+                transition: all 0.2s ease;
+                box-shadow: 0 1px 3px rgba(27, 31, 35, 0.12);
+            }
+            .language-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(27, 31, 35, 0.15);
+                border-color: #0366d6;
+            }
+            .language-card h3 {
+                margin: 0 0 12px 0;
+                font-size: 1.5rem;
+                color: #0366d6;
+            }
+            .language-card p {
+                margin: 0 0 16px 0;
+                color: #586069;
+            }
+            .language-card .badge {
+                display: inline-block;
+                background: #28a745;
+                color: white;
+                padding: 4px 8px;
+                border-radius: 3px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .language-card .badge.partial {
+                background: #ffa500;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 60px;
+                padding-top: 30px;
+                border-top: 1px solid #e1e4e8;
+                color: #586069;
+            }
+            .footer a {
+                color: #0366d6;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .auto-redirect {
+                background: #f1f8ff;
+                border: 1px solid #c5d6e8;
+                border-radius: 6px;
+                padding: 16px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .auto-redirect a {
+                color: #0366d6;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .auto-redirect a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Data.Triplets Documentation</h1>
+                <p>LinksPlatform's Platform.Data.Triplets Class Library</p>
+            </div>
+
+            <div class="auto-redirect">
+                Looking for the C# documentation? <a href="csharp/">Click here for automatic redirect</a>
+            </div>
+
+            <div class="language-grid">
+                <a href="csharp/" class="language-card">
+                    <h3>C# / .NET</h3>
+                    <p>Complete API documentation with examples and comprehensive class library reference.</p>
+                    <span class="badge">Complete</span>
+                </a>
+
+                <a href="nim/" class="language-card">
+                    <h3>Nim</h3>
+                    <p>Nim language bindings and documentation for the Data.Triplets library.</p>
+                    <span class="badge partial">Partial</span>
+                </a>
+
+                <a href="https://github.com/linksplatform/Data.Triplets/tree/main/rust" class="language-card">
+                    <h3>Rust</h3>
+                    <p>Rust implementation of the Data.Triplets library (view source code).</p>
+                    <span class="badge partial">Source Only</span>
+                </a>
+            </div>
+
+            <div class="footer">
+                <p>
+                    <a href="https://github.com/linksplatform/Data.Triplets">View on GitHub</a> |
+                    <a href="https://www.nuget.org/packages/Platform.Data.Triplets">NuGet Package</a> |
+                    <a href="https://stackoverflow.com/tags/links-platform">Get Support</a> |
+                    <a href="https://discord.gg/eEXJyjWv5e">Discord</a>
+                </p>
+                <p>© LinksPlatform - Open Source Data Management Platform</p>
+            </div>
+        </div>
+
+        <script>
+            // Optional: Store user language preference
+            function setLanguagePreference(lang) {
+                localStorage.setItem('preferred-language', lang);
+            }
+            
+            // Add click handlers to store preferences
+            document.querySelectorAll('.language-card').forEach(card => {
+                card.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('csharp/')) {
+                        setLanguagePreference('csharp');
+                    } else if (href.startsWith('nim/')) {
+                        setLanguagePreference('nim');
+                    } else if (href.includes('rust')) {
+                        setLanguagePreference('rust');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
